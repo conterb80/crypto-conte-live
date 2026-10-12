@@ -1,54 +1,24 @@
 <!doctype html>
-<html lang="it">
-<head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Crypto Conte LIVE — Prototipo V1</title>
-<style>
-:root{color-scheme:dark}*{box-sizing:border-box}body{font:15px system-ui,-apple-system,sans-serif;background:#0d1524;color:#edf3ff;margin:0;padding:18px}main{max-width:900px;margin:auto}h1{margin:0 0 4px;font-size:27px}p{color:#b7c5d9;line-height:1.5}.panel{background:#19263b;border:1px solid #34445f;border-radius:16px;padding:16px;margin:14px 0}button{background:#74b3ff;color:#071221;border:0;border-radius:10px;padding:12px 16px;font-weight:700;font-size:15px;cursor:pointer}button:disabled{opacity:.5}.meta{font-size:13px;color:#b7c5d9}.scroll{overflow-x:auto}table{border-collapse:collapse;width:100%;min-width:560px}th,td{padding:12px 7px;text-align:left;border-bottom:1px solid #34445f}th{font-size:12px;color:#afc0d6}.positive{color:#8ce3b4}.negative{color:#ff9f9f}.highlight{color:#ffd782;font-weight:700}.notice{border-left:3px solid #74b3ff;padding-left:12px}#status{margin:12px 0;font-weight:600}small{color:#b7c5d9}code{color:#b6d9ff}
-</style></head>
-<body><main>
-<h1>📡 Crypto Conte LIVE</h1><p>Prototipo V1 · osservazione del mercato · nessun acquisto automatico</p>
-<section class="panel"><strong>Scanner di mercato</strong><p>Controlla 10 crypto tramite candele da 1 minuto. Confronta il volume dell'ultima candela completa con la media delle 20 precedenti e misura il movimento degli ultimi 5 minuti.</p><button id="refresh">Aggiorna adesso</button><div id="status" role="status">Avvio scanner…</div><div class="meta" id="last"></div></section>
-<section class="panel"><strong>Mercati monitorati</strong><div class="scroll"><table><thead><tr><th>Crypto</th><th>Prezzo USDT</th><th>Volume 1m / media</th><th>Prezzo 5m</th><th>Segnale</th></tr></thead><tbody id="rows"><tr><td colspan="5">Caricamento…</td></tr></tbody></table></div></section>
-<section class="panel notice"><strong>Come leggere il prototipo</strong><p><strong>PRE-RADAR</strong> = volume almeno 3 volte la media e prezzo in aumento, ma non oltre +5% negli ultimi 5 minuti. <strong>Volume anomalo</strong> = volume elevato senza quelle condizioni. <strong>Osserva</strong> = nessun segnale preliminare.</p><small>Queste regole sono sperimentali: NON sono consigli di acquisto, non verificano supporti, liquidità, commissioni, spread o disponibilità su Revolut. I prezzi USDT possono differire da Revolut. La scansione funziona solo mentre questa pagina è aperta. Se la fonte dati è irraggiungibile viene mostrato un errore, senza inventare prezzi.</small></section>
-</main>
-<script>
+<html lang="it"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#0c1424"><title>Crypto Conte LIVE V2</title>
+<style>:root{font-family:system-ui,-apple-system,sans-serif;color:#edf3ff;background:#0c1424}*{box-sizing:border-box}body{margin:0;padding:16px}main{max-width:860px;margin:auto}h1{font-size:1.7rem;margin:10px 0 2px}h2{font-size:1.1rem;margin:0 0 12px}p{line-height:1.5}.sub,.muted,small{color:#b2c1d7}.card{background:#1b2940;border:1px solid #354763;border-radius:16px;padding:16px;margin:14px 0}.top{display:flex;justify-content:space-between;gap:8px;align-items:center}.pill{padding:5px 9px;border-radius:30px;font-size:12px;background:#33435b}.button{background:#75afff;border:0;color:#0b1728;font-size:15px;font-weight:700;border-radius:10px;padding:12px 16px}.button:disabled{opacity:.55}.list{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:10px}.coin{background:#142035;border:1px solid #344661;border-radius:12px;padding:13px}.coin h3{margin:0;font-size:1.05rem}.coin .price{font-size:1.3rem;font-weight:700;margin:8px 0}.stats{display:flex;gap:15px;flex-wrap:wrap;font-size:13px;color:#c7d5e7}.reason{font-size:13px;margin:10px 0 0;line-height:1.4}.signal{font-weight:700;font-size:12px}.watch{color:#c8d3e2}.radar{color:#facc72}.setup{color:#86efac}.error{color:#fca5a5}.foot{font-size:12px;color:#aabbd2}details{margin-top:10px}summary{cursor:pointer;color:#a5c8ff}#log{padding-left:18px;font-size:13px;line-height:1.6}#status{font-size:14px;margin:12px 0 6px}</style></head><body><main>
+<div class="top"><div><h1>📡 Crypto Conte LIVE</h1><div class="sub">V2 · Laboratorio dati e segnali</div></div><span class="pill">TEST</span></div>
+<section class="card"><h2>Scanner di mercato</h2><p class="muted">10 mercati · candele complete da 1 minuto · confronto volume con le 20 precedenti · controllo ogni 60 secondi mentre la pagina è aperta.</p><button class="button" id="refresh">Aggiorna adesso</button><div id="status" role="status">Avvio del controllo…</div><small id="updated"></small><p class="foot">In caso di errore conserviamo l'ultimo dato valido e segnaliamo che non è aggiornato.</p></section>
+<section class="card"><h2>Mercati monitorati</h2><div id="coins" class="list"></div></section>
+<section class="card"><h2>Registro segnali (sul telefono)</h2><p class="foot">Memorizza fino a 40 cambi di stato in questo browser. Non è un registro cloud e può sparire cancellando i dati del browser.</p><ol id="log"></ol></section>
+<section class="card"><h2>Come leggere i segnali</h2><p><b>Osserva:</b> nessuna anomalia convincente. <b>PRE-RADAR:</b> volume almeno 3 volte la media e prezzo in crescita moderata negli ultimi 5 minuti. <b>Movimento forte:</b> volume elevato ma prezzo già mosso molto: attenzione a inseguire.</p><p class="foot">Non sono indicazioni di acquisto. Le quotazioni sono in USDT, non quelle di Revolut. Non abbiamo ancora conferma di trend, supporti, spread, commissioni, disponibilità su Revolut, rapporto rischio/rendimento né qualità dell'esecuzione. Nessun ordine automatico.</p></section>
+</main><script>
 'use strict';
-const symbols=['BTCUSDT','ETHUSDT','SOLUSDT','XRPUSDT','LINKUSDT','AVAXUSDT','NEARUSDT','ADAUSDT','DOGEUSDT','LTCUSDT'];
-const tbody=document.getElementById('rows'), status=document.getElementById('status'), last=document.getElementById('last'), button=document.getElementById('refresh');
-let running=false;
-const fmt=(value,decimals)=>Number(value).toLocaleString('it-IT',{maximumFractionDigits:decimals});
-async function scan(){
- if(running)return;
- running=true;button.disabled=true;status.textContent='Aggiornamento dei dati…';
- const results=await Promise.all(symbols.map(async symbol=>{
-  try{
-   const url='https://data-api.binance.vision/api/v3/klines?symbol='+encodeURIComponent(symbol)+'&interval=1m&limit=32';
-   const response=await fetch(url,{cache:'no-store'});
-   if(!response.ok)throw new Error('HTTP '+response.status);
-   const data=await response.json();
-   if(!Array.isArray(data)||data.length<27)throw new Error('Dati insufficienti');
-   const candles=data.slice(0,-1); // esclude la candela ancora in formazione
-   const latest=candles.at(-1), baseline=candles.slice(-21,-1);
-   const avgQuoteVolume=baseline.reduce((total,c)=>total+Number(c[7]),0)/baseline.length;
-   const volumeRatio=avgQuoteVolume>0?Number(latest[7])/avgQuoteVolume:0;
-   const price=Number(latest[4]);
-   const change5m=(price/Number(candles.at(-6)[4])-1)*100;
-   const signal=volumeRatio>=3&&change5m>0&&change5m<5?'PRE-RADAR':volumeRatio>=3?'Volume anomalo':'Osserva';
-   return {symbol:symbol.replace('USDT',''),price,volumeRatio,change5m,signal};
-  }catch(error){return {symbol:symbol.replace('USDT',''),error:error.message};}
- }));
- tbody.replaceChildren();let success=0,signals=0;
- for(const item of results){
-  const row=document.createElement('tr');
-  const cells=item.error?[item.symbol,'—','—','—','Dati non disponibili']:[item.symbol,fmt(item.price,item.price>=100?2:6),fmt(item.volumeRatio,1)+'×',(item.change5m>=0?'+':'')+fmt(item.change5m,2)+'%',item.signal];
-  cells.forEach((value,index)=>{const cell=document.createElement('td');cell.textContent=value;if(index===3&&!item.error)cell.className=item.change5m>=0?'positive':'negative';if(index===4&&item.signal==='PRE-RADAR')cell.className='highlight';row.appendChild(cell)});
-  tbody.appendChild(row);
-  if(!item.error){success++;if(item.signal==='PRE-RADAR')signals++;}
- }
- status.textContent=success?'Mercati letti: '+success+'/10 · PRE-RADAR: '+signals:'Impossibile raggiungere la fonte dati. Riprova più tardi.';
- last.textContent='Ultimo controllo: '+new Date().toLocaleString('it-IT');
- running=false;button.disabled=false;
-}
-button.addEventListener('click',scan);scan();setInterval(scan,60000);
+const SYMS=['BTC','ETH','SOL','XRP','LINK','AVAX','NEAR','ADA','DOGE','LTC'];
+const $=id=>document.getElementById(id), storeKey='crypto_conte_live_v2';
+let state={cache:{},events:[]};try{const v=JSON.parse(localStorage.getItem(storeKey));if(v&&typeof v==='object'){state.cache=v.cache||{};state.events=Array.isArray(v.events)?v.events:[]}}catch{}
+let busy=false;
+const f=(n,d=2)=>Number(n).toLocaleString('it-IT',{maximumFractionDigits:d});
+const dt=t=>new Date(t).toLocaleString('it-IT');
+function persist(){try{localStorage.setItem(storeKey,JSON.stringify(state))}catch{}}
+function explain(r){if(r.error&&!r.price)return 'Dati non disponibili: nessuna valutazione.';if(r.signal==='PRE-RADAR')return 'Volume '+f(r.ratio,1)+'× la media; prezzo +'+f(r.change,2)+'% in 5 minuti. Da verificare con conferme ulteriori.';if(r.signal==='MOVIMENTO FORTE')return 'Volume elevato e movimento già ampio: rischio di inseguire un rialzo.';if(r.ratio>=3)return 'Volume elevato, ma prezzo non conferma un movimento rialzista moderato.';return 'Volume senza anomalia rialzista sufficiente secondo le regole sperimentali.'}
+function render(){const root=$('coins');root.replaceChildren();for(const symbol of SYMS){const r=state.cache[symbol];const card=document.createElement('article');card.className='coin';if(!r){card.textContent=symbol+' · in attesa di dati';root.appendChild(card);continue}const h=document.createElement('div');h.className='top';const name=document.createElement('h3');name.textContent=symbol;const sig=document.createElement('span');sig.className='signal '+(r.signal==='PRE-RADAR'?'setup':r.signal==='MOVIMENTO FORTE'?'radar':'watch');sig.textContent=r.signal||'NON DISPONIBILE';h.append(name,sig);const price=document.createElement('div');price.className='price';price.textContent=r.price!=null?f(r.price,r.price>=100?2:6)+' USDT':'—';const stats=document.createElement('div');stats.className='stats';for(const s of ['Volume 1m: '+(r.ratio!=null?f(r.ratio,1)+'×':'—'),'Prezzo 5m: '+(r.change!=null?f(r.change,2)+'%':'—')]){const span=document.createElement('span');span.textContent=s;stats.append(span)}const reason=document.createElement('p');reason.className='reason';reason.textContent=explain(r);card.append(h,price,stats,reason);const age=document.createElement('small');age.textContent='Dati: '+dt(r.time)+(r.stale?' · NON AGGIORNATI':'');if(r.stale)age.className='error';card.append(age);root.append(card)}const log=$('log');log.replaceChildren();for(const e of state.events.slice(0,15)){const li=document.createElement('li');li.textContent=dt(e.time)+' · '+e.symbol+' → '+e.signal;log.append(li)}if(!state.events.length){const li=document.createElement('li');li.textContent='Nessun cambio di stato registrato';log.append(li)}}
+const pause=ms=>new Promise(r=>setTimeout(r,ms));
+async function fetchOne(symbol){let lastError='Errore sconosciuto';for(let attempt=0;attempt<2;attempt++){try{const ctrl=new AbortController();const timeout=setTimeout(()=>ctrl.abort(),9000);let response;try{response=await fetch('https://data-api.binance.vision/api/v3/klines?symbol='+symbol+'USDT&interval=1m&limit=32',{cache:'no-store',signal:ctrl.signal})}finally{clearTimeout(timeout)}if(!response.ok)throw Error('HTTP '+response.status);const all=await response.json();if(!Array.isArray(all)||all.length<27)throw Error('Candele insufficienti');const complete=all.slice(0,-1),last=complete.at(-1),baseline=complete.slice(-21,-1);const avg=baseline.reduce((sum,c)=>sum+Number(c[7]),0)/baseline.length;const ratio=avg>0?Number(last[7])/avg:0;const price=Number(last[4]);const old=Number(complete.at(-6)[4]);const change=(price/old-1)*100;if(![ratio,price,change].every(Number.isFinite))throw Error('Numeri non validi');const signal=ratio>=3&&change>0&&change<5?'PRE-RADAR':ratio>=3&&change>=5?'MOVIMENTO FORTE':'OSSERVA';return {symbol,price,ratio,change,signal,time:Date.now(),stale:false}}catch(e){lastError=e.message;if(attempt===0)await pause(700)}}throw Error(lastError)}
+async function scan(){if(busy)return;busy=true;$('refresh').disabled=true;$('status').textContent='Controllo in corso…';const data=await Promise.all(SYMS.map(async symbol=>{try{return await fetchOne(symbol)}catch(e){return {symbol,error:e.message}}}));let good=0,radar=0;for(const r of data){const old=state.cache[r.symbol];if(r.error){if(old)state.cache[r.symbol]={...old,stale:true};else state.cache[r.symbol]={symbol:r.symbol,signal:'NON DISPONIBILE',stale:true,time:Date.now(),error:r.error};continue}good++;if(r.signal==='PRE-RADAR')radar++;if(old&&old.signal!==r.signal&&r.signal!=='OSSERVA'){state.events.unshift({time:Date.now(),symbol:r.symbol,signal:r.signal})}else if(!old&&r.signal!=='OSSERVA'){state.events.unshift({time:Date.now(),symbol:r.symbol,signal:r.signal})}state.cache[r.symbol]=r}state.events=state.events.slice(0,40);persist();render();$('status').textContent=good===10?'✓ Mercati aggiornati: 10/10 · PRE-RADAR: '+radar:good>0?'⚠ Aggiornati '+good+'/10 · '+(10-good)+' con dati precedenti o non disponibili':'⚠ Fonte dati non raggiungibile: mostro gli ultimi dati salvati, se presenti.';$('updated').textContent='Ultimo tentativo: '+dt(Date.now());$('refresh').disabled=false;busy=false}
+$('refresh').addEventListener('click',scan);render();scan();setInterval(()=>{if(!document.hidden)scan()},60000);document.addEventListener('visibilitychange',()=>{if(!document.hidden)scan()});
 </script></body></html>
