@@ -194,8 +194,9 @@ def analyse(state,markets,errors,now):
             row['candidate']=candidate.copy()
         state['cache'][symbol]=row; good+=1
     state['runs']+=1
-    trigger=os.getenv('GITHUB_EVENT_NAME','local')
-    if trigger=='schedule' and good==len(SYMS):
+    event=os.getenv('GITHUB_EVENT_NAME','local')
+    trigger=os.getenv('TRIGGER_SOURCE',event)
+    if (event=='schedule' or (event=='workflow_dispatch' and trigger=='cron-job.org')) and good==len(SYMS):
         state['lastScheduledSuccess']=now
     if good==len(SYMS):
         state['lastSuccess']=now

@@ -3,6 +3,13 @@ on:
   schedule:
     - cron: '8,23,38,53 * * * *'
   workflow_dispatch:
+    inputs:
+      trigger_source:
+        description: Origine dell'avvio
+        type: choice
+        options: [manual, cron-job.org]
+        default: manual
+        required: true
   push:
     branches: [main]
     paths: ['engine/**', 'tests/**', '.github/workflows/**', 'index.html', 'v3.html', 'manifest.webmanifest', 'sw.js', 'icons/**']
@@ -30,6 +37,7 @@ jobs:
         id: scan
         continue-on-error: true
         env:
+          TRIGGER_SOURCE: ${{ inputs.trigger_source || github.event_name }}
           RUN_URL: https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}
         run: python -m engine.scanner
       - name: Salva dati e storico anche in caso di fonte irraggiungibile
