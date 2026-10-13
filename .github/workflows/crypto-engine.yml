@@ -5,7 +5,7 @@ on:
   workflow_dispatch:
   push:
     branches: [main]
-    paths: ['engine/**', 'tests/**', '.github/workflows/**', 'index.html', 'v3.html']
+    paths: ['engine/**', 'tests/**', '.github/workflows/**', 'index.html', 'v3.html', 'manifest.webmanifest', 'sw.js', 'icons/**']
 permissions:
   contents: write
   pages: write
@@ -60,6 +60,8 @@ jobs:
         run: |
           mkdir -p public/data
           cp index.html v3.html public/
+          cp manifest.webmanifest sw.js public/
+          cp -r icons public/
           cp data/latest.json public/data/
           cp -r data/archive public/data/
           touch public/.nojekyll
