@@ -194,12 +194,16 @@ def analyse(state,markets,errors,now):
             row['candidate']=candidate.copy()
         state['cache'][symbol]=row; good+=1
     state['runs']+=1
+    trigger=os.getenv('GITHUB_EVENT_NAME','local')
+    if trigger=='schedule' and good==len(SYMS):
+        state['lastScheduledSuccess']=now
     if good==len(SYMS):
         state['lastSuccess']=now
     state['events']=state['events'][:500]
     health='ok' if good==len(SYMS) else 'partial' if good else 'error'
     latest=dict(schema=1,version=VERSION,generatedAt=now,lastFullSuccess=state['lastSuccess'],runNumber=state['runs'],
                 health=health,coverage=good,total=len(SYMS),intervalMinutes=15,errors=errors,
+                runTrigger=trigger,lastScheduledSuccess=state.get('lastScheduledSuccess'),
                 runUrl=os.getenv('RUN_URL',''),markets=[state['cache'][s] for s in SYMS],
                 active=list(state['active'].values()),totals=state['totals'],events=state['events'][:80])
     return latest,emitted
