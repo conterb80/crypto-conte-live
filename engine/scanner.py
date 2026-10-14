@@ -103,6 +103,7 @@ def assess(market, btc, now):
     elif blocked:
         reason='Filtro prudenziale: liquidità, estensione del movimento o trend sfavorevole'
     return {k:market[k] for k in ('symbol','provider','quote')} | dict(price=price,time=now,candleTime=last['t']+900,
+           candles=[{k:b[k] for k in ('t','o','h','l','c')} for b in bars[-96:]],
            stale=False,signal=signal,score=score,qualified=qualified,ratio=ratio,trend=trend,trend4h=trend4h,
            trend24h=trend24h,relative=relative,entry=price,stop=stop,target=target,rr=(target-price)/risk,
            reason=reason,targetMethod='Massimo delle 24 ore oppure proiezione di 2 volte il rischio; non è una previsione')
@@ -253,3 +254,4 @@ def main():
 
 if __name__=='__main__':
     sys.exit(main())
+

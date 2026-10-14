@@ -1,5 +1,5 @@
 'use strict';
-const CACHE='crypto-conte-live-shell-v1';
+const CACHE='crypto-conte-live-shell-v2';
 const BASE=new URL('./',self.location.href);
 const ASSETS=['./','manifest.webmanifest','icons/live-192.png','icons/live-512.png'];
 self.addEventListener('install',event=>{event.waitUntil(caches.open(CACHE).then(cache=>cache.addAll(ASSETS.map(path=>new URL(path,BASE).href))).then(()=>self.skipWaiting()));});
@@ -16,3 +16,4 @@ self.addEventListener('fetch',event=>{
     event.respondWith(fetch(event.request).catch(()=>caches.match(event.request)));
   }
 });
+
