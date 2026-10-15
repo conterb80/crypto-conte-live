@@ -1,7 +1,7 @@
 {
   "version": "paper-1",
   "startedAt": 1792060401.9214385,
-  "lastRun": 1792071933.5666645,
+  "lastRun": 1792072859.8997378,
   "portfolios": {
     "A": {
       "name": "Conferme",
@@ -93,64 +93,47 @@
           "time": 1792071933.5666645,
           "equity": 150.0,
           "cash": 150.0
+        },
+        {
+          "time": 1792072859.8997378,
+          "equity": 150.0,
+          "cash": 150.0
         }
       ],
       "realizedEUR": 0
     },
     "B": {
       "name": "Anticipato",
-      "cash": 149.01061162888305,
-      "positions": {},
-      "pending": {
-        "LTC": {
-          "id": "LTC-1792071900",
-          "symbol": "LTC",
-          "status": "OPPORTUNITA",
-          "createdAt": 1792071900.0,
-          "checkedThrough": 1792071900.0,
-          "lastSeen": 1792071933.5666645,
-          "lastPrice": 58.49,
-          "eligibleAt": 1792071933.5666645,
-          "entry": 58.49,
-          "stop": 57.870000000000005,
-          "target": 60.6,
+      "cash": 89.01061162888305,
+      "positions": {
+        "NEAR": {
+          "candidateId": "NEAR-1792071900",
+          "qty": 7.3235314467022565,
+          "openedAt": 1792072859.8997378,
+          "checkedThrough": 1792073700,
           "provider": "Binance",
           "quote": "USDT",
-          "queuedAt": 1792071933.5666645
-        },
-        "NEAR": {
-          "id": "NEAR-1792071900",
-          "symbol": "NEAR",
-          "status": "OPPORTUNITA",
-          "createdAt": 1792071900.0,
-          "checkedThrough": 1792071900.0,
-          "lastSeen": 1792071933.5666645,
-          "lastPrice": 4.622,
-          "eligibleAt": 1792071933.5666645,
-          "entry": 4.622,
+          "entry": 4.589585,
           "stop": 4.5249999999999995,
           "target": 5.039,
-          "provider": "Binance",
-          "quote": "USDT",
-          "queuedAt": 1792071933.5666645
+          "mark": 29.79073295781526,
+          "markedAt": 1792072859.8997378
         },
         "UNI": {
-          "id": "UNI-1792071900",
-          "symbol": "UNI",
-          "status": "OPPORTUNITA",
-          "createdAt": 1792071900.0,
-          "checkedThrough": 1792071900.0,
-          "lastSeen": 1792071933.5666645,
-          "lastPrice": 6.981,
-          "eligibleAt": 1792071933.5666645,
-          "entry": 6.981,
-          "stop": 6.861857142857143,
-          "target": 7.342,
+          "candidateId": "UNI-1792071900",
+          "qty": 4.804462967968214,
+          "openedAt": 1792072859.8997378,
+          "checkedThrough": 1792073700,
           "provider": "Binance",
           "quote": "USDT",
-          "queuedAt": 1792071933.5666645
+          "entry": 6.995988999999999,
+          "stop": 6.861857142857143,
+          "target": 7.342,
+          "mark": 29.79073295781526,
+          "markedAt": 1792072859.8997378
         }
       },
+      "pending": {},
       "seen": [
         "ETH-1792051200",
         "ATOM-1792060200",
@@ -249,11 +232,41 @@
           "symbol": "UNI",
           "candidateId": "UNI-1792071900",
           "reason": "Esecuzione dalla prossima osservazione disponibile"
+        },
+        {
+          "time": 1792072859.8997378,
+          "type": "SALTATO",
+          "symbol": "LTC",
+          "reason": "Segnale scaduto o dati/filtri non validi"
+        },
+        {
+          "time": 1792072859.8997378,
+          "type": "ACQUISTO",
+          "symbol": "NEAR",
+          "candidateId": "NEAR-1792071900",
+          "price": 4.589585,
+          "quote": "USDT",
+          "eurRate": 0.8903133903133903,
+          "costEUR": 30,
+          "feeEUR": 0.07481296758104605,
+          "qty": 7.3235314467022565
+        },
+        {
+          "time": 1792072859.8997378,
+          "type": "ACQUISTO",
+          "symbol": "UNI",
+          "candidateId": "UNI-1792071900",
+          "price": 6.995988999999999,
+          "quote": "USDT",
+          "eurRate": 0.8903133903133903,
+          "costEUR": 30,
+          "feeEUR": 0.07481296758104605,
+          "qty": 4.804462967968214
         }
       ],
-      "equity": 149.01061162888305,
+      "equity": 148.5920775445136,
       "peak": 150.0,
-      "maxDrawdownPct": 0.6595922474113003,
+      "maxDrawdownPct": 0.9386149703242808,
       "history": [
         {
           "time": 1792060401.9214385,
@@ -334,6 +347,11 @@
           "time": 1792071933.5666645,
           "equity": 149.01061162888305,
           "cash": 149.01061162888305
+        },
+        {
+          "time": 1792072859.8997378,
+          "equity": 148.5920775445136,
+          "cash": 89.01061162888305
         }
       ],
       "realizedEUR": -0.9893883711169345
@@ -351,9 +369,9 @@
     "fx": "Cambio contemporaneo EUR/USDT Binance o EUR/USD Coinbase; senza cambio nessun acquisto",
     "gaps": "Valori conservati e anomalie registrate; uscita al primo prezzo osservato disponibile"
   },
-  "fxAt": 1792071933.5666645,
+  "fxAt": 1792072859.8997378,
   "eurRates": {
-    "USDT": 0.8911067545891997
+    "USDT": 0.8903133903133903
   },
   "errors": []
 }
