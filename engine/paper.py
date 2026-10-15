@@ -61,6 +61,7 @@ def step(state,latest,markets,quotes,eur_rates,now):
             if c['symbol'] in p['positions'] or c['symbol'] in p['pending']:continue
             p['pending'][c['symbol']]=dict(c,queuedAt=now)
             log('IN_ATTESA',symbol=c['symbol'],candidateId=c['id'],reason='Esecuzione dalla prossima osservazione disponibile')
+        p['realizedEUR']=sum(e.get('pnlEUR',0) for e in p['ledger'] if e['type']=='VENDITA')
         p['equity']=p['cash']+sum(x['mark'] for x in p['positions'].values());p['peak']=max(p['peak'],p['equity']);p['maxDrawdownPct']=max(p['maxDrawdownPct'],(1-p['equity']/p['peak'])*100)
         p['history'].append({'time':now,'equity':p['equity'],'cash':p['cash']})
     state['lastRun']=now
