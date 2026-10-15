@@ -1,7 +1,7 @@
 {
   "version": "paper-1",
   "startedAt": 1792060401.9214385,
-  "lastRun": 1792064731.1007936,
+  "lastRun": 1792065662.423784,
   "portfolios": {
     "A": {
       "name": "Conferme",
@@ -53,6 +53,11 @@
           "time": 1792064731.1007936,
           "equity": 150.0,
           "cash": 150.0
+        },
+        {
+          "time": 1792065662.423784,
+          "equity": 150.0,
+          "cash": 150.0
         }
       ],
       "realizedEUR": 0
@@ -61,12 +66,38 @@
       "name": "Anticipato",
       "cash": 150.0,
       "positions": {},
-      "pending": {},
+      "pending": {
+        "LTC": {
+          "id": "LTC-1792065600",
+          "symbol": "LTC",
+          "status": "OPPORTUNITA",
+          "createdAt": 1792065600.0,
+          "checkedThrough": 1792065600.0,
+          "lastSeen": 1792065662.423784,
+          "lastPrice": 58.39,
+          "eligibleAt": 1792065662.423784,
+          "entry": 58.39,
+          "stop": 57.92285714285714,
+          "target": 61.82,
+          "provider": "Binance",
+          "quote": "USDT",
+          "queuedAt": 1792065662.423784
+        }
+      },
       "seen": [
         "ETH-1792051200",
-        "ATOM-1792060200"
+        "ATOM-1792060200",
+        "LTC-1792065600"
       ],
-      "ledger": [],
+      "ledger": [
+        {
+          "time": 1792065662.423784,
+          "type": "IN_ATTESA",
+          "symbol": "LTC",
+          "candidateId": "LTC-1792065600",
+          "reason": "Esecuzione dalla prossima osservazione disponibile"
+        }
+      ],
       "equity": 150.0,
       "peak": 150.0,
       "maxDrawdownPct": 0.0,
@@ -110,6 +141,11 @@
           "time": 1792064731.1007936,
           "equity": 150.0,
           "cash": 150.0
+        },
+        {
+          "time": 1792065662.423784,
+          "equity": 150.0,
+          "cash": 150.0
         }
       ],
       "realizedEUR": 0
@@ -127,9 +163,9 @@
     "fx": "Cambio contemporaneo EUR/USDT Binance o EUR/USD Coinbase; senza cambio nessun acquisto",
     "gaps": "Valori conservati e anomalie registrate; uscita al primo prezzo osservato disponibile"
   },
-  "fxAt": 1792064731.1007936,
+  "fxAt": 1792065662.423784,
   "eurRates": {
-    "USDT": 0.8907892392659896
+    "USDT": 0.89126559714795
   },
   "errors": []
 }
