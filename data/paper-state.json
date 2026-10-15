@@ -1,7 +1,7 @@
 {
   "version": "paper-1",
   "startedAt": 1792060401.9214385,
-  "lastRun": 1792065662.423784,
+  "lastRun": 1792066533.5484464,
   "portfolios": {
     "A": {
       "name": "Conferme",
@@ -58,36 +58,56 @@
           "time": 1792065662.423784,
           "equity": 150.0,
           "cash": 150.0
+        },
+        {
+          "time": 1792066533.5484464,
+          "equity": 150.0,
+          "cash": 150.0
         }
       ],
       "realizedEUR": 0
     },
     "B": {
       "name": "Anticipato",
-      "cash": 150.0,
-      "positions": {},
-      "pending": {
+      "cash": 120.0,
+      "positions": {
         "LTC": {
-          "id": "LTC-1792065600",
-          "symbol": "LTC",
-          "status": "OPPORTUNITA",
-          "createdAt": 1792065600.0,
-          "checkedThrough": 1792065600.0,
-          "lastSeen": 1792065662.423784,
-          "lastPrice": 58.39,
-          "eligibleAt": 1792065662.423784,
-          "entry": 58.39,
-          "stop": 57.92285714285714,
-          "target": 61.82,
+          "candidateId": "LTC-1792065600",
+          "qty": 0.5734190961956023,
+          "openedAt": 1792066533.5484464,
+          "checkedThrough": 1792067400,
           "provider": "Binance",
           "quote": "USDT",
-          "queuedAt": 1792065662.423784
+          "entry": 58.53847999999999,
+          "stop": 57.92285714285714,
+          "target": 61.82,
+          "mark": 29.79073295781526,
+          "markedAt": 1792066533.5484464
+        }
+      },
+      "pending": {
+        "AVAX": {
+          "id": "AVAX-1792066500",
+          "symbol": "AVAX",
+          "status": "OPPORTUNITA",
+          "createdAt": 1792066500.0,
+          "checkedThrough": 1792066500.0,
+          "lastSeen": 1792066533.5484464,
+          "lastPrice": 9.621,
+          "eligibleAt": 1792066533.5484464,
+          "entry": 9.621,
+          "stop": 9.505,
+          "target": 10.299,
+          "provider": "Binance",
+          "quote": "USDT",
+          "queuedAt": 1792066533.5484464
         }
       },
       "seen": [
         "ETH-1792051200",
         "ATOM-1792060200",
-        "LTC-1792065600"
+        "LTC-1792065600",
+        "AVAX-1792066500"
       ],
       "ledger": [
         {
@@ -96,11 +116,30 @@
           "symbol": "LTC",
           "candidateId": "LTC-1792065600",
           "reason": "Esecuzione dalla prossima osservazione disponibile"
+        },
+        {
+          "time": 1792066533.5484464,
+          "type": "ACQUISTO",
+          "symbol": "LTC",
+          "candidateId": "LTC-1792065600",
+          "price": 58.53847999999999,
+          "quote": "USDT",
+          "eurRate": 0.8915039671926541,
+          "costEUR": 30,
+          "feeEUR": 0.07481296758104605,
+          "qty": 0.5734190961956023
+        },
+        {
+          "time": 1792066533.5484464,
+          "type": "IN_ATTESA",
+          "symbol": "AVAX",
+          "candidateId": "AVAX-1792066500",
+          "reason": "Esecuzione dalla prossima osservazione disponibile"
         }
       ],
-      "equity": 150.0,
+      "equity": 149.79073295781527,
       "peak": 150.0,
-      "maxDrawdownPct": 0.0,
+      "maxDrawdownPct": 0.13951136145649023,
       "history": [
         {
           "time": 1792060401.9214385,
@@ -146,6 +185,11 @@
           "time": 1792065662.423784,
           "equity": 150.0,
           "cash": 150.0
+        },
+        {
+          "time": 1792066533.5484464,
+          "equity": 149.79073295781527,
+          "cash": 120.0
         }
       ],
       "realizedEUR": 0
@@ -163,9 +207,9 @@
     "fx": "Cambio contemporaneo EUR/USDT Binance o EUR/USD Coinbase; senza cambio nessun acquisto",
     "gaps": "Valori conservati e anomalie registrate; uscita al primo prezzo osservato disponibile"
   },
-  "fxAt": 1792065662.423784,
+  "fxAt": 1792066533.5484464,
   "eurRates": {
-    "USDT": 0.89126559714795
+    "USDT": 0.8915039671926541
   },
   "errors": []
 }
