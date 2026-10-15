@@ -37,7 +37,7 @@ def step(state,latest,markets,quotes,eur_rates,now):
         # Only pending signals observed in a previous run may be filled.
         for symbol,order in list(p['pending'].items()):
             q=quotes.get(symbol);rate=eur_rates.get(order['quote']);row=next((r for r in latest['markets'] if r['symbol']==symbol),{})
-            if now-order['queuedAt']>3600 or row.get('stale') or row.get('signal')=='SCARTA':
+            if not any(c['id']==order['id'] for c in latest['active']) or now-order['queuedAt']>3600 or row.get('stale') or row.get('signal')=='SCARTA':
                 log('SALTATO',symbol=symbol,reason='Segnale scaduto o dati/filtri non validi');del p['pending'][symbol];continue
             if not q or q['provider']!=order['provider'] or q['quote']!=order['quote'] or not rate:continue
             if not order['stop']<q['price']<order['target']:
