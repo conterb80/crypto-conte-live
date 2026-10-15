@@ -1,7 +1,7 @@
 {
   "version": "paper-1",
   "startedAt": 1792060401.9214385,
-  "lastRun": 1792067446.5760334,
+  "lastRun": 1792068332.5603404,
   "portfolios": {
     "A": {
       "name": "Conferme",
@@ -68,39 +68,31 @@
           "time": 1792067446.5760334,
           "equity": 150.0,
           "cash": 150.0
+        },
+        {
+          "time": 1792068332.5603404,
+          "equity": 150.0,
+          "cash": 150.0
         }
       ],
       "realizedEUR": 0
     },
     "B": {
       "name": "Anticipato",
-      "cash": 90.0,
+      "cash": 119.62734256297065,
       "positions": {
-        "LTC": {
-          "candidateId": "LTC-1792065600",
-          "qty": 0.5734190961956023,
-          "openedAt": 1792066533.5484464,
-          "checkedThrough": 1792067400.0,
-          "provider": "Binance",
-          "quote": "USDT",
-          "entry": 58.53847999999999,
-          "stop": 57.92285714285714,
-          "target": 61.82,
-          "mark": 29.656221214358226,
-          "markedAt": 1792067446.5760334
-        },
         "AVAX": {
           "candidateId": "AVAX-1792066500",
           "qty": 3.487524825683954,
           "openedAt": 1792067446.5760334,
-          "checkedThrough": 1792068300,
+          "checkedThrough": 1792068300.0,
           "provider": "Binance",
           "quote": "USDT",
           "entry": 9.620611,
           "stop": 9.505,
           "target": 10.299,
-          "mark": 29.790732957815255,
-          "markedAt": 1792067446.5760334
+          "mark": 29.72967281508884,
+          "markedAt": 1792068332.5603404
         }
       },
       "pending": {},
@@ -148,11 +140,26 @@
           "costEUR": 30,
           "feeEUR": 0.07481296758104605,
           "qty": 3.487524825683954
+        },
+        {
+          "time": 1792068332.5603404,
+          "type": "VENDITA",
+          "symbol": "LTC",
+          "candidateId": "LTC-1792065600",
+          "reason": "Invalidazione",
+          "price": 58.12182,
+          "quote": "USDT",
+          "eurRate": 0.8911861687906603,
+          "netEUR": 29.627342562970654,
+          "feeEUR": 0.07425399138589137,
+          "pnlEUR": -0.3726574370293463,
+          "ambiguous": false,
+          "openedAt": 1792066533.5484464
         }
       ],
-      "equity": 149.4469541721735,
+      "equity": 149.3570153780595,
       "peak": 150.0,
-      "maxDrawdownPct": 0.36869721855100623,
+      "maxDrawdownPct": 0.42865641462700443,
       "history": [
         {
           "time": 1792060401.9214385,
@@ -208,9 +215,14 @@
           "time": 1792067446.5760334,
           "equity": 149.4469541721735,
           "cash": 90.0
+        },
+        {
+          "time": 1792068332.5603404,
+          "equity": 149.3570153780595,
+          "cash": 119.62734256297065
         }
       ],
-      "realizedEUR": 0
+      "realizedEUR": -0.3726574370293463
     }
   },
   "rules": {
@@ -225,9 +237,9 @@
     "fx": "Cambio contemporaneo EUR/USDT Binance o EUR/USD Coinbase; senza cambio nessun acquisto",
     "gaps": "Valori conservati e anomalie registrate; uscita al primo prezzo osservato disponibile"
   },
-  "fxAt": 1792067446.5760334,
+  "fxAt": 1792068332.5603404,
   "eurRates": {
-    "USDT": 0.8919015340706387
+    "USDT": 0.8911861687906603
   },
   "errors": []
 }
