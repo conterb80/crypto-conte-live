@@ -1,7 +1,7 @@
 {
   "version": "paper-1",
   "startedAt": 1792060401.9214385,
-  "lastRun": 1792074653.7517421,
+  "lastRun": 1792075533.6701212,
   "portfolios": {
     "A": {
       "name": "Conferme",
@@ -113,6 +113,11 @@
           "time": 1792074653.7517421,
           "equity": 150.0,
           "cash": 150.0
+        },
+        {
+          "time": 1792075533.6701212,
+          "equity": 150.0,
+          "cash": 150.0
         }
       ],
       "realizedEUR": 0
@@ -125,43 +130,108 @@
           "candidateId": "NEAR-1792071900",
           "qty": 7.3235314467022565,
           "openedAt": 1792072859.8997378,
-          "checkedThrough": 1792074600.0,
+          "checkedThrough": 1792075500.0,
           "provider": "Binance",
           "quote": "USDT",
           "entry": 4.589585,
           "stop": 4.5249999999999995,
           "target": 5.039,
-          "mark": 30.52931778278451,
-          "markedAt": 1792074653.7517421
+          "mark": 31.50339185679235,
+          "markedAt": 1792075533.6701212
         },
         "UNI": {
           "candidateId": "UNI-1792071900",
           "qty": 4.804462967968214,
           "openedAt": 1792072859.8997378,
-          "checkedThrough": 1792074600.0,
+          "checkedThrough": 1792075500.0,
           "provider": "Binance",
           "quote": "USDT",
           "entry": 6.995988999999999,
           "stop": 6.861857142857143,
           "target": 7.342,
-          "mark": 30.406839051619936,
-          "markedAt": 1792074653.7517421
+          "mark": 31.005062834512213,
+          "markedAt": 1792075533.6701212
         },
         "ADA": {
           "candidateId": "ADA-1792073700",
           "qty": 150.61698823568838,
           "openedAt": 1792073817.9718964,
-          "checkedThrough": 1792074600.0,
+          "checkedThrough": 1792075500.0,
           "provider": "Binance",
           "quote": "USDT",
           "entry": 0.22302279999999997,
           "stop": 0.21915714285714288,
           "target": 0.2315,
-          "mark": 29.769405704146504,
-          "markedAt": 1792074653.7517421
+          "mark": 30.09558633296107,
+          "markedAt": 1792075533.6701212
         }
       },
-      "pending": {},
+      "pending": {
+        "BTC": {
+          "id": "BTC-1792075500",
+          "symbol": "BTC",
+          "status": "OPPORTUNITA",
+          "createdAt": 1792075500.0,
+          "checkedThrough": 1792075500.0,
+          "lastSeen": 1792075533.6701212,
+          "lastPrice": 81500.0,
+          "eligibleAt": 1792075533.6701212,
+          "entry": 81500.0,
+          "stop": 80581.86285714286,
+          "target": 83336.27428571427,
+          "provider": "Binance",
+          "quote": "USDT",
+          "queuedAt": 1792075533.6701212
+        },
+        "FIL": {
+          "id": "FIL-1792075500",
+          "symbol": "FIL",
+          "status": "OPPORTUNITA",
+          "createdAt": 1792075500.0,
+          "checkedThrough": 1792075500.0,
+          "lastSeen": 1792075533.6701212,
+          "lastPrice": 1.0401,
+          "eligibleAt": 1792075533.6701212,
+          "entry": 1.0401,
+          "stop": 1.0162285714285715,
+          "target": 1.1055,
+          "provider": "Binance",
+          "quote": "USDT",
+          "queuedAt": 1792075533.6701212
+        },
+        "INJ": {
+          "id": "INJ-1792075500",
+          "symbol": "INJ",
+          "status": "OPPORTUNITA",
+          "createdAt": 1792075500.0,
+          "checkedThrough": 1792075500.0,
+          "lastSeen": 1792075533.6701212,
+          "lastPrice": 7.424,
+          "eligibleAt": 1792075533.6701212,
+          "entry": 7.424,
+          "stop": 7.240571428571429,
+          "target": 7.895,
+          "provider": "Binance",
+          "quote": "USDT",
+          "queuedAt": 1792075533.6701212
+        },
+        "XRP": {
+          "id": "XRP-1792075500",
+          "symbol": "XRP",
+          "status": "OPPORTUNITA",
+          "createdAt": 1792075500.0,
+          "checkedThrough": 1792075500.0,
+          "lastSeen": 1792075533.6701212,
+          "lastPrice": 1.3186,
+          "eligibleAt": 1792075533.6701212,
+          "entry": 1.3186,
+          "stop": 1.296957142857143,
+          "target": 1.3618857142857141,
+          "provider": "Binance",
+          "quote": "USDT",
+          "queuedAt": 1792075533.6701212
+        }
+      },
       "seen": [
         "ETH-1792051200",
         "ATOM-1792060200",
@@ -178,7 +248,11 @@
         "OP-1792073700",
         "RENDER-1792073700",
         "SOL-1792073700",
-        "UNI-1792074600"
+        "UNI-1792074600",
+        "BTC-1792075500",
+        "FIL-1792075500",
+        "INJ-1792075500",
+        "XRP-1792075500"
       ],
       "ledger": [
         {
@@ -409,10 +483,38 @@
           "type": "SALTATO",
           "symbol": "SOL",
           "reason": "Capitale o posti impegnati"
+        },
+        {
+          "time": 1792075533.6701212,
+          "type": "IN_ATTESA",
+          "symbol": "BTC",
+          "candidateId": "BTC-1792075500",
+          "reason": "Esecuzione dalla prossima osservazione disponibile"
+        },
+        {
+          "time": 1792075533.6701212,
+          "type": "IN_ATTESA",
+          "symbol": "FIL",
+          "candidateId": "FIL-1792075500",
+          "reason": "Esecuzione dalla prossima osservazione disponibile"
+        },
+        {
+          "time": 1792075533.6701212,
+          "type": "IN_ATTESA",
+          "symbol": "INJ",
+          "candidateId": "INJ-1792075500",
+          "reason": "Esecuzione dalla prossima osservazione disponibile"
+        },
+        {
+          "time": 1792075533.6701212,
+          "type": "IN_ATTESA",
+          "symbol": "XRP",
+          "candidateId": "XRP-1792075500",
+          "reason": "Esecuzione dalla prossima osservazione disponibile"
         }
       ],
-      "equity": 149.71617416743402,
-      "peak": 150.09744323274964,
+      "equity": 151.61465265314868,
+      "peak": 151.61465265314868,
       "maxDrawdownPct": 0.9386149703242808,
       "history": [
         {
@@ -514,6 +616,11 @@
           "time": 1792074653.7517421,
           "equity": 149.71617416743402,
           "cash": 59.010611628883055
+        },
+        {
+          "time": 1792075533.6701212,
+          "equity": 151.61465265314868,
+          "cash": 59.010611628883055
         }
       ],
       "realizedEUR": -0.9893883711169345
@@ -531,9 +638,9 @@
     "fx": "Cambio contemporaneo EUR/USDT Binance o EUR/USD Coinbase; senza cambio nessun acquisto",
     "gaps": "Valori conservati e anomalie registrate; uscita al primo prezzo osservato disponibile"
   },
-  "fxAt": 1792074653.7517421,
+  "fxAt": 1792075533.6701212,
   "eurRates": {
-    "USDT": 0.8906305664410402
+    "USDT": 0.8907892392659896
   },
   "errors": []
 }
