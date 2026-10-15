@@ -239,6 +239,37 @@ def main():
         errors={s:'; '.join(failures) for s in SYMS}
     latest,events=analyse(state,markets,errors,now)
     latest['sourceNotes']=failures
+    # Paper state is separate from the unchanged signal strategy/state.
+    from engine.paper import step
+    paper_path=root/'paper-state.json'
+    paper=json.loads(paper_path.read_text()) if paper_path.exists() else None
+    quotes={}; rates={}; paper_errors=[]
+    try:
+        if provider=='Binance':
+            ticks={r['symbol']:float(r['price']) for r in request_json('https://data-api.binance.vision/api/v3/ticker/price')}
+            fx=ticks.get('EURUSDT',0)
+            if not math.isfinite(fx) or fx<=0: raise ValueError('Cambio EUR/USDT non valido')
+            rates['USDT']=1/fx
+            quotes={s:dict(price=ticks[s+'USDT'],quote='USDT',provider=provider) for s in SYMS if s+'USDT' in ticks and math.isfinite(ticks[s+'USDT']) and ticks[s+'USDT']>0}
+        elif provider=='Coinbase':
+            fx=float(request_json('https://api.coinbase.com/v2/exchange-rates?currency=EUR')['data']['rates']['USD'])
+            if not math.isfinite(fx) or fx<=0: raise ValueError('Cambio EUR/USD non valido')
+            rates['USD']=1/fx
+            needed=set((paper or {}).get('portfolios',{}).get('A',{}).get('positions',{})) | set((paper or {}).get('portfolios',{}).get('B',{}).get('positions',{}))
+            for portfolio in (paper or {}).get('portfolios',{}).values(): needed.update(portfolio.get('pending',{}))
+            for symbol in needed:
+                try:
+                    value=float(request_json(f'https://api.exchange.coinbase.com/products/{symbol}-USD/ticker')['price'])
+                    if not math.isfinite(value) or value<=0: raise ValueError('Prezzo non valido')
+                    quotes[symbol]=dict(price=value,quote='USD',provider=provider)
+                except Exception as exc: paper_errors.append(f'{symbol}: {exc}')
+    except Exception as exc: paper_errors.append(str(exc))
+    paper=step(paper,latest,markets,quotes,rates,now)
+    paper['errors']=paper_errors
+    save_json(paper_path,paper)
+    latest['paper']={k:v for k,v in paper.items() if k!='portfolios'}
+    latest['paper']['portfolios']={k:{**{f:v for f,v in v.items() if f not in ('seen','ledger','history')},'ledger':v['ledger'][-100:],'history':v['history'][-2880:]} for k,v in paper['portfolios'].items()}
+
     for event in events:
         month=dt.datetime.fromtimestamp(event['time'],dt.timezone.utc).strftime('%Y-%m')
         archive=root/'archive'/f'{month}.jsonl'; archive.parent.mkdir(parents=True,exist_ok=True)
