@@ -1,7 +1,7 @@
 {
   "version": "paper-1",
   "startedAt": 1792060401.9214385,
-  "lastRun": 1792171844.4443376,
+  "lastRun": 1792172732.970801,
   "portfolios": {
     "A": {
       "name": "Conferme",
@@ -867,29 +867,37 @@
           "time": 1792171844.4443376,
           "equity": 147.0890083678541,
           "cash": 147.0890083678541
+        },
+        {
+          "time": 1792172732.970801,
+          "equity": 147.0890083678541,
+          "cash": 147.0890083678541
         }
       ],
       "realizedEUR": -2.9109916321458904
     },
     "B": {
       "name": "Anticipato",
-      "cash": 124.15074750769145,
-      "positions": {
-        "ATOM": {
-          "candidateId": "ATOM-1792085400",
-          "qty": 19.298708745305024,
-          "openedAt": 1792086330.3474946,
-          "checkedThrough": 1792171800.0,
+      "cash": 153.96750757217222,
+      "positions": {},
+      "pending": {
+        "DOT": {
+          "id": "DOT-1792172700",
+          "symbol": "DOT",
+          "status": "OPPORTUNITA",
+          "createdAt": 1792172700.0,
+          "checkedThrough": 1792172700.0,
+          "lastSeen": 1792172732.970801,
+          "lastPrice": 1.178,
+          "eligibleAt": 1792172732.970801,
+          "entry": 1.178,
+          "stop": 1.1404285714285713,
+          "target": 1.2531428571428571,
           "provider": "Binance",
           "quote": "USDT",
-          "entry": 1.7407389999999998,
-          "stop": 1.7041428571428572,
-          "target": 1.7937142857142856,
-          "mark": 29.624657049347395,
-          "markedAt": 1792171844.4443376
+          "queuedAt": 1792172732.970801
         }
       },
-      "pending": {},
       "seen": [
         "ETH-1792051200",
         "ATOM-1792060200",
@@ -959,7 +967,8 @@
         "FIL-1792150200",
         "AAVE-1792151100",
         "DOT-1792154700",
-        "ETH-1792156500"
+        "ETH-1792156500",
+        "DOT-1792172700"
       ],
       "ledger": [
         {
@@ -1996,9 +2005,31 @@
           "pnlEUR": -0.21952172340111176,
           "ambiguous": false,
           "openedAt": 1792155664.782948
+        },
+        {
+          "time": 1792172732.970801,
+          "type": "VENDITA",
+          "symbol": "ATOM",
+          "candidateId": "ATOM-1792085400",
+          "reason": "Scadenza 24 ore",
+          "price": 1.741257,
+          "quote": "USDT",
+          "eurRate": 0.8895214374666429,
+          "netEUR": 29.81676006448078,
+          "feeEUR": 0.07472872196611723,
+          "pnlEUR": -0.18323993551922158,
+          "ambiguous": false,
+          "openedAt": 1792086330.3474946
+        },
+        {
+          "time": 1792172732.970801,
+          "type": "IN_ATTESA",
+          "symbol": "DOT",
+          "candidateId": "DOT-1792172700",
+          "reason": "Esecuzione dalla prossima osservazione disponibile"
         }
       ],
-      "equity": 153.77540455703885,
+      "equity": 153.96750757217222,
       "peak": 155.33235502952698,
       "maxDrawdownPct": 1.019283346364619,
       "history": [
@@ -2671,9 +2702,14 @@
           "time": 1792171844.4443376,
           "equity": 153.77540455703885,
           "cash": 124.15074750769145
+        },
+        {
+          "time": 1792172732.970801,
+          "equity": 153.96750757217222,
+          "cash": 153.96750757217222
         }
       ],
-      "realizedEUR": 4.150747507691488
+      "realizedEUR": 3.9675075721722664
     }
   },
   "rules": {
@@ -2688,9 +2724,9 @@
     "fx": "Cambio contemporaneo EUR/USDT Binance o EUR/USD Coinbase; senza cambio nessun acquisto",
     "gaps": "Valori conservati e anomalie registrate; uscita al primo prezzo osservato disponibile"
   },
-  "fxAt": 1792171844.4443376,
+  "fxAt": 1792172732.970801,
   "eurRates": {
-    "USDT": 0.8899172376968942
+    "USDT": 0.8895214374666429
   },
   "errors": []
 }
