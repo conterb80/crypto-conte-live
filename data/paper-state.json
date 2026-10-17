@@ -1,13 +1,31 @@
 {
   "version": "paper-1",
   "startedAt": 1792060401.9214385,
-  "lastRun": 1792202454.6829875,
+  "lastRun": 1792203332.3752072,
   "portfolios": {
     "A": {
       "name": "Conferme",
       "cash": 147.0890083678541,
       "positions": {},
-      "pending": {},
+      "pending": {
+        "INJ": {
+          "id": "INJ-1792202400",
+          "symbol": "INJ",
+          "status": "CONFERMATO",
+          "createdAt": 1792202400.0,
+          "checkedThrough": 1792203300.0,
+          "lastSeen": 1792203332.3752072,
+          "lastPrice": 8.832,
+          "eligibleAt": 1792203332.3752072,
+          "entry": 8.832,
+          "stop": 8.631428571428572,
+          "target": 9.413,
+          "provider": "Binance",
+          "quote": "USDT",
+          "confirmedAt": 1792203300.0,
+          "queuedAt": 1792203332.3752072
+        }
+      },
       "seen": [
         "UNI-1792127700:CONFERMATO",
         "SUI-1792133100:CONFERMATO",
@@ -15,7 +33,8 @@
         "NEAR-1792136700:CONFERMATO",
         "AAVE-1792151100:CONFERMATO",
         "FIL-1792150200:CONFERMATO",
-        "DOT-1792154700:CONFERMATO"
+        "DOT-1792154700:CONFERMATO",
+        "INJ-1792202400:CONFERMATO"
       ],
       "ledger": [
         {
@@ -192,6 +211,13 @@
           "pnlEUR": -0.9525010074390288,
           "ambiguous": false,
           "openedAt": 1792156534.3833363
+        },
+        {
+          "time": 1792203332.3752072,
+          "type": "IN_ATTESA",
+          "symbol": "INJ",
+          "candidateId": "INJ-1792202400",
+          "reason": "Esecuzione dalla prossima osservazione disponibile"
         }
       ],
       "equity": 147.0890083678541,
@@ -1057,6 +1083,11 @@
           "time": 1792202454.6829875,
           "equity": 147.0890083678541,
           "cash": 147.0890083678541
+        },
+        {
+          "time": 1792203332.3752072,
+          "equity": 147.0890083678541,
+          "cash": 147.0890083678541
         }
       ],
       "realizedEUR": -2.9109916321458904
@@ -1069,60 +1100,43 @@
           "candidateId": "DOT-1792172700",
           "qty": 28.796313149697045,
           "openedAt": 1792173482.2006395,
-          "checkedThrough": 1792202400.0,
+          "checkedThrough": 1792203300.0,
           "provider": "Binance",
           "quote": "USDT",
           "entry": 1.168167,
           "stop": 1.1404285714285713,
           "target": 1.2531428571428571,
-          "mark": 29.911967036476376,
-          "markedAt": 1792202454.6829875
+          "mark": 29.886466638320808,
+          "markedAt": 1792203332.3752072
         },
         "UNI": {
           "candidateId": "UNI-1792179000",
           "qty": 4.644690403019344,
           "openedAt": 1792179931.7986617,
-          "checkedThrough": 1792202400.0,
+          "checkedThrough": 1792203300.0,
           "provider": "Binance",
           "quote": "USDT",
           "entry": 7.248240999999999,
           "stop": 7.167000000000001,
           "target": 7.626,
-          "mark": 30.029575502925674,
-          "markedAt": 1792202454.6829875
+          "mark": 29.980218578389977,
+          "markedAt": 1792203332.3752072
         },
         "ADA": {
           "candidateId": "ADA-1792185300",
           "qty": 149.07891493024408,
           "openedAt": 1792186243.7944627,
-          "checkedThrough": 1792202400.0,
+          "checkedThrough": 1792203300.0,
           "provider": "Binance",
           "quote": "USDT",
           "entry": 0.22582559999999996,
           "stop": 0.22245714285714285,
           "target": 0.2336,
-          "mark": 29.61117018811811,
-          "markedAt": 1792202454.6829875
+          "mark": 29.63757337152258,
+          "markedAt": 1792203332.3752072
         }
       },
-      "pending": {
-        "INJ": {
-          "id": "INJ-1792202400",
-          "symbol": "INJ",
-          "status": "OPPORTUNITA",
-          "createdAt": 1792202400.0,
-          "checkedThrough": 1792202400.0,
-          "lastSeen": 1792202454.6829875,
-          "lastPrice": 8.754,
-          "eligibleAt": 1792202454.6829875,
-          "entry": 8.754,
-          "stop": 8.631428571428572,
-          "target": 9.413,
-          "provider": "Binance",
-          "quote": "USDT",
-          "queuedAt": 1792202454.6829875
-        }
-      },
+      "pending": {},
       "seen": [
         "ETH-1792051200",
         "ATOM-1792060200",
@@ -2369,9 +2383,15 @@
           "symbol": "INJ",
           "candidateId": "INJ-1792202400",
           "reason": "Esecuzione dalla prossima osservazione disponibile"
+        },
+        {
+          "time": 1792203332.3752072,
+          "type": "SALTATO",
+          "symbol": "INJ",
+          "reason": "Capitale o posti impegnati"
         }
       ],
-      "equity": 153.52022029969237,
+      "equity": 153.4717661604056,
       "peak": 155.33235502952698,
       "maxDrawdownPct": 1.5931892268296832,
       "history": [
@@ -3234,6 +3254,11 @@
           "time": 1792202454.6829875,
           "equity": 153.52022029969237,
           "cash": 63.967507572172224
+        },
+        {
+          "time": 1792203332.3752072,
+          "equity": 153.4717661604056,
+          "cash": 63.967507572172224
         }
       ],
       "realizedEUR": 3.9675075721722664
@@ -3251,7 +3276,7 @@
     "fx": "Cambio contemporaneo EUR/USDT Binance o EUR/USD Coinbase; senza cambio nessun acquisto",
     "gaps": "Valori conservati e anomalie registrate; uscita al primo prezzo osservato disponibile"
   },
-  "fxAt": 1792202454.6829875,
+  "fxAt": 1792203332.3752072,
   "eurRates": {
     "USDT": 0.888651915044877
   },
