@@ -1,7 +1,7 @@
 {
   "version": "paper-1",
   "startedAt": 1792060401.9214385,
-  "lastRun": 1792418458.935032,
+  "lastRun": 1792419332.4468982,
   "portfolios": {
     "A": {
       "name": "Conferme",
@@ -2517,52 +2517,31 @@
           "time": 1792418458.935032,
           "equity": 144.0966215910253,
           "cash": 144.0966215910253
+        },
+        {
+          "time": 1792419332.4468982,
+          "equity": 144.0966215910253,
+          "cash": 144.0966215910253
         }
       ],
       "realizedEUR": -5.903378408974685
     },
     "B": {
       "name": "Anticipato",
-      "cash": 57.344819990712466,
+      "cash": 116.42910044494572,
       "positions": {
-        "AAVE": {
-          "candidateId": "AAVE-1792361700",
-          "qty": 0.22338464986251325,
-          "openedAt": 1792362644.977066,
-          "checkedThrough": 1792418400.0,
-          "provider": "Binance",
-          "quote": "USDT",
-          "entry": 150.52036999999999,
-          "stop": 148.13714285714286,
-          "target": 155.0,
-          "mark": 29.484243386860612,
-          "markedAt": 1792418458.935032
-        },
         "ADA": {
           "candidateId": "ADA-1792361700",
           "qty": 154.1548866444521,
           "openedAt": 1792362644.977066,
-          "checkedThrough": 1792418400.0,
+          "checkedThrough": 1792419300.0,
           "provider": "Binance",
           "quote": "USDT",
           "entry": 0.21811789999999998,
           "stop": 0.21512857142857142,
           "target": 0.22374285714285713,
-          "mark": 29.59619298122205,
-          "markedAt": 1792418458.935032
-        },
-        "ARB": {
-          "candidateId": "ARB-1792392300",
-          "qty": 170.95846986768538,
-          "openedAt": 1792393259.0524228,
-          "checkedThrough": 1792418400.0,
-          "provider": "Binance",
-          "quote": "USDT",
-          "entry": 0.1966965,
-          "stop": 0.19405714285714284,
-          "target": 0.20348571428571427,
-          "mark": 29.59165052085999,
-          "markedAt": 1792418458.935032
+          "mark": 29.762534526483034,
+          "markedAt": 1792419332.4468982
         }
       },
       "pending": {},
@@ -5122,9 +5101,39 @@
           "type": "SALTATO",
           "symbol": "XRP",
           "reason": "Segnale scaduto o dati/filtri non validi"
+        },
+        {
+          "time": 1792419332.4468982,
+          "type": "VENDITA",
+          "symbol": "AAVE",
+          "candidateId": "AAVE-1792361700",
+          "reason": "Invalidazione",
+          "price": 148.3515,
+          "quote": "USDT",
+          "eurRate": 0.8907892392659896,
+          "netEUR": 29.446462911427435,
+          "feeEUR": 0.07380065892588329,
+          "pnlEUR": -0.5535370885725648,
+          "ambiguous": false,
+          "openedAt": 1792362644.977066
+        },
+        {
+          "time": 1792419332.4468982,
+          "type": "VENDITA",
+          "symbol": "ARB",
+          "candidateId": "ARB-1792392300",
+          "reason": "Invalidazione",
+          "price": 0.1951047,
+          "quote": "USDT",
+          "eurRate": 0.8907892392659896,
+          "netEUR": 29.63781754280582,
+          "feeEUR": 0.07428024446818501,
+          "pnlEUR": -0.3621824571941801,
+          "ambiguous": false,
+          "openedAt": 1792393259.0524228
         }
       ],
-      "equity": 146.01690687965512,
+      "equity": 146.19163497142875,
       "peak": 155.33235502952698,
       "maxDrawdownPct": 6.390757255547919,
       "history": [
@@ -7272,9 +7281,14 @@
           "time": 1792418458.935032,
           "equity": 146.01690687965512,
           "cash": 57.344819990712466
+        },
+        {
+          "time": 1792419332.4468982,
+          "equity": 146.19163497142875,
+          "cash": 116.42910044494572
         }
       ],
-      "realizedEUR": -2.6551800092874736
+      "realizedEUR": -3.5708995550542184
     }
   },
   "rules": {
@@ -7289,9 +7303,9 @@
     "fx": "Cambio contemporaneo EUR/USDT Binance o EUR/USD Coinbase; senza cambio nessun acquisto",
     "gaps": "Valori conservati e anomalie registrate; uscita al primo prezzo osservato disponibile"
   },
-  "fxAt": 1792418458.935032,
+  "fxAt": 1792419332.4468982,
   "eurRates": {
-    "USDT": 0.8903133903133903
+    "USDT": 0.8907892392659896
   },
   "errors": []
 }
