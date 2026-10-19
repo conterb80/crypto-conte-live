@@ -1,7 +1,7 @@
 {
   "version": "paper-1",
   "startedAt": 1792060401.9214385,
-  "lastRun": 1792392332.8556416,
+  "lastRun": 1792393259.0524228,
   "portfolios": {
     "A": {
       "name": "Conferme",
@@ -2297,70 +2297,75 @@
           "time": 1792392332.8556416,
           "equity": 144.89519131178028,
           "cash": 144.89519131178028
+        },
+        {
+          "time": 1792393259.0524228,
+          "equity": 144.89519131178028,
+          "cash": 144.89519131178028
         }
       ],
       "realizedEUR": -5.104808688219702
     },
     "B": {
       "name": "Anticipato",
-      "cash": 57.797387756397,
+      "cash": 57.344819990712466,
       "positions": {
         "AAVE": {
           "candidateId": "AAVE-1792361700",
           "qty": 0.22338464986251325,
           "openedAt": 1792362644.977066,
-          "checkedThrough": 1792392300.0,
+          "checkedThrough": 1792393200.0,
           "provider": "Binance",
           "quote": "USDT",
           "entry": 150.52036999999999,
           "stop": 148.13714285714286,
           "target": 155.0,
-          "mark": 30.32978239267712,
-          "markedAt": 1792392332.8556416
+          "mark": 30.36454866509355,
+          "markedAt": 1792393259.0524228
         },
         "ADA": {
           "candidateId": "ADA-1792361700",
           "qty": 154.1548866444521,
           "openedAt": 1792362644.977066,
-          "checkedThrough": 1792392300.0,
+          "checkedThrough": 1792393200.0,
           "provider": "Binance",
           "quote": "USDT",
           "entry": 0.21811789999999998,
           "stop": 0.21512857142857142,
           "target": 0.22374285714285713,
-          "mark": 30.154249487416628,
-          "markedAt": 1792392332.8556416
+          "mark": 30.23920927308444,
+          "markedAt": 1792393259.0524228
         },
-        "INJ": {
-          "candidateId": "INJ-1792390500",
-          "qty": 3.8851425774075192,
-          "openedAt": 1792391445.1938205,
-          "checkedThrough": 1792392300.0,
+        "ARB": {
+          "candidateId": "ARB-1792392300",
+          "qty": 170.95846986768538,
+          "openedAt": 1792393259.0524228,
+          "checkedThrough": 1792394100,
           "provider": "Binance",
           "quote": "USDT",
-          "entry": 8.650641999999998,
-          "stop": 8.521285714285714,
-          "target": 8.973428571428572,
-          "mark": 29.471789143077732,
-          "markedAt": 1792392332.8556416
+          "entry": 0.1966965,
+          "stop": 0.19405714285714284,
+          "target": 0.20348571428571427,
+          "mark": 29.790732957815255,
+          "markedAt": 1792393259.0524228
         }
       },
       "pending": {
-        "ARB": {
-          "id": "ARB-1792392300",
-          "symbol": "ARB",
+        "UNI": {
+          "id": "UNI-1792393200",
+          "symbol": "UNI",
           "status": "OPPORTUNITA",
-          "createdAt": 1792392300.0,
-          "checkedThrough": 1792392300.0,
-          "lastSeen": 1792392332.8556416,
-          "lastPrice": 0.1972,
-          "eligibleAt": 1792392332.8556416,
-          "entry": 0.1972,
-          "stop": 0.19405714285714284,
-          "target": 0.20348571428571427,
+          "createdAt": 1792393200.0,
+          "checkedThrough": 1792393200.0,
+          "lastSeen": 1792393259.0524228,
+          "lastPrice": 7.394,
+          "eligibleAt": 1792393259.0524228,
+          "entry": 7.394,
+          "stop": 7.312714285714287,
+          "target": 7.556571428571428,
           "provider": "Binance",
           "quote": "USDT",
-          "queuedAt": 1792392332.8556416
+          "queuedAt": 1792393259.0524228
         }
       },
       "seen": [
@@ -2503,7 +2508,8 @@
         "NEAR-1792386000",
         "LTC-1792388700",
         "INJ-1792390500",
-        "ARB-1792392300"
+        "ARB-1792392300",
+        "UNI-1792393200"
       ],
       "ledger": [
         {
@@ -4724,9 +4730,43 @@
           "symbol": "ARB",
           "candidateId": "ARB-1792392300",
           "reason": "Esecuzione dalla prossima osservazione disponibile"
+        },
+        {
+          "time": 1792393259.0524228,
+          "type": "VENDITA",
+          "symbol": "INJ",
+          "candidateId": "INJ-1792390500",
+          "reason": "Invalidazione",
+          "price": 8.567424,
+          "quote": "USDT",
+          "eurRate": 0.8899172376968942,
+          "netEUR": 29.547432234315462,
+          "feeEUR": 0.07405371487297108,
+          "pnlEUR": -0.45256776568453816,
+          "ambiguous": false,
+          "openedAt": 1792391445.1938205
+        },
+        {
+          "time": 1792393259.0524228,
+          "type": "ACQUISTO",
+          "symbol": "ARB",
+          "candidateId": "ARB-1792392300",
+          "price": 0.1966965,
+          "quote": "USDT",
+          "eurRate": 0.8899172376968942,
+          "costEUR": 30,
+          "feeEUR": 0.07481296758104605,
+          "qty": 170.95846986768538
+        },
+        {
+          "time": 1792393259.0524228,
+          "type": "IN_ATTESA",
+          "symbol": "UNI",
+          "candidateId": "UNI-1792393200",
+          "reason": "Esecuzione dalla prossima osservazione disponibile"
         }
       ],
-      "equity": 147.75320877956847,
+      "equity": 147.7393108867057,
       "peak": 155.33235502952698,
       "maxDrawdownPct": 6.390757255547919,
       "history": [
@@ -6724,9 +6764,14 @@
           "time": 1792392332.8556416,
           "equity": 147.75320877956847,
           "cash": 57.797387756397
+        },
+        {
+          "time": 1792393259.0524228,
+          "equity": 147.7393108867057,
+          "cash": 57.344819990712466
         }
       ],
-      "realizedEUR": -2.2026122436029354
+      "realizedEUR": -2.6551800092874736
     }
   },
   "rules": {
@@ -6741,9 +6786,9 @@
     "fx": "Cambio contemporaneo EUR/USDT Binance o EUR/USD Coinbase; senza cambio nessun acquisto",
     "gaps": "Valori conservati e anomalie registrate; uscita al primo prezzo osservato disponibile"
   },
-  "fxAt": 1792392332.8556416,
+  "fxAt": 1792393259.0524228,
   "eurRates": {
-    "USDT": 0.8902341315766047
+    "USDT": 0.8899172376968942
   },
   "errors": []
 }
