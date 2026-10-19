@@ -1,7 +1,7 @@
 {
   "version": "paper-1",
   "startedAt": 1792060401.9214385,
-  "lastRun": 1792390530.5096295,
+  "lastRun": 1792391445.1938205,
   "portfolios": {
     "A": {
       "name": "Conferme",
@@ -2287,72 +2287,60 @@
           "time": 1792390530.5096295,
           "equity": 144.89519131178028,
           "cash": 144.89519131178028
+        },
+        {
+          "time": 1792391445.1938205,
+          "equity": 144.89519131178028,
+          "cash": 144.89519131178028
         }
       ],
       "realizedEUR": -5.104808688219702
     },
     "B": {
       "name": "Anticipato",
-      "cash": 56.97681465972258,
+      "cash": 57.797387756397,
       "positions": {
         "AAVE": {
           "candidateId": "AAVE-1792361700",
           "qty": 0.22338464986251325,
           "openedAt": 1792362644.977066,
-          "checkedThrough": 1792390500.0,
+          "checkedThrough": 1792391400.0,
           "provider": "Binance",
           "quote": "USDT",
           "entry": 150.52036999999999,
           "stop": 148.13714285714286,
           "target": 155.0,
-          "mark": 30.427612335717612,
-          "markedAt": 1792390530.5096295
+          "mark": 30.347075739842566,
+          "markedAt": 1792391445.1938205
         },
         "ADA": {
           "candidateId": "ADA-1792361700",
           "qty": 154.1548866444521,
           "openedAt": 1792362644.977066,
-          "checkedThrough": 1792390500.0,
+          "checkedThrough": 1792391400.0,
           "provider": "Binance",
           "quote": "USDT",
           "entry": 0.21811789999999998,
           "stop": 0.21512857142857142,
           "target": 0.22374285714285713,
-          "mark": 30.18428738888958,
-          "markedAt": 1792390530.5096295
+          "mark": 30.173297143805485,
+          "markedAt": 1792391445.1938205
         },
-        "ARB": {
-          "candidateId": "ARB-1792374300",
-          "qty": 176.68400339482892,
-          "openedAt": 1792375255.5319602,
-          "checkedThrough": 1792390500.0,
+        "INJ": {
+          "candidateId": "INJ-1792390500",
+          "qty": 3.8851425774075192,
+          "openedAt": 1792391445.1938205,
+          "checkedThrough": 1792392300,
           "provider": "Binance",
           "quote": "USDT",
-          "entry": 0.19039019999999998,
-          "stop": 0.1866142857142857,
-          "target": 0.19617142857142855,
-          "mark": 30.551347362906895,
-          "markedAt": 1792390530.5096295
-        }
-      },
-      "pending": {
-        "INJ": {
-          "id": "INJ-1792390500",
-          "symbol": "INJ",
-          "status": "OPPORTUNITA",
-          "createdAt": 1792390500.0,
-          "checkedThrough": 1792390500.0,
-          "lastSeen": 1792390530.5096295,
-          "lastPrice": 8.672,
-          "eligibleAt": 1792390530.5096295,
-          "entry": 8.672,
+          "entry": 8.650641999999998,
           "stop": 8.521285714285714,
           "target": 8.973428571428572,
-          "provider": "Binance",
-          "quote": "USDT",
-          "queuedAt": 1792390530.5096295
+          "mark": 29.79073295781526,
+          "markedAt": 1792391445.1938205
         }
       },
+      "pending": {},
       "seen": [
         "ETH-1792051200",
         "ATOM-1792060200",
@@ -4679,9 +4667,36 @@
           "symbol": "INJ",
           "candidateId": "INJ-1792390500",
           "reason": "Esecuzione dalla prossima osservazione disponibile"
+        },
+        {
+          "time": 1792391445.1938205,
+          "type": "VENDITA",
+          "symbol": "ARB",
+          "candidateId": "ARB-1792374300",
+          "reason": "Obiettivo",
+          "price": 0.1964034,
+          "quote": "USDT",
+          "eurRate": 0.8903926631644555,
+          "netEUR": 30.82057309667443,
+          "feeEUR": 0.07724454410194093,
+          "pnlEUR": 0.8205730966744298,
+          "ambiguous": false,
+          "openedAt": 1792375255.5319602
+        },
+        {
+          "time": 1792391445.1938205,
+          "type": "ACQUISTO",
+          "symbol": "INJ",
+          "candidateId": "INJ-1792390500",
+          "price": 8.650641999999998,
+          "quote": "USDT",
+          "eurRate": 0.8903926631644555,
+          "costEUR": 30,
+          "feeEUR": 0.07481296758104605,
+          "qty": 3.8851425774075192
         }
       ],
-      "equity": 148.14006174723667,
+      "equity": 148.1084935978603,
       "peak": 155.33235502952698,
       "maxDrawdownPct": 6.390757255547919,
       "history": [
@@ -6669,9 +6684,14 @@
           "time": 1792390530.5096295,
           "equity": 148.14006174723667,
           "cash": 56.97681465972258
+        },
+        {
+          "time": 1792391445.1938205,
+          "equity": 148.1084935978603,
+          "cash": 57.797387756397
         }
       ],
-      "realizedEUR": -3.023185340277365
+      "realizedEUR": -2.2026122436029354
     }
   },
   "rules": {
@@ -6686,9 +6706,9 @@
     "fx": "Cambio contemporaneo EUR/USDT Binance o EUR/USD Coinbase; senza cambio nessun acquisto",
     "gaps": "Valori conservati e anomalie registrate; uscita al primo prezzo osservato disponibile"
   },
-  "fxAt": 1792390530.5096295,
+  "fxAt": 1792391445.1938205,
   "eurRates": {
-    "USDT": 0.8903133903133903
+    "USDT": 0.8903926631644555
   },
   "errors": []
 }
