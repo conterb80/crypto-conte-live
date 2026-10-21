@@ -1,31 +1,40 @@
 {
   "version": "paper-2",
   "startedAt": 1792571521.2736304,
-  "lastRun": 1792596648.354441,
+  "lastRun": 1792597826.7147503,
   "portfolios": {
     "A": {
       "name": "Conferme",
-      "cash": 150.33841096385066,
-      "positions": {},
-      "pending": {
+      "cash": 120.33841096385066,
+      "positions": {
         "BTC": {
-          "id": "BTC-1792594800",
-          "symbol": "BTC",
-          "status": "CONFERMATO",
-          "createdAt": 1792594800.0,
-          "checkedThrough": 1792596600.0,
-          "lastSeen": 1792596648.354441,
-          "lastPrice": 84429.93,
-          "eligibleAt": 1792596648.354441,
-          "entry": 84429.93,
-          "stop": 84018.23714285715,
-          "target": 85690.65571428572,
+          "candidateId": "BTC-1792594800",
+          "qty": 0.0003974690597145397,
+          "costEUR": 30,
+          "openedAt": 1792597826.7147503,
+          "checkedThrough": 1792597500,
           "provider": "Binance",
           "quote": "USDT",
-          "confirmedAt": 1792596600.0,
-          "queuedAt": 1792596648.354441
+          "entry": 84527.35291,
+          "stop": 84018.23714285715,
+          "target": 85690.65571428572,
+          "mark": 29.79073295781525,
+          "markedAt": 1792597826.7147503,
+          "entryCheck": {
+            "entry": 84527.35291,
+            "stop": 84018.23714285715,
+            "target": 85690.65571428572,
+            "riskPct": 0.6023088971979637,
+            "rewardPct": 1.3762442147269633,
+            "rr": 2.284947509707177,
+            "targetNetPct": 0.7697564095620724,
+            "stopNetPct": -1.1969599220249427,
+            "eurRate": 0.8907098957869422,
+            "fxAssumption": "Cambio invariato solo per la stima dei livelli netti"
+          }
         }
       },
+      "pending": {},
       "seen": [
         "OP-1792539000:CONFERMATO",
         "ADA-1792567800:CONFERMATO",
@@ -107,9 +116,37 @@
           "signalAt": 1792596600.0,
           "stop": 84018.23714285715,
           "target": 85690.65571428572
+        },
+        {
+          "time": 1792597826.7147503,
+          "type": "ACQUISTO",
+          "version": "paper-2",
+          "symbol": "BTC",
+          "candidateId": "BTC-1792594800",
+          "price": 84527.35291,
+          "observedPrice": 84442.91,
+          "quote": "USDT",
+          "eurRate": 0.8907098957869422,
+          "costEUR": 30,
+          "feeEUR": 0.07481296758104605,
+          "qty": 0.0003974690597145397,
+          "entryCheck": {
+            "entry": 84527.35291,
+            "stop": 84018.23714285715,
+            "target": 85690.65571428572,
+            "riskPct": 0.6023088971979637,
+            "rewardPct": 1.3762442147269633,
+            "rr": 2.284947509707177,
+            "targetNetPct": 0.7697564095620724,
+            "stopNetPct": -1.1969599220249427,
+            "eurRate": 0.8907098957869422,
+            "fxAssumption": "Cambio invariato solo per la stima dei livelli netti"
+          },
+          "signalAt": 1792596600.0,
+          "queuedAt": 1792596648.354441
         }
       ],
-      "equity": 150.33841096385066,
+      "equity": 150.1291439216659,
       "peak": 150.33841096385066,
       "maxDrawdownPct": 0.13951136145651244,
       "history": [
@@ -267,6 +304,11 @@
           "time": 1792596648.354441,
           "equity": 150.33841096385066,
           "cash": 150.33841096385066
+        },
+        {
+          "time": 1792597826.7147503,
+          "equity": 150.1291439216659,
+          "cash": 120.33841096385066
         }
       ],
       "realizedEUR": 0.33841096385067715,
@@ -286,14 +328,14 @@
           "qty": 24.38500892909337,
           "costEUR": 30,
           "openedAt": 1792596648.354441,
-          "checkedThrough": 1792596600,
+          "checkedThrough": 1792597500.0,
           "provider": "Binance",
           "quote": "USDT",
           "entry": 1.3788774999999998,
           "stop": 1.3648857142857143,
           "target": 1.4126285714285716,
-          "mark": 29.79073295781526,
-          "markedAt": 1792596648.354441,
+          "mark": 29.84275157252133,
+          "markedAt": 1792597826.7147503,
           "entryCheck": {
             "entry": 1.3788774999999998,
             "stop": 1.3648857142857143,
@@ -308,7 +350,24 @@
           }
         }
       },
-      "pending": {},
+      "pending": {
+        "SOL": {
+          "id": "SOL-1792597500",
+          "symbol": "SOL",
+          "status": "OPPORTUNITA",
+          "createdAt": 1792597500.0,
+          "checkedThrough": 1792597500.0,
+          "lastSeen": 1792597826.7147503,
+          "lastPrice": 108.56,
+          "eligibleAt": 1792597826.7147503,
+          "entry": 108.56,
+          "stop": 107.32428571428572,
+          "target": 111.03142857142858,
+          "provider": "Binance",
+          "quote": "USDT",
+          "queuedAt": 1792597826.7147503
+        }
+      },
       "seen": [
         "OP-1792539000",
         "ETH-1792558800",
@@ -355,7 +414,8 @@
         "UNI-1792594800",
         "DOGE-1792595700",
         "LINK-1792595700",
-        "XRP-1792595700"
+        "XRP-1792595700",
+        "SOL-1792597500"
       ],
       "ledger": [
         {
@@ -1397,9 +1457,20 @@
           },
           "signalAt": 1792595700.0,
           "queuedAt": 1792595733.4373302
+        },
+        {
+          "time": 1792597826.7147503,
+          "type": "IN_ATTESA",
+          "version": "paper-2",
+          "symbol": "SOL",
+          "candidateId": "SOL-1792597500",
+          "reason": "Esecuzione dalla prossima osservazione disponibile",
+          "signalAt": 1792597500.0,
+          "stop": 107.32428571428572,
+          "target": 111.03142857142858
         }
       ],
-      "equity": 149.0052708960748,
+      "equity": 149.05728951078086,
       "peak": 150.0,
       "maxDrawdownPct": 0.8552877604939391,
       "history": [
@@ -1557,6 +1628,11 @@
           "time": 1792596648.354441,
           "equity": 149.0052708960748,
           "cash": 119.21453793825953
+        },
+        {
+          "time": 1792597826.7147503,
+          "equity": 149.05728951078086,
+          "cash": 119.21453793825953
         }
       ],
       "realizedEUR": -0.7854620617404962,
@@ -1613,9 +1689,9 @@
     "fx": "Cambio contemporaneo EUR/USDT Binance o EUR/USD Coinbase; nessuna parità presunta",
     "uncertainty": "Prima candela parziale, entrambi i livelli o interruzione dati: chiusura al prezzo osservato, esito separato dalle statistiche certe"
   },
-  "fxAt": 1792596648.354441,
+  "fxAt": 1792597826.7147503,
   "eurRates": {
-    "USDT": 0.8899964400142399
+    "USDT": 0.8907098957869422
   },
   "errors": []
 }
