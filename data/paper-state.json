@@ -1,7 +1,7 @@
 {
   "version": "paper-2",
   "startedAt": 1792571521.2736304,
-  "lastRun": 1792584936.189245,
+  "lastRun": 1792585845.8507469,
   "portfolios": {
     "A": {
       "name": "Conferme",
@@ -12,14 +12,14 @@
           "qty": 17.9948199561726,
           "costEUR": 30,
           "openedAt": 1792578647.828583,
-          "checkedThrough": 1792584900.0,
+          "checkedThrough": 1792585800.0,
           "provider": "Binance",
           "quote": "USDT",
           "entry": 1.8688669999999998,
           "stop": 1.852,
           "target": 1.906,
-          "mark": 30.149542892997065,
-          "markedAt": 1792584936.189245,
+          "mark": 30.221378890116775,
+          "markedAt": 1792585845.8507469,
           "entryCheck": {
             "entry": 1.8688669999999998,
             "stop": 1.852,
@@ -83,8 +83,8 @@
           "queuedAt": 1792577732.371635
         }
       ],
-      "equity": 150.14954289299706,
-      "peak": 150.14954289299706,
+      "equity": 150.22137889011677,
+      "peak": 150.22137889011677,
       "maxDrawdownPct": 0.13951136145651244,
       "history": [
         {
@@ -171,6 +171,11 @@
           "time": 1792584936.189245,
           "equity": 150.14954289299706,
           "cash": 120.0
+        },
+        {
+          "time": 1792585845.8507469,
+          "equity": 150.22137889011677,
+          "cash": 120.0
         }
       ],
       "realizedEUR": 0,
@@ -190,14 +195,14 @@
           "qty": 4.499295412918622,
           "costEUR": 30,
           "openedAt": 1792583131.9240189,
-          "checkedThrough": 1792584900.0,
+          "checkedThrough": 1792585800.0,
           "provider": "Binance",
           "quote": "USDT",
           "entry": 7.480472999999999,
           "stop": 7.407,
           "target": 7.79,
-          "mark": 29.87843483458121,
-          "markedAt": 1792584936.189245,
+          "mark": 29.88241915628448,
+          "markedAt": 1792585845.8507469,
           "entryCheck": {
             "entry": 7.480472999999999,
             "stop": 7.407,
@@ -216,14 +221,14 @@
           "qty": 2.7123814395992194,
           "costEUR": 30,
           "openedAt": 1792584062.4153006,
-          "checkedThrough": 1792584900.0,
+          "checkedThrough": 1792585800.0,
           "provider": "Binance",
           "quote": "USDT",
           "entry": 12.406393999999999,
           "stop": 12.318428571428573,
           "target": 12.572142857142856,
-          "mark": 29.804661127542786,
-          "markedAt": 1792584936.189245,
+          "mark": 29.759728461994005,
+          "markedAt": 1792585845.8507469,
           "entryCheck": {
             "entry": 12.406393999999999,
             "stop": 12.318428571428573,
@@ -239,21 +244,21 @@
         }
       },
       "pending": {
-        "DOT": {
-          "id": "DOT-1792584900",
-          "symbol": "DOT",
+        "NEAR": {
+          "id": "NEAR-1792585800",
+          "symbol": "NEAR",
           "status": "OPPORTUNITA",
-          "createdAt": 1792584900.0,
-          "checkedThrough": 1792584900.0,
-          "lastSeen": 1792584936.189245,
-          "lastPrice": 1.168,
-          "eligibleAt": 1792584936.189245,
-          "entry": 1.168,
-          "stop": 1.1562857142857141,
-          "target": 1.1914285714285713,
+          "createdAt": 1792585800.0,
+          "checkedThrough": 1792585800.0,
+          "lastSeen": 1792585845.8507469,
+          "lastPrice": 5.261,
+          "eligibleAt": 1792585845.8507469,
+          "entry": 5.261,
+          "stop": 5.178,
+          "target": 5.427,
           "provider": "Binance",
           "quote": "USDT",
-          "queuedAt": 1792584936.189245
+          "queuedAt": 1792585845.8507469
         }
       },
       "seen": [
@@ -283,7 +288,8 @@
         "SUI-1792581300",
         "UNI-1792582200",
         "LINK-1792583100",
-        "DOT-1792584900"
+        "DOT-1792584900",
+        "NEAR-1792585800"
       ],
       "ledger": [
         {
@@ -622,11 +628,42 @@
           "signalAt": 1792584900.0,
           "stop": 1.1562857142857141,
           "target": 1.1914285714285713
+        },
+        {
+          "time": 1792585845.8507469,
+          "type": "SALTATO",
+          "version": "paper-2",
+          "symbol": "DOT",
+          "candidateId": "DOT-1792584900",
+          "reason": "Rapporto rischio/obiettivo al prezzo eseguito inferiore a 1,8",
+          "entryCheck": {
+            "entry": 1.170169,
+            "stop": 1.1562857142857141,
+            "target": 1.1914285714285713,
+            "riskPct": 1.1864342427705634,
+            "rewardPct": 1.8167949611185448,
+            "rr": 1.5313069158185808,
+            "targetNetPct": 1.207671541887323,
+            "stopNetPct": -1.777590712225896,
+            "eurRate": 0.8893632159373888,
+            "fxAssumption": "Cambio invariato solo per la stima dei livelli netti"
+          }
+        },
+        {
+          "time": 1792585845.8507469,
+          "type": "IN_ATTESA",
+          "version": "paper-2",
+          "symbol": "NEAR",
+          "candidateId": "NEAR-1792585800",
+          "reason": "Esecuzione dalla prossima osservazione disponibile",
+          "signalAt": 1792585800.0,
+          "stop": 5.178,
+          "target": 5.427
         }
       ],
-      "equity": 149.683095962124,
+      "equity": 149.6421476182785,
       "peak": 150.0,
-      "maxDrawdownPct": 0.21126935858398754,
+      "maxDrawdownPct": 0.2385682544809975,
       "history": [
         {
           "time": 1792571521.2736304,
@@ -712,6 +749,11 @@
           "time": 1792584936.189245,
           "equity": 149.683095962124,
           "cash": 90.0
+        },
+        {
+          "time": 1792585845.8507469,
+          "equity": 149.6421476182785,
+          "cash": 90.0
         }
       ],
       "realizedEUR": 0,
@@ -768,9 +810,9 @@
     "fx": "Cambio contemporaneo EUR/USDT Binance o EUR/USD Coinbase; nessuna parità presunta",
     "uncertainty": "Prima candela parziale, entrambi i livelli o interruzione dati: chiusura al prezzo osservato, esito separato dalle statistiche certe"
   },
-  "fxAt": 1792584936.189245,
+  "fxAt": 1792585845.8507469,
   "eurRates": {
-    "USDT": 0.8891259891526629
+    "USDT": 0.8893632159373888
   },
   "errors": []
 }
