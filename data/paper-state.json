@@ -1,31 +1,40 @@
 {
   "version": "paper-2",
   "startedAt": 1792571521.2736304,
-  "lastRun": 1792577732.371635,
+  "lastRun": 1792578647.828583,
   "portfolios": {
     "A": {
       "name": "Conferme",
-      "cash": 150.0,
-      "positions": {},
-      "pending": {
+      "cash": 120.0,
+      "positions": {
         "RENDER": {
-          "id": "RENDER-1792575000",
-          "symbol": "RENDER",
-          "status": "CONFERMATO",
-          "createdAt": 1792575000.0,
-          "checkedThrough": 1792577700.0,
-          "lastSeen": 1792577732.371635,
-          "lastPrice": 1.864,
-          "eligibleAt": 1792577732.371635,
-          "entry": 1.864,
-          "stop": 1.852,
-          "target": 1.906,
+          "candidateId": "RENDER-1792575000",
+          "qty": 17.9948199561726,
+          "costEUR": 30,
+          "openedAt": 1792578647.828583,
+          "checkedThrough": 1792578600,
           "provider": "Binance",
           "quote": "USDT",
-          "confirmedAt": 1792577700.0,
-          "queuedAt": 1792577732.371635
+          "entry": 1.8688669999999998,
+          "stop": 1.852,
+          "target": 1.906,
+          "mark": 29.79073295781525,
+          "markedAt": 1792578647.828583,
+          "entryCheck": {
+            "entry": 1.8688669999999998,
+            "stop": 1.852,
+            "target": 1.906,
+            "riskPct": 0.9025254338591107,
+            "rewardPct": 1.986925768393368,
+            "rr": 2.201517756566114,
+            "targetNetPct": 1.3767845341829732,
+            "stopNetPct": -1.4953804001537896,
+            "eurRate": 0.8898380494749957,
+            "fxAssumption": "Cambio invariato solo per la stima dei livelli netti"
+          }
         }
       },
+      "pending": {},
       "seen": [
         "OP-1792539000:CONFERMATO",
         "ADA-1792567800:CONFERMATO",
@@ -44,11 +53,39 @@
           "signalAt": 1792577700.0,
           "stop": 1.852,
           "target": 1.906
+        },
+        {
+          "time": 1792578647.828583,
+          "type": "ACQUISTO",
+          "version": "paper-2",
+          "symbol": "RENDER",
+          "candidateId": "RENDER-1792575000",
+          "price": 1.8688669999999998,
+          "observedPrice": 1.867,
+          "quote": "USDT",
+          "eurRate": 0.8898380494749957,
+          "costEUR": 30,
+          "feeEUR": 0.07481296758104605,
+          "qty": 17.9948199561726,
+          "entryCheck": {
+            "entry": 1.8688669999999998,
+            "stop": 1.852,
+            "target": 1.906,
+            "riskPct": 0.9025254338591107,
+            "rewardPct": 1.986925768393368,
+            "rr": 2.201517756566114,
+            "targetNetPct": 1.3767845341829732,
+            "stopNetPct": -1.4953804001537896,
+            "eurRate": 0.8898380494749957,
+            "fxAssumption": "Cambio invariato solo per la stima dei livelli netti"
+          },
+          "signalAt": 1792577700.0,
+          "queuedAt": 1792577732.371635
         }
       ],
-      "equity": 150.0,
+      "equity": 149.79073295781524,
       "peak": 150.0,
-      "maxDrawdownPct": 0.0,
+      "maxDrawdownPct": 0.13951136145651244,
       "history": [
         {
           "time": 1792571521.2736304,
@@ -94,6 +131,11 @@
           "time": 1792577732.371635,
           "equity": 150.0,
           "cash": 150.0
+        },
+        {
+          "time": 1792578647.828583,
+          "equity": 149.79073295781524,
+          "cash": 120.0
         }
       ],
       "realizedEUR": 0,
@@ -241,6 +283,11 @@
           "time": 1792577732.371635,
           "equity": 150.0,
           "cash": 150.0
+        },
+        {
+          "time": 1792578647.828583,
+          "equity": 150.0,
+          "cash": 150.0
         }
       ],
       "realizedEUR": 0,
@@ -297,9 +344,9 @@
     "fx": "Cambio contemporaneo EUR/USDT Binance o EUR/USD Coinbase; nessuna parità presunta",
     "uncertainty": "Prima candela parziale, entrambi i livelli o interruzione dati: chiusura al prezzo osservato, esito separato dalle statistiche certe"
   },
-  "fxAt": 1792577732.371635,
+  "fxAt": 1792578647.828583,
   "eurRates": {
-    "USDT": 0.8903133903133903
+    "USDT": 0.8898380494749957
   },
   "errors": []
 }
