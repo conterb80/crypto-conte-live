@@ -240,7 +240,7 @@ def main():
     latest,events=analyse(state,markets,errors,now)
     latest['sourceNotes']=failures
     # Paper state is separate from the unchanged signal strategy/state.
-    from engine.paper import step
+    from engine.paper import step, upgrade
     paper_path=root/'paper-state.json'
     paper=json.loads(paper_path.read_text()) if paper_path.exists() else None
     quotes={}; rates={}; paper_errors=[]
@@ -264,6 +264,12 @@ def main():
                     quotes[symbol]=dict(price=value,quote='USD',provider=provider)
                 except Exception as exc: paper_errors.append(f'{symbol}: {exc}')
     except Exception as exc: paper_errors.append(str(exc))
+    paper,previous=upgrade(paper,now)
+    if previous is not None:
+        archive_path=root/'paper-v1-final.json'
+        if archive_path.exists():
+            if json.loads(archive_path.read_text())!=previous: raise ValueError('Archivio paper v1 esistente diverso: nessuna sovrascrittura')
+        else: save_json(archive_path,previous)
     paper=step(paper,latest,markets,quotes,rates,now)
     paper['errors']=paper_errors
     save_json(paper_path,paper)
