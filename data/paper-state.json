@@ -1,7 +1,7 @@
 {
   "version": "paper-2",
   "startedAt": 1792571521.2736304,
-  "lastRun": 1792589447.0852468,
+  "lastRun": 1792590332.3297203,
   "portfolios": {
     "A": {
       "name": "Conferme",
@@ -192,6 +192,11 @@
           "time": 1792589447.0852468,
           "equity": 150.33841096385066,
           "cash": 150.33841096385066
+        },
+        {
+          "time": 1792590332.3297203,
+          "equity": 150.33841096385066,
+          "cash": 150.33841096385066
         }
       ],
       "realizedEUR": 0.33841096385067715,
@@ -204,47 +209,21 @@
     },
     "B": {
       "name": "Anticipato",
-      "cash": 59.40188907033989,
+      "cash": 119.00486357248013,
       "positions": {
-        "UNI": {
-          "candidateId": "UNI-1792582200",
-          "qty": 4.499295412918622,
-          "costEUR": 30,
-          "openedAt": 1792583131.9240189,
-          "checkedThrough": 1792589400.0,
-          "provider": "Binance",
-          "quote": "USDT",
-          "entry": 7.480472999999999,
-          "stop": 7.407,
-          "target": 7.79,
-          "mark": 29.695006065766016,
-          "markedAt": 1792589447.0852468,
-          "entryCheck": {
-            "entry": 7.480472999999999,
-            "stop": 7.407,
-            "target": 7.79,
-            "riskPct": 0.9821972487568503,
-            "rewardPct": 4.137799842336188,
-            "rr": 4.212799259592029,
-            "targetNetPct": 3.514790910112353,
-            "stopNetPct": -1.5745755749419499,
-            "eurRate": 0.8891259891526629,
-            "fxAssumption": "Cambio invariato solo per la stima dei livelli netti"
-          }
-        },
         "LINK": {
           "candidateId": "LINK-1792583100",
           "qty": 2.7123814395992194,
           "costEUR": 30,
           "openedAt": 1792584062.4153006,
-          "checkedThrough": 1792589400.0,
+          "checkedThrough": 1792590300.0,
           "provider": "Binance",
           "quote": "USDT",
           "entry": 12.406393999999999,
           "stop": 12.318428571428573,
           "target": 12.572142857142856,
-          "mark": 29.829440265337936,
-          "markedAt": 1792589447.0852468,
+          "mark": 29.73472734117441,
+          "markedAt": 1792590332.3297203,
           "entryCheck": {
             "entry": 12.406393999999999,
             "stop": 12.318428571428573,
@@ -257,68 +236,9 @@
             "eurRate": 0.8892841262783459,
             "fxAssumption": "Cambio invariato solo per la stima dei livelli netti"
           }
-        },
-        "ARB": {
-          "candidateId": "ARB-1792588500",
-          "qty": 175.16553430546463,
-          "costEUR": 30,
-          "openedAt": 1792589447.0852468,
-          "checkedThrough": 1792589400,
-          "provider": "Binance",
-          "quote": "USDT",
-          "entry": 0.19209189999999995,
-          "stop": 0.19145714285714283,
-          "target": 0.2002857142857143,
-          "mark": 29.79073295781526,
-          "markedAt": 1792589447.0852468,
-          "entryCheck": {
-            "entry": 0.19209189999999995,
-            "stop": 0.19145714285714283,
-            "target": 0.2002857142857143,
-            "riskPct": 0.330444512682278,
-            "rewardPct": 4.265569909878728,
-            "rr": 12.908581459726248,
-            "targetNetPct": 3.641796587649826,
-            "stopNetPct": -0.9267219780540237,
-            "eurRate": 0.8893632159373888,
-            "fxAssumption": "Cambio invariato solo per la stima dei livelli netti"
-          }
         }
       },
-      "pending": {
-        "ETH": {
-          "id": "ETH-1792589400",
-          "symbol": "ETH",
-          "status": "OPPORTUNITA",
-          "createdAt": 1792589400.0,
-          "checkedThrough": 1792589400.0,
-          "lastSeen": 1792589447.0852468,
-          "lastPrice": 2479.61,
-          "eligibleAt": 1792589447.0852468,
-          "entry": 2479.61,
-          "stop": 2462.588571428572,
-          "target": 2513.652857142857,
-          "provider": "Binance",
-          "quote": "USDT",
-          "queuedAt": 1792589447.0852468
-        },
-        "RENDER": {
-          "id": "RENDER-1792589400",
-          "symbol": "RENDER",
-          "status": "OPPORTUNITA",
-          "createdAt": 1792589400.0,
-          "checkedThrough": 1792589400.0,
-          "lastSeen": 1792589447.0852468,
-          "lastPrice": 1.89,
-          "eligibleAt": 1792589447.0852468,
-          "entry": 1.89,
-          "stop": 1.8684285714285713,
-          "target": 1.933142857142857,
-          "provider": "Binance",
-          "quote": "USDT",
-          "queuedAt": 1792589447.0852468
-        }
-      },
+      "pending": {},
       "seen": [
         "OP-1792539000",
         "ETH-1792558800",
@@ -832,9 +752,73 @@
           "signalAt": 1792589400.0,
           "stop": 1.8684285714285713,
           "target": 1.933142857142857
+        },
+        {
+          "time": 1792590332.3297203,
+          "type": "VENDITA",
+          "version": "paper-2",
+          "symbol": "UNI",
+          "candidateId": "UNI-1792582200",
+          "reason": "Invalidazione",
+          "price": 7.4275649999999995,
+          "observedPrice": 7.435,
+          "quote": "USDT",
+          "eurRate": 0.8890469416785206,
+          "netEUR": 29.63661282967707,
+          "feeEUR": 0.07427722513703526,
+          "pnlEUR": -0.36338717032293033,
+          "ambiguous": false,
+          "quality": "OSSERVATO",
+          "uncertainty": [],
+          "openedAt": 1792583131.9240189,
+          "triggerAt": 1792590300.0,
+          "entry": 7.480472999999999,
+          "stop": 7.407,
+          "target": 7.79
+        },
+        {
+          "time": 1792590332.3297203,
+          "type": "VENDITA",
+          "version": "paper-2",
+          "symbol": "ARB",
+          "candidateId": "ARB-1792588500",
+          "reason": "Invalidazione",
+          "price": 0.1929069,
+          "observedPrice": 0.1931,
+          "quote": "USDT",
+          "eurRate": 0.8890469416785206,
+          "netEUR": 29.966361672463158,
+          "feeEUR": 0.07510366333950666,
+          "pnlEUR": -0.03363832753684193,
+          "ambiguous": true,
+          "quality": "INCERTO",
+          "uncertainty": [
+            "Livello toccato nella prima candela parziale: prima/dopo ingresso non ricostruibile"
+          ],
+          "openedAt": 1792589447.0852468,
+          "triggerAt": 1792590300.0,
+          "entry": 0.19209189999999995,
+          "stop": 0.19145714285714283,
+          "target": 0.2002857142857143
+        },
+        {
+          "time": 1792590332.3297203,
+          "type": "SALTATO",
+          "version": "paper-2",
+          "symbol": "ETH",
+          "candidateId": "ETH-1792589400",
+          "reason": "Segnale scaduto o dati/filtri non validi"
+        },
+        {
+          "time": 1792590332.3297203,
+          "type": "SALTATO",
+          "version": "paper-2",
+          "symbol": "RENDER",
+          "candidateId": "RENDER-1792589400",
+          "reason": "Segnale scaduto o dati/filtri non validi"
         }
       ],
-      "equity": 148.7170683592591,
+      "equity": 148.73959091365455,
       "peak": 150.0,
       "maxDrawdownPct": 0.8552877604939391,
       "history": [
@@ -947,15 +931,20 @@
           "time": 1792589447.0852468,
           "equity": 148.7170683592591,
           "cash": 59.40188907033989
+        },
+        {
+          "time": 1792590332.3297203,
+          "equity": 148.73959091365455,
+          "cash": 119.00486357248013
         }
       ],
-      "realizedEUR": -0.598110929660109,
-      "certainRealizedEUR": -0.598110929660109,
-      "uncertainRealizedEUR": 0.0,
-      "closedCount": 1,
-      "uncertainCount": 0,
+      "realizedEUR": -0.9951364275198813,
+      "certainRealizedEUR": -0.9614980999830394,
+      "uncertainRealizedEUR": -0.03363832753684193,
+      "closedCount": 2,
+      "uncertainCount": 1,
       "wins": 0,
-      "losses": 1
+      "losses": 2
     }
   },
   "previous": {
@@ -1003,9 +992,9 @@
     "fx": "Cambio contemporaneo EUR/USDT Binance o EUR/USD Coinbase; nessuna parità presunta",
     "uncertainty": "Prima candela parziale, entrambi i livelli o interruzione dati: chiusura al prezzo osservato, esito separato dalle statistiche certe"
   },
-  "fxAt": 1792589447.0852468,
+  "fxAt": 1792590332.3297203,
   "eurRates": {
-    "USDT": 0.8893632159373888
+    "USDT": 0.8890469416785206
   },
   "errors": []
 }
