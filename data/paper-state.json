@@ -1,7 +1,7 @@
 {
   "version": "paper-1",
   "startedAt": 1792060401.9214385,
-  "lastRun": 1792544454.1858659,
+  "lastRun": 1792545331.928451,
   "portfolios": {
     "A": {
       "name": "Conferme",
@@ -11,14 +11,14 @@
           "candidateId": "ADA-1792535400",
           "qty": 150.15771870284385,
           "openedAt": 1792537256.278159,
-          "checkedThrough": 1792544400.0,
+          "checkedThrough": 1792545300.0,
           "provider": "Binance",
           "quote": "USDT",
           "entry": 0.22402379999999997,
           "stop": 0.22231428571428571,
           "target": 0.22767142857142858,
-          "mark": 29.846633393872597,
-          "markedAt": 1792544454.1858659
+          "mark": 29.883912194055068,
+          "markedAt": 1792545331.928451
         }
       },
       "pending": {},
@@ -823,7 +823,7 @@
           "qty": 150.15771870284385
         }
       ],
-      "equity": 139.02210117681116,
+      "equity": 139.05937997699363,
       "peak": 150.0370847243388,
       "maxDrawdownPct": 7.3858713574761925,
       "history": [
@@ -3711,55 +3711,64 @@
           "time": 1792544454.1858659,
           "equity": 139.02210117681116,
           "cash": 109.17546778293857
+        },
+        {
+          "time": 1792545331.928451,
+          "equity": 139.05937997699363,
+          "cash": 109.17546778293857
         }
       ],
       "realizedEUR": -10.824532217061456
     },
     "B": {
       "name": "Anticipato",
-      "cash": 53.888169773899506,
+      "cash": 83.48123366987332,
       "positions": {
         "DOGE": {
           "candidateId": "DOGE-1792510200",
           "qty": 419.55684750308893,
           "openedAt": 1792511134.1138122,
-          "checkedThrough": 1792544400.0,
+          "checkedThrough": 1792545300.0,
           "provider": "Binance",
           "quote": "USDT",
           "entry": 0.08017008999999999,
           "stop": 0.07904428571428572,
           "target": 0.08296142857142857,
-          "mark": 30.47143018983926,
-          "markedAt": 1792544454.1858659
+          "mark": 30.465000123570004,
+          "markedAt": 1792545331.928451
         },
         "SUI": {
           "candidateId": "SUI-1792510200",
           "qty": 33.55868163040286,
           "openedAt": 1792511134.1138122,
-          "checkedThrough": 1792544400.0,
+          "checkedThrough": 1792545300.0,
           "provider": "Binance",
           "quote": "USDT",
           "entry": 1.0023013,
           "stop": 0.9849571428571429,
           "target": 1.0591857142857144,
-          "mark": 30.721972288265285,
-          "markedAt": 1792544454.1858659
-        },
-        "FIL": {
-          "candidateId": "FIL-1792542600",
-          "qty": 32.31589330291033,
-          "openedAt": 1792543532.5335464,
-          "checkedThrough": 1792544400.0,
-          "provider": "Binance",
-          "quote": "USDT",
-          "entry": 1.0409399,
-          "stop": 1.0311,
-          "target": 1.069,
-          "mark": 29.584236635300464,
-          "markedAt": 1792544454.1858659
+          "mark": 30.7132893781531,
+          "markedAt": 1792545331.928451
         }
       },
-      "pending": {},
+      "pending": {
+        "AAVE": {
+          "id": "AAVE-1792545300",
+          "symbol": "AAVE",
+          "status": "OPPORTUNITA",
+          "createdAt": 1792545300.0,
+          "checkedThrough": 1792545300.0,
+          "lastSeen": 1792545331.928451,
+          "lastPrice": 156.53,
+          "eligibleAt": 1792545331.928451,
+          "entry": 156.53,
+          "stop": 154.91285714285715,
+          "target": 159.7642857142857,
+          "provider": "Binance",
+          "quote": "USDT",
+          "queuedAt": 1792545331.928451
+        }
+      },
       "seen": [
         "ETH-1792051200",
         "ATOM-1792060200",
@@ -4012,7 +4021,8 @@
         "OP-1792539000",
         "FIL-1792542600",
         "LTC-1792542600",
-        "NEAR-1792542600"
+        "NEAR-1792542600",
+        "AAVE-1792545300"
       ],
       "ledger": [
         {
@@ -8097,9 +8107,31 @@
           "type": "SALTATO",
           "symbol": "NEAR",
           "reason": "Capitale o posti impegnati"
+        },
+        {
+          "time": 1792545331.928451,
+          "type": "VENDITA",
+          "symbol": "FIL",
+          "candidateId": "FIL-1792542600",
+          "reason": "Invalidazione",
+          "price": 1.0319669999999999,
+          "quote": "USDT",
+          "eurRate": 0.8896005693443643,
+          "netEUR": 29.593063895973806,
+          "feeEUR": 0.07416807993978397,
+          "pnlEUR": -0.40693610402619385,
+          "ambiguous": false,
+          "openedAt": 1792543532.5335464
+        },
+        {
+          "time": 1792545331.928451,
+          "type": "IN_ATTESA",
+          "symbol": "AAVE",
+          "candidateId": "AAVE-1792545300",
+          "reason": "Esecuzione dalla prossima osservazione disponibile"
         }
       ],
-      "equity": 144.6658088873045,
+      "equity": 144.65952317159642,
       "peak": 155.33235502952698,
       "maxDrawdownPct": 8.925007776456006,
       "history": [
@@ -10987,9 +11019,14 @@
           "time": 1792544454.1858659,
           "equity": 144.6658088873045,
           "cash": 53.888169773899506
+        },
+        {
+          "time": 1792545331.928451,
+          "equity": 144.65952317159642,
+          "cash": 83.48123366987332
         }
       ],
-      "realizedEUR": -6.11183022610043
+      "realizedEUR": -6.518766330126624
     }
   },
   "rules": {
@@ -11004,9 +11041,9 @@
     "fx": "Cambio contemporaneo EUR/USDT Binance o EUR/USD Coinbase; senza cambio nessun acquisto",
     "gaps": "Valori conservati e anomalie registrate; uscita al primo prezzo osservato disponibile"
   },
-  "fxAt": 1792544454.1858659,
+  "fxAt": 1792545331.928451,
   "eurRates": {
-    "USDT": 0.889679715302491
+    "USDT": 0.8896005693443643
   },
   "errors": []
 }
