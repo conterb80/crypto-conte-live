@@ -1,39 +1,12 @@
 {
   "version": "paper-2",
   "startedAt": 1792571521.2736304,
-  "lastRun": 1792632642.7301242,
+  "lastRun": 1792633530.2103925,
   "portfolios": {
     "A": {
       "name": "Conferme",
-      "cash": 120.33841096385066,
-      "positions": {
-        "BTC": {
-          "candidateId": "BTC-1792594800",
-          "qty": 0.0003974690597145397,
-          "costEUR": 30,
-          "openedAt": 1792597826.7147503,
-          "checkedThrough": 1792632600.0,
-          "provider": "Binance",
-          "quote": "USDT",
-          "entry": 84527.35291,
-          "stop": 84018.23714285715,
-          "target": 85690.65571428572,
-          "mark": 29.690941697051695,
-          "markedAt": 1792632642.7301242,
-          "entryCheck": {
-            "entry": 84527.35291,
-            "stop": 84018.23714285715,
-            "target": 85690.65571428572,
-            "riskPct": 0.6023088971979637,
-            "rewardPct": 1.3762442147269633,
-            "rr": 2.284947509707177,
-            "targetNetPct": 0.7697564095620724,
-            "stopNetPct": -1.1969599220249427,
-            "eurRate": 0.8907098957869422,
-            "fxAssumption": "Cambio invariato solo per la stima dei livelli netti"
-          }
-        }
-      },
+      "cash": 149.8498912419516,
+      "positions": {},
       "pending": {},
       "seen": [
         "OP-1792539000:CONFERMATO",
@@ -144,11 +117,34 @@
           },
           "signalAt": 1792596600.0,
           "queuedAt": 1792596648.354441
+        },
+        {
+          "time": 1792633530.2103925,
+          "type": "VENDITA",
+          "version": "paper-2",
+          "symbol": "BTC",
+          "candidateId": "BTC-1792594800",
+          "reason": "Invalidazione",
+          "price": 83664.47178,
+          "observedPrice": 83748.22,
+          "quote": "USDT",
+          "eurRate": 0.889679715302491,
+          "netEUR": 29.51148027810095,
+          "feeEUR": 0.07396360971955125,
+          "pnlEUR": -0.48851972189904913,
+          "ambiguous": false,
+          "quality": "OSSERVATO",
+          "uncertainty": [],
+          "openedAt": 1792597826.7147503,
+          "triggerAt": 1792633500.0,
+          "entry": 84527.35291,
+          "stop": 84018.23714285715,
+          "target": 85690.65571428572
         }
       ],
-      "equity": 150.02935266090236,
+      "equity": 149.8498912419516,
       "peak": 150.33841096385066,
-      "maxDrawdownPct": 0.24517464003016576,
+      "maxDrawdownPct": 0.3249467110680859,
       "history": [
         {
           "time": 1792571521.2736304,
@@ -519,47 +515,25 @@
           "time": 1792632642.7301242,
           "equity": 150.02935266090236,
           "cash": 120.33841096385066
+        },
+        {
+          "time": 1792633530.2103925,
+          "equity": 149.8498912419516,
+          "cash": 149.8498912419516
         }
       ],
-      "realizedEUR": 0.33841096385067715,
-      "certainRealizedEUR": 0.33841096385067715,
+      "realizedEUR": -0.15010875804837198,
+      "certainRealizedEUR": -0.15010875804837198,
       "uncertainRealizedEUR": 0.0,
-      "closedCount": 1,
+      "closedCount": 2,
       "uncertainCount": 0,
       "wins": 1,
-      "losses": 0
+      "losses": 1
     },
     "B": {
       "name": "Anticipato",
-      "cash": 117.3461737485336,
-      "positions": {
-        "UNI": {
-          "candidateId": "UNI-1792631700",
-          "qty": 4.438507467968409,
-          "costEUR": 30,
-          "openedAt": 1792632642.7301242,
-          "checkedThrough": 1792632600,
-          "provider": "Binance",
-          "quote": "USDT",
-          "entry": 7.581573999999999,
-          "stop": 7.489714285714286,
-          "target": 7.79,
-          "mark": 29.790732957815266,
-          "markedAt": 1792632642.7301242,
-          "entryCheck": {
-            "entry": 7.581573999999999,
-            "stop": 7.489714285714286,
-            "target": 7.79,
-            "riskPct": 1.2116179870527246,
-            "rewardPct": 2.7491125193792363,
-            "rr": 2.268959811389468,
-            "targetNetPct": 2.134411469668551,
-            "stopNetPct": -1.802623793658853,
-            "eurRate": 0.8892841262783459,
-            "fxAssumption": "Cambio invariato solo per la stima dei livelli netti"
-          }
-        }
-      },
+      "cash": 146.7291096433171,
+      "positions": {},
       "pending": {},
       "seen": [
         "OP-1792539000",
@@ -2045,11 +2019,36 @@
           },
           "signalAt": 1792631700.0,
           "queuedAt": 1792631731.7586207
+        },
+        {
+          "time": 1792633530.2103925,
+          "type": "VENDITA",
+          "version": "paper-2",
+          "symbol": "UNI",
+          "candidateId": "UNI-1792631700",
+          "reason": "Invalidazione",
+          "price": 7.4595329999999995,
+          "observedPrice": 7.467,
+          "quote": "USDT",
+          "eurRate": 0.889679715302491,
+          "netEUR": 29.382935894783497,
+          "feeEUR": 0.07364144334532205,
+          "pnlEUR": -0.6170641052165031,
+          "ambiguous": true,
+          "quality": "INCERTO",
+          "uncertainty": [
+            "Livello toccato nella prima candela parziale: prima/dopo ingresso non ricostruibile"
+          ],
+          "openedAt": 1792632642.7301242,
+          "triggerAt": 1792633500.0,
+          "entry": 7.581573999999999,
+          "stop": 7.489714285714286,
+          "target": 7.79
         }
       ],
-      "equity": 147.13690670634887,
+      "equity": 146.7291096433171,
       "peak": 150.0,
-      "maxDrawdownPct": 1.9087288624340837,
+      "maxDrawdownPct": 2.180593571121936,
       "history": [
         {
           "time": 1792571521.2736304,
@@ -2420,13 +2419,18 @@
           "time": 1792632642.7301242,
           "equity": 147.13690670634887,
           "cash": 117.3461737485336
+        },
+        {
+          "time": 1792633530.2103925,
+          "equity": 146.7291096433171,
+          "cash": 146.7291096433171
         }
       ],
-      "realizedEUR": -2.6538262514664055,
+      "realizedEUR": -3.2708903566829086,
       "certainRealizedEUR": -2.6201879239295636,
-      "uncertainRealizedEUR": -0.03363832753684193,
+      "uncertainRealizedEUR": -0.650702432753345,
       "closedCount": 7,
-      "uncertainCount": 1,
+      "uncertainCount": 2,
       "wins": 1,
       "losses": 6
     }
@@ -2476,9 +2480,9 @@
     "fx": "Cambio contemporaneo EUR/USDT Binance o EUR/USD Coinbase; nessuna parità presunta",
     "uncertainty": "Prima candela parziale, entrambi i livelli o interruzione dati: chiusura al prezzo osservato, esito separato dalle statistiche certe"
   },
-  "fxAt": 1792632642.7301242,
+  "fxAt": 1792633530.2103925,
   "eurRates": {
-    "USDT": 0.8892841262783459
+    "USDT": 0.889679715302491
   },
   "errors": []
 }
