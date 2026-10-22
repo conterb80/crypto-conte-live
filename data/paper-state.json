@@ -1,7 +1,7 @@
 {
   "version": "paper-2",
   "startedAt": 1792571521.2736304,
-  "lastRun": 1792663259.163872,
+  "lastRun": 1792664134.568885,
   "portfolios": {
     "A": {
       "name": "Conferme",
@@ -690,6 +690,11 @@
           "time": 1792663259.163872,
           "equity": 149.8498912419516,
           "cash": 149.8498912419516
+        },
+        {
+          "time": 1792664134.568885,
+          "equity": 149.8498912419516,
+          "cash": 149.8498912419516
         }
       ],
       "realizedEUR": -0.15010875804837198,
@@ -702,24 +707,83 @@
     },
     "B": {
       "name": "Anticipato",
-      "cash": 146.21221674550986,
-      "positions": {},
-      "pending": {
+      "cash": 116.21221674550986,
+      "positions": {
         "RENDER": {
-          "id": "RENDER-1792663200",
-          "symbol": "RENDER",
-          "status": "OPPORTUNITA",
-          "createdAt": 1792663200.0,
-          "checkedThrough": 1792663200.0,
-          "lastSeen": 1792663259.163872,
-          "lastPrice": 1.832,
-          "eligibleAt": 1792663259.163872,
-          "entry": 1.832,
-          "stop": 1.8114285714285714,
-          "target": 1.946,
+          "candidateId": "RENDER-1792663200",
+          "qty": 18.257249635326183,
+          "costEUR": 30,
+          "openedAt": 1792664134.568885,
+          "checkedThrough": 1792664100,
           "provider": "Binance",
           "quote": "USDT",
-          "queuedAt": 1792663259.163872
+          "entry": 1.84184,
+          "stop": 1.8114285714285714,
+          "target": 1.946,
+          "mark": 29.790732957815255,
+          "markedAt": 1792664134.568885,
+          "entryCheck": {
+            "entry": 1.84184,
+            "stop": 1.8114285714285714,
+            "target": 1.946,
+            "riskPct": 1.6511438871687298,
+            "rewardPct": 5.655214350866527,
+            "rr": 3.425028184892903,
+            "targetNetPct": 5.023127420124074,
+            "stopNetPct": -2.2395202108961065,
+            "eurRate": 0.8899172376968942,
+            "fxAssumption": "Cambio invariato solo per la stima dei livelli netti"
+          }
+        }
+      },
+      "pending": {
+        "ARB": {
+          "id": "ARB-1792664100",
+          "symbol": "ARB",
+          "status": "OPPORTUNITA",
+          "createdAt": 1792664100.0,
+          "checkedThrough": 1792664100.0,
+          "lastSeen": 1792664134.568885,
+          "lastPrice": 0.181,
+          "eligibleAt": 1792664134.568885,
+          "entry": 0.181,
+          "stop": 0.17889999999999998,
+          "target": 0.1986,
+          "provider": "Binance",
+          "quote": "USDT",
+          "queuedAt": 1792664134.568885
+        },
+        "DOT": {
+          "id": "DOT-1792664100",
+          "symbol": "DOT",
+          "status": "OPPORTUNITA",
+          "createdAt": 1792664100.0,
+          "checkedThrough": 1792664100.0,
+          "lastSeen": 1792664134.568885,
+          "lastPrice": 1.119,
+          "eligibleAt": 1792664134.568885,
+          "entry": 1.119,
+          "stop": 1.1068571428571428,
+          "target": 1.192,
+          "provider": "Binance",
+          "quote": "USDT",
+          "queuedAt": 1792664134.568885
+        },
+        "NEAR": {
+          "id": "NEAR-1792664100",
+          "symbol": "NEAR",
+          "status": "OPPORTUNITA",
+          "createdAt": 1792664100.0,
+          "checkedThrough": 1792664100.0,
+          "lastSeen": 1792664134.568885,
+          "lastPrice": 4.995,
+          "eligibleAt": 1792664134.568885,
+          "entry": 4.995,
+          "stop": 4.9190000000000005,
+          "target": 5.451,
+          "provider": "Binance",
+          "quote": "USDT",
+          "queuedAt": 1792664134.568885
         }
       },
       "seen": [
@@ -781,7 +845,10 @@
         "UNI-1792631700",
         "INJ-1792650600",
         "ATOM-1792659600",
-        "RENDER-1792663200"
+        "RENDER-1792663200",
+        "ARB-1792664100",
+        "DOT-1792664100",
+        "NEAR-1792664100"
       ],
       "ledger": [
         {
@@ -2326,11 +2393,72 @@
           "signalAt": 1792663200.0,
           "stop": 1.8114285714285714,
           "target": 1.946
+        },
+        {
+          "time": 1792664134.568885,
+          "type": "ACQUISTO",
+          "version": "paper-2",
+          "symbol": "RENDER",
+          "candidateId": "RENDER-1792663200",
+          "price": 1.84184,
+          "observedPrice": 1.84,
+          "quote": "USDT",
+          "eurRate": 0.8899172376968942,
+          "costEUR": 30,
+          "feeEUR": 0.07481296758104605,
+          "qty": 18.257249635326183,
+          "entryCheck": {
+            "entry": 1.84184,
+            "stop": 1.8114285714285714,
+            "target": 1.946,
+            "riskPct": 1.6511438871687298,
+            "rewardPct": 5.655214350866527,
+            "rr": 3.425028184892903,
+            "targetNetPct": 5.023127420124074,
+            "stopNetPct": -2.2395202108961065,
+            "eurRate": 0.8899172376968942,
+            "fxAssumption": "Cambio invariato solo per la stima dei livelli netti"
+          },
+          "signalAt": 1792663200.0,
+          "queuedAt": 1792663259.163872
+        },
+        {
+          "time": 1792664134.568885,
+          "type": "IN_ATTESA",
+          "version": "paper-2",
+          "symbol": "ARB",
+          "candidateId": "ARB-1792664100",
+          "reason": "Esecuzione dalla prossima osservazione disponibile",
+          "signalAt": 1792664100.0,
+          "stop": 0.17889999999999998,
+          "target": 0.1986
+        },
+        {
+          "time": 1792664134.568885,
+          "type": "IN_ATTESA",
+          "version": "paper-2",
+          "symbol": "DOT",
+          "candidateId": "DOT-1792664100",
+          "reason": "Esecuzione dalla prossima osservazione disponibile",
+          "signalAt": 1792664100.0,
+          "stop": 1.1068571428571428,
+          "target": 1.192
+        },
+        {
+          "time": 1792664134.568885,
+          "type": "IN_ATTESA",
+          "version": "paper-2",
+          "symbol": "NEAR",
+          "candidateId": "NEAR-1792664100",
+          "reason": "Esecuzione dalla prossima osservazione disponibile",
+          "signalAt": 1792664100.0,
+          "stop": 4.9190000000000005,
+          "target": 5.451
         }
       ],
-      "equity": 146.21221674550986,
+      "equity": 146.00294970332513,
       "peak": 150.0,
-      "maxDrawdownPct": 2.5251888363267527,
+      "maxDrawdownPct": 2.664700197783243,
       "history": [
         {
           "time": 1792571521.2736304,
@@ -2876,6 +3004,11 @@
           "time": 1792663259.163872,
           "equity": 146.21221674550986,
           "cash": 146.21221674550986
+        },
+        {
+          "time": 1792664134.568885,
+          "equity": 146.00294970332513,
+          "cash": 116.21221674550986
         }
       ],
       "realizedEUR": -3.7877832544901473,
@@ -2932,9 +3065,9 @@
     "fx": "Cambio contemporaneo EUR/USDT Binance o EUR/USD Coinbase; nessuna parità presunta",
     "uncertainty": "Prima candela parziale, entrambi i livelli o interruzione dati: chiusura al prezzo osservato, esito separato dalle statistiche certe"
   },
-  "fxAt": 1792663259.163872,
+  "fxAt": 1792664134.568885,
   "eurRates": {
-    "USDT": 0.8901548869503294
+    "USDT": 0.8899172376968942
   },
   "errors": []
 }
