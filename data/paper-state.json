@@ -1,7 +1,7 @@
 {
   "version": "paper-2",
   "startedAt": 1792571521.2736304,
-  "lastRun": 1792935050.0499752,
+  "lastRun": 1792935933.9133277,
   "portfolios": {
     "A": {
       "name": "Conferme",
@@ -2300,6 +2300,11 @@
           "time": 1792935050.0499752,
           "equity": 149.8498912419516,
           "cash": 149.8498912419516
+        },
+        {
+          "time": 1792935933.9133277,
+          "equity": 149.8498912419516,
+          "cash": 149.8498912419516
         }
       ],
       "realizedEUR": -0.15010875804837198,
@@ -2314,40 +2319,7 @@
       "name": "Anticipato",
       "cash": 137.56615548958857,
       "positions": {},
-      "pending": {
-        "DOGE": {
-          "id": "DOGE-1792935000",
-          "symbol": "DOGE",
-          "status": "OPPORTUNITA",
-          "createdAt": 1792935000.0,
-          "checkedThrough": 1792935000.0,
-          "lastSeen": 1792935050.0499752,
-          "lastPrice": 0.07666,
-          "eligibleAt": 1792935050.0499752,
-          "entry": 0.07666,
-          "stop": 0.07620004000000001,
-          "target": 0.07807,
-          "provider": "Binance",
-          "quote": "USDT",
-          "queuedAt": 1792935050.0499752
-        },
-        "UNI": {
-          "id": "UNI-1792935000",
-          "symbol": "UNI",
-          "status": "OPPORTUNITA",
-          "createdAt": 1792935000.0,
-          "checkedThrough": 1792935000.0,
-          "lastSeen": 1792935050.0499752,
-          "lastPrice": 6.714,
-          "eligibleAt": 1792935050.0499752,
-          "entry": 6.714,
-          "stop": 6.647857142857143,
-          "target": 6.899,
-          "provider": "Binance",
-          "quote": "USDT",
-          "queuedAt": 1792935050.0499752
-        }
-      },
+      "pending": {},
       "seen": [
         "OP-1792539000",
         "ETH-1792558800",
@@ -6006,6 +5978,46 @@
           "signalAt": 1792935000.0,
           "stop": 6.647857142857143,
           "target": 6.899
+        },
+        {
+          "time": 1792935933.9133277,
+          "type": "SALTATO",
+          "version": "paper-2",
+          "symbol": "DOGE",
+          "candidateId": "DOGE-1792935000",
+          "reason": "Rapporto rischio/obiettivo al prezzo eseguito inferiore a 1,8",
+          "entryCheck": {
+            "entry": 0.07707699999999999,
+            "stop": 0.07620004000000001,
+            "target": 0.07807,
+            "riskPct": 1.1377713195894783,
+            "rewardPct": 1.288322067542857,
+            "rr": 1.1323207443897418,
+            "targetNetPct": 0.6823602604604906,
+            "stopNetPct": -1.7292189171064343,
+            "eurRate": 0.891583452211127,
+            "fxAssumption": "Cambio invariato solo per la stima dei livelli netti"
+          }
+        },
+        {
+          "time": 1792935933.9133277,
+          "type": "SALTATO",
+          "version": "paper-2",
+          "symbol": "UNI",
+          "candidateId": "UNI-1792935000",
+          "reason": "Rapporto rischio/obiettivo al prezzo eseguito inferiore a 1,8",
+          "entryCheck": {
+            "entry": 6.766759999999999,
+            "stop": 6.647857142857143,
+            "target": 6.899,
+            "riskPct": 1.7571608442276017,
+            "rewardPct": 1.9542587589925058,
+            "rr": 1.1121683967704976,
+            "targetNetPct": 1.3443129565914758,
+            "stopNetPct": -2.3449029168827074,
+            "eurRate": 0.891583452211127,
+            "fxAssumption": "Cambio invariato solo per la stima dei livelli netti"
+          }
         }
       ],
       "equity": 137.56615548958857,
@@ -8166,6 +8178,11 @@
           "time": 1792935050.0499752,
           "equity": 137.56615548958857,
           "cash": 137.56615548958857
+        },
+        {
+          "time": 1792935933.9133277,
+          "equity": 137.56615548958857,
+          "cash": 137.56615548958857
         }
       ],
       "realizedEUR": -12.43384451041145,
@@ -8222,9 +8239,9 @@
     "fx": "Cambio contemporaneo EUR/USDT Binance o EUR/USD Coinbase; nessuna parità presunta",
     "uncertainty": "Prima candela parziale, entrambi i livelli o interruzione dati: chiusura al prezzo osservato, esito separato dalle statistiche certe"
   },
-  "fxAt": 1792935050.0499752,
+  "fxAt": 1792935933.9133277,
   "eurRates": {
-    "USDT": 0.8919015340706387
+    "USDT": 0.891583452211127
   },
   "errors": []
 }
