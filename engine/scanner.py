@@ -103,6 +103,7 @@ def assess(market, btc, now):
     elif blocked:
         reason='Filtro prudenziale: liquidità, estensione del movimento o trend sfavorevole'
     return {k:market[k] for k in ('symbol','provider','quote')} | dict(price=price,time=now,candleTime=last['t']+900,
+           confirmationFilters={'trendOrario':uptrend,'volume':ratio>=1.5,'forzaBTC':strength,'punteggio':score>=7,'prudenza':not blocked},
            candles=[{k:b[k] for k in ('t','o','h','l','c')} for b in bars[-96:]],
            stale=False,signal=signal,score=score,qualified=qualified,ratio=ratio,trend=trend,trend4h=trend4h,
            trend24h=trend24h,relative=relative,entry=price,stop=stop,target=target,rr=(target-price)/risk,
@@ -115,6 +116,7 @@ def record(state,candidate,status,now,reason,price=None):
     event=dict(id=f"{candidate['id']}:{status}",candidateId=candidate['id'],symbol=candidate['symbol'],status=status,
                time=now,reason=reason,price=price,quote=candidate['quote'],provider=candidate['provider'],
                entry=candidate['entry'],stop=candidate['stop'],target=candidate['target'])
+    if candidate.get('signalSnapshot'):event['signalSnapshot']=candidate['signalSnapshot']
     if status in TERMINAL:
         state['totals'][status]=state['totals'].get(status,0)+1
         event['confirmed']=candidate['status']=='CONFERMATO'
@@ -165,6 +167,17 @@ def advance(state,row,bars,now):
             end('SCADUTO','Finestra di osservazione terminata',row['price'])
             return emitted
         if candidate['status']=='OPPORTUNITA' and row['candleTime']>candidate['createdAt']:
+            rr=(candidate['target']-row['price'])/(row['price']-candidate['stop']) if row['price']>candidate['stop'] else 0
+            blockers=[k for k,v in row.get('confirmationFilters',{}).items() if not v]
+            if not row['qualified'] and not blockers:blockers=['filtriSetup']
+            if rr<1.8:blockers.append('rapportoLivelli')
+            candidate['confirmationCheck']=dict(time=now,candleTime=row['candleTime'],blockers=blockers,rr=rr)
+            diagnostics=state.setdefault('confirmationDiagnostics',dict(since=now,checks=0,blockedChecks=0,reasons={}))
+            if candidate.get('diagnosedThrough',0)<row['candleTime']:
+                diagnostics['checks']+=1
+                if blockers:diagnostics['blockedChecks']+=1
+                for reason in blockers:diagnostics['reasons'][reason]=diagnostics['reasons'].get(reason,0)+1
+                candidate['diagnosedThrough']=row['candleTime']
             if row['signal']=='SCARTA':
                 end('INVALIDATO','I filtri di mercato non sono più superati',row['price'])
             elif row['qualified'] and row['price']>candidate['stop'] and (candidate['target']-row['price'])/(row['price']-candidate['stop'])>=1.8:
@@ -176,6 +189,7 @@ def advance(state,row,bars,now):
         candidate=dict(id=f"{symbol}-{int(row['candleTime'])}",symbol=symbol,status='OPPORTUNITA',createdAt=row['candleTime'],
                        checkedThrough=row['candleTime'],lastSeen=now,lastPrice=row['price'],eligibleAt=now,
                        **{k:row[k] for k in ('entry','stop','target','provider','quote')})
+        candidate['signalSnapshot']={k:row[k] for k in ('signal','score','ratio','trend','trend4h','relative','confirmationFilters') if k in row}
         state['active'][symbol]=candidate
         state['totals']['OPPORTUNITA']=state['totals'].get('OPPORTUNITA',0)+1
         emitted.append(record(state,candidate,'OPPORTUNITA',now,row['reason'],row['price']))
@@ -272,6 +286,11 @@ def main():
         else: save_json(archive_path,previous)
     paper=step(paper,latest,markets,quotes,rates,now)
     paper['errors']=paper_errors
+    from engine.diagnostics import diagnose
+    archived=[]
+    for archive in sorted((root/'archive').glob('*.jsonl')):
+        archived.extend(json.loads(line) for line in archive.read_text().splitlines() if line.strip())
+    latest['diagnosis']=diagnose(state,paper,archived+events,now)
     save_json(paper_path,paper)
     latest['paper']={k:v for k,v in paper.items() if k!='portfolios'}
     latest['paper']['portfolios']={k:{**{f:v for f,v in v.items() if f not in ('seen','ledger','history')},'ledger':v['ledger'][-100:],'history':v['history'][-2880:]} for k,v in paper['portfolios'].items()}

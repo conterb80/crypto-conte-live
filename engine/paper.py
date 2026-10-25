@@ -4,6 +4,8 @@ FEE=.0025
 SLIP=.001
 VERSION='paper-2'
 MIN_RR=1.8
+MAX_DRAWDOWN_PCT=8
+REVIEW_AT=1792937700  # 25 October 2026, 14:15 UTC; prospective policy for this experiment.
 
 def start(now):
     return {'version':VERSION,'startedAt':now,'lastRun':None,'portfolios':{k:{'name':name,'cash':150.,'positions':{},'pending':{},'seen':[],'ledger':[],'equity':150.,'peak':150.,'maxDrawdownPct':0.,'history':[]} for k,name in [('A','Conferme'),('B','Anticipato')]}}
@@ -67,7 +69,17 @@ def step(state,latest,markets,quotes,eur_rates,now):
     if state['version']!=VERSION:raise ValueError('Eseguire migrazione esplicita prima del paper v2')
     if state.get('lastRun') is not None and now<=state['lastRun']:return state
     for key,p in state['portfolios'].items():
-        def log(kind,**kw):p['ledger'].append(dict(time=now,type=kind,version=VERSION,**kw))
+        def log(kind,**kw):p['ledger'].append(dict(time=now,type=kind,version=VERSION,revision='paper-2.1',**kw))
+        if state.get('revision')!='paper-2.1':
+            log('REVISIONE',reason='Revisione 2.1: storico e capitale conservati; A invariato, nuovi ingressi B sospesi, limite calo 8% e diagnosi dei filtri attivati.')
+        # Prospective intervention: keep balances, ledger and existing exits intact.
+        # No automatic resumption or parameter fitting to past trades.
+        if key=='B' and now>=REVIEW_AT and not p.get('entryPause'):
+            p['entryPause']=dict(at=now,reason='Diagnosi 25/10: sospesi nuovi anticipi dopo 24 esiti osservati, 1 positivo e 23 negativi. Posizioni già aperte gestite fino all’uscita.')
+            log('PAUSA_INGRESSI',reason=p['entryPause']['reason'])
+        if p.get('maxDrawdownPct',0)>=MAX_DRAWDOWN_PCT and not p.get('entryPause'):
+            p['entryPause']=dict(at=now,reason='Limite sperimentale di calo del capitale dell’8% raggiunto; nuovi ingressi sospesi per revisione.')
+            log('PAUSA_INGRESSI',reason=p['entryPause']['reason'])
         for symbol,pos in list(p['positions'].items()):
             m=markets.get(symbol);q=quotes.get(symbol);rate=eur_rates.get(pos['quote'])
             if not m or m.get('provider',pos['provider'])!=pos['provider'] or not valid_quote(q,pos['provider'],pos['quote']) or not rate or not math.isfinite(rate) or rate<=0:
@@ -83,7 +95,14 @@ def step(state,latest,markets,quotes,eur_rates,now):
                 gross=pos['qty']*q['price']*(1-SLIP)*rate;net=gross*(1-FEE);p['cash']+=net
                 log('VENDITA',symbol=symbol,candidateId=pos['candidateId'],reason=reason,price=q['price']*(1-SLIP),observedPrice=q['price'],quote=pos['quote'],eurRate=rate,netEUR=net,feeEUR=gross*FEE,pnlEUR=net-pos['costEUR'],ambiguous=bool(uncertain),quality='INCERTO' if uncertain else 'OSSERVATO',uncertainty=uncertain,openedAt=pos['openedAt'],triggerAt=trigger_at,entry=pos['entry'],stop=pos['stop'],target=pos['target'])
                 del p['positions'][symbol]
+        equity=p['cash']+sum(x['mark'] for x in p['positions'].values())
+        drawdown=(1-equity/max(p['peak'],equity))*100
+        if drawdown>=MAX_DRAWDOWN_PCT and not p.get('entryPause'):
+            p['entryPause']=dict(at=now,reason='Limite sperimentale di calo del capitale dell’8% raggiunto; nuovi ingressi sospesi per revisione.')
+            log('PAUSA_INGRESSI',reason=p['entryPause']['reason'])
         for symbol,order in list(p['pending'].items()):
+            if p.get('entryPause'):
+                log('SALTATO',symbol=symbol,candidateId=order['id'],reason='Nuovi ingressi sospesi per revisione del test');del p['pending'][symbol];continue
             if now<=order['queuedAt']:continue
             q=quotes.get(symbol);rate=eur_rates.get(order['quote']);row=next((r for r in latest['markets'] if r['symbol']==symbol),{})
             if not any(c['id']==order['id'] for c in latest['active']) or now-order['queuedAt']>3600 or row.get('stale') or row.get('signal')=='SCARTA':
@@ -101,6 +120,7 @@ def step(state,latest,markets,quotes,eur_rates,now):
         eligible=[c for c in latest['active'] if key=='B' or c['status']=='CONFERMATO']
         eligible.sort(key=lambda c:(c.get('confirmedAt',c['createdAt']),c['symbol']))
         for c in eligible:
+            if p.get('entryPause'):continue
             identity=c['id']+(':'+c['status'] if key=='A' else '')
             if identity in p['seen']:continue
             p['seen'].append(identity)
@@ -117,7 +137,14 @@ def step(state,latest,markets,quotes,eur_rates,now):
         p['wins']=sum(e['pnlEUR']>0 for e in certain);p['losses']=sum(e['pnlEUR']<0 for e in certain)
         p['equity']=p['cash']+sum(x['mark'] for x in p['positions'].values());p['peak']=max(p['peak'],p['equity']);p['maxDrawdownPct']=max(p['maxDrawdownPct'],(1-p['equity']/p['peak'])*100)
         p['history'].append({'time':now,'equity':p['equity'],'cash':p['cash']})
+        # Catch the threshold reached by this scan before any subsequent scan can buy.
+        if p['maxDrawdownPct']>=MAX_DRAWDOWN_PCT and not p.get('entryPause'):
+            p['entryPause']=dict(at=now,reason='Limite sperimentale di calo del capitale dell’8% raggiunto; nuovi ingressi sospesi per revisione.')
+            log('PAUSA_INGRESSI',reason=p['entryPause']['reason'])
+        p['activity']=('INGRESSI SOSPESI' if p.get('entryPause') else 'POSIZIONI APERTE' if p['positions'] else 'INGRESSO IN ATTESA' if p['pending'] else 'IN ATTESA DI CONFERME' if key=='A' else 'IN ATTESA DI OPPORTUNITÀ')
     state['lastRun']=now
     state['rules']={'initialEUR':150,'orderEUR':30,'maxPositions':3,'feePct':.25,'slippagePct':.1,'expiryHours':24,'minExecutedRR':MIN_RR,'positiveNetTargetRequired':True,'execution':'Prima osservazione successiva; ticker corrente con costi, mai livello storico','priority':'Ordine temporale del segnale; simbolo a parità','fx':'Cambio contemporaneo EUR/USDT Binance o EUR/USD Coinbase; nessuna parità presunta','uncertainty':'Prima candela parziale, entrambi i livelli o interruzione dati: chiusura al prezzo osservato, esito separato dalle statistiche certe'}
     state['fxAt']=now;state['eurRates']=eur_rates
+    state['revision']='paper-2.1'
+    state['rules']['maxDrawdownPausePct']=MAX_DRAWDOWN_PCT
     return state
