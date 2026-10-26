@@ -1,13 +1,53 @@
 {
   "version": "paper-2",
   "startedAt": 1792571521.2736304,
-  "lastRun": 1793050250.7587824,
+  "lastRun": 1793051135.8122516,
   "portfolios": {
     "A": {
       "name": "Conferme",
       "cash": 149.4558957011088,
       "positions": {},
-      "pending": {},
+      "pending": {
+        "UNI": {
+          "id": "UNI-1793034900",
+          "symbol": "UNI",
+          "status": "CONFERMATO",
+          "createdAt": 1793034900.0,
+          "checkedThrough": 1793051100.0,
+          "lastSeen": 1793051135.8122516,
+          "lastPrice": 7.107,
+          "eligibleAt": 1793051135.8122516,
+          "entry": 7.107,
+          "stop": 7.004428571428571,
+          "target": 7.405142857142858,
+          "provider": "Binance",
+          "quote": "USDT",
+          "signalSnapshot": {
+            "signal": "PRE-RADAR",
+            "score": 6,
+            "ratio": 0.7210188576730391,
+            "trend": 0.8619471527483435,
+            "trend4h": 2.425025111206769,
+            "relative": 2.0183993565792147,
+            "confirmationFilters": {
+              "trendOrario": true,
+              "volume": false,
+              "forzaBTC": true,
+              "punteggio": false,
+              "prudenza": true
+            }
+          },
+          "confirmationCheck": {
+            "time": 1793051135.8122516,
+            "candleTime": 1793051100.0,
+            "blockers": [],
+            "rr": 2.9066852367687877
+          },
+          "diagnosedThrough": 1793051100.0,
+          "confirmedAt": 1793051100.0,
+          "queuedAt": 1793051135.8122516
+        }
+      },
       "seen": [
         "OP-1792539000:CONFERMATO",
         "ADA-1792567800:CONFERMATO",
@@ -15,7 +55,8 @@
         "BTC-1792568700:CONFERMATO",
         "RENDER-1792575000:CONFERMATO",
         "BTC-1792594800:CONFERMATO",
-        "RENDER-1793027700:CONFERMATO"
+        "RENDER-1793027700:CONFERMATO",
+        "UNI-1793034900:CONFERMATO"
       ],
       "ledger": [
         {
@@ -215,6 +256,18 @@
           "entry": 1.738737,
           "stop": 1.7281428571428572,
           "target": 1.8117142857142858
+        },
+        {
+          "time": 1793051135.8122516,
+          "type": "IN_ATTESA",
+          "version": "paper-2",
+          "revision": "paper-2.1",
+          "symbol": "UNI",
+          "candidateId": "UNI-1793034900",
+          "reason": "Esecuzione dalla prossima osservazione disponibile",
+          "signalAt": 1793051100.0,
+          "stop": 7.004428571428571,
+          "target": 7.405142857142858
         }
       ],
       "equity": 149.4558957011088,
@@ -3060,6 +3113,11 @@
           "time": 1793050250.7587824,
           "equity": 149.4558957011088,
           "cash": 149.4558957011088
+        },
+        {
+          "time": 1793051135.8122516,
+          "equity": 149.4558957011088,
+          "cash": 149.4558957011088
         }
       ],
       "realizedEUR": -0.5441042988911846,
@@ -3069,7 +3127,7 @@
       "uncertainCount": 1,
       "wins": 1,
       "losses": 1,
-      "activity": "IN ATTESA DI CONFERME"
+      "activity": "INGRESSO IN ATTESA"
     },
     "B": {
       "name": "Anticipato",
@@ -9761,6 +9819,11 @@
           "time": 1793050250.7587824,
           "equity": 137.86891661665993,
           "cash": 137.86891661665993
+        },
+        {
+          "time": 1793051135.8122516,
+          "equity": 137.86891661665993,
+          "cash": 137.86891661665993
         }
       ],
       "realizedEUR": -12.13108338334009,
@@ -9823,9 +9886,9 @@
     "uncertainty": "Prima candela parziale, entrambi i livelli o interruzione dati: chiusura al prezzo osservato, esito separato dalle statistiche certe",
     "maxDrawdownPausePct": 8
   },
-  "fxAt": 1793050250.7587824,
+  "fxAt": 1793051135.8122516,
   "eurRates": {
-    "USDT": 0.8933357155619082
+    "USDT": 0.8931761343336907
   },
   "errors": [],
   "revision": "paper-2.1"
