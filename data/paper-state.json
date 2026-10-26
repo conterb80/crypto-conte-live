@@ -1,53 +1,40 @@
 {
   "version": "paper-2",
   "startedAt": 1792571521.2736304,
-  "lastRun": 1793051135.8122516,
+  "lastRun": 1793051507.6169667,
   "portfolios": {
     "A": {
       "name": "Conferme",
-      "cash": 149.4558957011088,
-      "positions": {},
-      "pending": {
+      "cash": 119.4558957011088,
+      "positions": {
         "UNI": {
-          "id": "UNI-1793034900",
-          "symbol": "UNI",
-          "status": "CONFERMATO",
-          "createdAt": 1793034900.0,
-          "checkedThrough": 1793051100.0,
-          "lastSeen": 1793051135.8122516,
-          "lastPrice": 7.107,
-          "eligibleAt": 1793051135.8122516,
-          "entry": 7.107,
-          "stop": 7.004428571428571,
-          "target": 7.405142857142858,
+          "candidateId": "UNI-1793034900",
+          "qty": 4.704013232439217,
+          "costEUR": 30,
+          "openedAt": 1793051507.6169667,
+          "checkedThrough": 1793051100,
           "provider": "Binance",
           "quote": "USDT",
-          "signalSnapshot": {
-            "signal": "PRE-RADAR",
-            "score": 6,
-            "ratio": 0.7210188576730391,
-            "trend": 0.8619471527483435,
-            "trend4h": 2.425025111206769,
-            "relative": 2.0183993565792147,
-            "confirmationFilters": {
-              "trendOrario": true,
-              "volume": false,
-              "forzaBTC": true,
-              "punteggio": false,
-              "prudenza": true
-            }
-          },
-          "confirmationCheck": {
-            "time": 1793051135.8122516,
-            "candleTime": 1793051100.0,
-            "blockers": [],
-            "rr": 2.9066852367687877
-          },
-          "diagnosedThrough": 1793051100.0,
-          "confirmedAt": 1793051100.0,
-          "queuedAt": 1793051135.8122516
+          "entry": 7.123115999999999,
+          "stop": 7.004428571428571,
+          "target": 7.405142857142858,
+          "mark": 29.79073295781526,
+          "markedAt": 1793051507.6169667,
+          "entryCheck": {
+            "entry": 7.123115999999999,
+            "stop": 7.004428571428571,
+            "target": 7.405142857142858,
+            "riskPct": 1.6662290572191676,
+            "rewardPct": 3.9593186063916277,
+            "rr": 2.376215076334993,
+            "targetNetPct": 3.3373774459509065,
+            "stopNetPct": -2.2545151332583946,
+            "eurRate": 0.8930963650977941,
+            "fxAssumption": "Cambio invariato solo per la stima dei livelli netti"
+          }
         }
       },
+      "pending": {},
       "seen": [
         "OP-1792539000:CONFERMATO",
         "ADA-1792567800:CONFERMATO",
@@ -268,11 +255,40 @@
           "signalAt": 1793051100.0,
           "stop": 7.004428571428571,
           "target": 7.405142857142858
+        },
+        {
+          "time": 1793051507.6169667,
+          "type": "ACQUISTO",
+          "version": "paper-2",
+          "revision": "paper-2.1",
+          "symbol": "UNI",
+          "candidateId": "UNI-1793034900",
+          "price": 7.123115999999999,
+          "observedPrice": 7.116,
+          "quote": "USDT",
+          "eurRate": 0.8930963650977941,
+          "costEUR": 30,
+          "feeEUR": 0.07481296758104605,
+          "qty": 4.704013232439217,
+          "entryCheck": {
+            "entry": 7.123115999999999,
+            "stop": 7.004428571428571,
+            "target": 7.405142857142858,
+            "riskPct": 1.6662290572191676,
+            "rewardPct": 3.9593186063916277,
+            "rr": 2.376215076334993,
+            "targetNetPct": 3.3373774459509065,
+            "stopNetPct": -2.2545151332583946,
+            "eurRate": 0.8930963650977941,
+            "fxAssumption": "Cambio invariato solo per la stima dei livelli netti"
+          },
+          "signalAt": 1793051100.0,
+          "queuedAt": 1793051135.8122516
         }
       ],
-      "equity": 149.4558957011088,
+      "equity": 149.24662865892407,
       "peak": 150.33841096385066,
-      "maxDrawdownPct": 0.5870191503847044,
+      "maxDrawdownPct": 0.7262164725082232,
       "history": [
         {
           "time": 1792571521.2736304,
@@ -3118,6 +3134,11 @@
           "time": 1793051135.8122516,
           "equity": 149.4558957011088,
           "cash": 149.4558957011088
+        },
+        {
+          "time": 1793051507.6169667,
+          "equity": 149.24662865892407,
+          "cash": 119.4558957011088
         }
       ],
       "realizedEUR": -0.5441042988911846,
@@ -3127,7 +3148,7 @@
       "uncertainCount": 1,
       "wins": 1,
       "losses": 1,
-      "activity": "INGRESSO IN ATTESA"
+      "activity": "POSIZIONI APERTE"
     },
     "B": {
       "name": "Anticipato",
@@ -9824,6 +9845,11 @@
           "time": 1793051135.8122516,
           "equity": 137.86891661665993,
           "cash": 137.86891661665993
+        },
+        {
+          "time": 1793051507.6169667,
+          "equity": 137.86891661665993,
+          "cash": 137.86891661665993
         }
       ],
       "realizedEUR": -12.13108338334009,
@@ -9886,9 +9912,9 @@
     "uncertainty": "Prima candela parziale, entrambi i livelli o interruzione dati: chiusura al prezzo osservato, esito separato dalle statistiche certe",
     "maxDrawdownPausePct": 8
   },
-  "fxAt": 1793051135.8122516,
+  "fxAt": 1793051507.6169667,
   "eurRates": {
-    "USDT": 0.8931761343336907
+    "USDT": 0.8930963650977941
   },
   "errors": [],
   "revision": "paper-2.1"
