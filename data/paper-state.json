@@ -1,39 +1,12 @@
 {
   "version": "paper-2",
   "startedAt": 1792571521.2736304,
-  "lastRun": 1793031338.6792233,
+  "lastRun": 1793032256.454408,
   "portfolios": {
     "A": {
       "name": "Conferme",
-      "cash": 119.84989124195161,
-      "positions": {
-        "RENDER": {
-          "candidateId": "RENDER-1793027700",
-          "qty": 19.269296852540812,
-          "costEUR": 30,
-          "openedAt": 1793031338.6792233,
-          "checkedThrough": 1793031300,
-          "provider": "Binance",
-          "quote": "USDT",
-          "entry": 1.738737,
-          "stop": 1.7281428571428572,
-          "target": 1.8117142857142858,
-          "mark": 29.79073295781525,
-          "markedAt": 1793031338.6792233,
-          "entryCheck": {
-            "entry": 1.738737,
-            "stop": 1.7281428571428572,
-            "target": 1.8117142857142858,
-            "riskPct": 0.6093010534165187,
-            "rewardPct": 4.1971434273432875,
-            "rr": 6.888455885327539,
-            "targetNetPct": 3.5737794695323233,
-            "stopNetPct": -1.203910247363782,
-            "eurRate": 0.8931761343336907,
-            "fxAssumption": "Cambio invariato solo per la stima dei livelli netti"
-          }
-        }
-      },
+      "cash": 149.4558957011088,
+      "positions": {},
       "pending": {},
       "seen": [
         "OP-1792539000:CONFERMATO",
@@ -216,11 +189,37 @@
           },
           "signalAt": 1793030400.0,
           "queuedAt": 1793030471.985255
+        },
+        {
+          "time": 1793032256.454408,
+          "type": "VENDITA",
+          "version": "paper-2",
+          "revision": "paper-2.1",
+          "symbol": "RENDER",
+          "candidateId": "RENDER-1793027700",
+          "reason": "Invalidazione",
+          "price": 1.725273,
+          "observedPrice": 1.727,
+          "quote": "USDT",
+          "eurRate": 0.8927774305865547,
+          "netEUR": 29.606004459157187,
+          "feeEUR": 0.07420051242896537,
+          "pnlEUR": -0.39399554084281263,
+          "ambiguous": true,
+          "quality": "INCERTO",
+          "uncertainty": [
+            "Livello toccato nella prima candela parziale: prima/dopo ingresso non ricostruibile"
+          ],
+          "openedAt": 1793031338.6792233,
+          "triggerAt": 1793032200.0,
+          "entry": 1.738737,
+          "stop": 1.7281428571428572,
+          "target": 1.8117142857142858
         }
       ],
-      "equity": 149.64062419976688,
+      "equity": 149.4558957011088,
       "peak": 150.33841096385066,
-      "maxDrawdownPct": 0.4641440331916047,
+      "maxDrawdownPct": 0.5870191503847044,
       "history": [
         {
           "time": 1792571521.2736304,
@@ -2951,16 +2950,21 @@
           "time": 1793031338.6792233,
           "equity": 149.64062419976688,
           "cash": 119.84989124195161
+        },
+        {
+          "time": 1793032256.454408,
+          "equity": 149.4558957011088,
+          "cash": 149.4558957011088
         }
       ],
-      "realizedEUR": -0.15010875804837198,
+      "realizedEUR": -0.5441042988911846,
       "certainRealizedEUR": -0.15010875804837198,
-      "uncertainRealizedEUR": 0.0,
+      "uncertainRealizedEUR": -0.39399554084281263,
       "closedCount": 2,
-      "uncertainCount": 0,
+      "uncertainCount": 1,
       "wins": 1,
       "losses": 1,
-      "activity": "POSIZIONI APERTE"
+      "activity": "IN ATTESA DI CONFERME"
     },
     "B": {
       "name": "Anticipato",
@@ -9542,6 +9546,11 @@
           "time": 1793031338.6792233,
           "equity": 137.86891661665993,
           "cash": 137.86891661665993
+        },
+        {
+          "time": 1793032256.454408,
+          "equity": 137.86891661665993,
+          "cash": 137.86891661665993
         }
       ],
       "realizedEUR": -12.13108338334009,
@@ -9604,9 +9613,9 @@
     "uncertainty": "Prima candela parziale, entrambi i livelli o interruzione dati: chiusura al prezzo osservato, esito separato dalle statistiche certe",
     "maxDrawdownPausePct": 8
   },
-  "fxAt": 1793031338.6792233,
+  "fxAt": 1793032256.454408,
   "eurRates": {
-    "USDT": 0.8931761343336907
+    "USDT": 0.8927774305865547
   },
   "errors": [],
   "revision": "paper-2.1"
