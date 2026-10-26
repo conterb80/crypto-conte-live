@@ -1,7 +1,7 @@
 {
   "version": "paper-2",
   "startedAt": 1792571521.2736304,
-  "lastRun": 1792986334.993029,
+  "lastRun": 1792987261.6552968,
   "portfolios": {
     "A": {
       "name": "Conferme",
@@ -2622,6 +2622,11 @@
           "time": 1792986334.993029,
           "equity": 149.8498912419516,
           "cash": 149.8498912419516
+        },
+        {
+          "time": 1792987261.6552968,
+          "equity": 149.8498912419516,
+          "cash": 149.8498912419516
         }
       ],
       "realizedEUR": -0.15010875804837198,
@@ -2635,35 +2640,8 @@
     },
     "B": {
       "name": "Anticipato",
-      "cash": 108.17061732365752,
-      "positions": {
-        "LINK": {
-          "candidateId": "LINK-1792937700",
-          "qty": 2.958663050403343,
-          "costEUR": 30,
-          "openedAt": 1792938647.8111715,
-          "checkedThrough": 1792986300.0,
-          "provider": "Binance",
-          "quote": "USDT",
-          "entry": 11.343332,
-          "stop": 11.291142857142859,
-          "target": 11.65,
-          "mark": 29.693051780096145,
-          "markedAt": 1792986334.993029,
-          "entryCheck": {
-            "entry": 11.343332,
-            "stop": 11.291142857142859,
-            "target": 11.65,
-            "riskPct": 0.46008653239754854,
-            "rewardPct": 2.7035089866011166,
-            "rr": 5.876088075242955,
-            "targetNetPct": 2.0890807620154606,
-            "stopNetPct": -1.0555884087286582,
-            "eurRate": 0.8916629514043692,
-            "fxAssumption": "Cambio invariato solo per la stima dei livelli netti"
-          }
-        }
-      },
+      "cash": 137.86891661665993,
+      "positions": {},
       "pending": {},
       "seen": [
         "OP-1792539000",
@@ -6481,9 +6459,33 @@
           "entry": 0.16546529999999998,
           "stop": 0.16372857142857142,
           "target": 0.171
+        },
+        {
+          "time": 1792987261.6552968,
+          "type": "VENDITA",
+          "version": "paper-2",
+          "revision": "paper-2.1",
+          "symbol": "LINK",
+          "candidateId": "LINK-1792937700",
+          "reason": "Invalidazione",
+          "price": 11.307681,
+          "observedPrice": 11.319,
+          "quote": "USDT",
+          "eurRate": 0.8899172376968942,
+          "netEUR": 29.69829929300241,
+          "feeEUR": 0.07443182780201105,
+          "pnlEUR": -0.30170070699758966,
+          "ambiguous": false,
+          "quality": "OSSERVATO",
+          "uncertainty": [],
+          "openedAt": 1792938647.8111715,
+          "triggerAt": 1792987200.0,
+          "entry": 11.343332,
+          "stop": 11.291142857142859,
+          "target": 11.65
         }
       ],
-      "equity": 137.86366910375367,
+      "equity": 137.86891661665993,
       "peak": 150.0,
       "maxDrawdownPct": 8.568252396520615,
       "history": [
@@ -8956,15 +8958,20 @@
           "time": 1792986334.993029,
           "equity": 137.86366910375367,
           "cash": 108.17061732365752
+        },
+        {
+          "time": 1792987261.6552968,
+          "equity": 137.86891661665993,
+          "cash": 137.86891661665993
         }
       ],
-      "realizedEUR": -11.829382676342501,
-      "certainRealizedEUR": -11.178680243589156,
+      "realizedEUR": -12.13108338334009,
+      "certainRealizedEUR": -11.480380950586746,
       "uncertainRealizedEUR": -0.650702432753345,
-      "closedCount": 25,
+      "closedCount": 26,
       "uncertainCount": 2,
       "wins": 2,
-      "losses": 23,
+      "losses": 24,
       "entryPause": {
         "at": 1792938995.083763,
         "reason": "Diagnosi 25/10: sospesi nuovi anticipi dopo 24 esiti osservati, 1 positivo e 23 negativi. Posizioni già aperte gestite fino all’uscita."
@@ -9018,7 +9025,7 @@
     "uncertainty": "Prima candela parziale, entrambi i livelli o interruzione dati: chiusura al prezzo osservato, esito separato dalle statistiche certe",
     "maxDrawdownPausePct": 8
   },
-  "fxAt": 1792986334.993029,
+  "fxAt": 1792987261.6552968,
   "eurRates": {
     "USDT": 0.8899172376968942
   },
