@@ -1,7 +1,7 @@
 {
   "version": "paper-2",
   "startedAt": 1792571521.2736304,
-  "lastRun": 1793165450.6409032,
+  "lastRun": 1793166336.9043853,
   "portfolios": {
     "A": {
       "name": "Conferme",
@@ -12,14 +12,14 @@
           "qty": 295.5310073495091,
           "costEUR": 30,
           "openedAt": 1793161850.388445,
-          "checkedThrough": 1793165400.0,
+          "checkedThrough": 1793166300.0,
           "provider": "Binance",
           "quote": "USDT",
           "entry": 0.11281269999999999,
           "stop": 0.11217142857142857,
           "target": 0.11495714285714287,
-          "mark": 29.8225202684865,
-          "markedAt": 1793165450.6409032,
+          "mark": 29.740535108412676,
+          "markedAt": 1793166336.9043853,
           "entryCheck": {
             "entry": 0.11281269999999999,
             "stop": 0.11217142857142857,
@@ -34,7 +34,47 @@
           }
         }
       },
-      "pending": {},
+      "pending": {
+        "UNI": {
+          "id": "UNI-1793163600",
+          "symbol": "UNI",
+          "status": "CONFERMATO",
+          "createdAt": 1793163600.0,
+          "checkedThrough": 1793166300.0,
+          "lastSeen": 1793166336.9043853,
+          "lastPrice": 7.177,
+          "eligibleAt": 1793166336.9043853,
+          "entry": 7.177,
+          "stop": 7.114285714285715,
+          "target": 7.353428571428571,
+          "provider": "Binance",
+          "quote": "USDT",
+          "signalSnapshot": {
+            "signal": "PRE-RADAR",
+            "score": 5,
+            "ratio": 1.1144536590941585,
+            "trend": 0.841042893187538,
+            "trend4h": 1.323943661971838,
+            "relative": 1.0182238556728063,
+            "confirmationFilters": {
+              "trendOrario": true,
+              "volume": false,
+              "forzaBTC": true,
+              "punteggio": false,
+              "prudenza": true
+            }
+          },
+          "confirmationCheck": {
+            "time": 1793166336.9043853,
+            "candleTime": 1793166300.0,
+            "blockers": [],
+            "rr": 2.813211845102548
+          },
+          "diagnosedThrough": 1793166300.0,
+          "confirmedAt": 1793166300.0,
+          "queuedAt": 1793166336.9043853
+        }
+      },
       "seen": [
         "OP-1792539000:CONFERMATO",
         "ADA-1792567800:CONFERMATO",
@@ -47,7 +87,8 @@
         "NEAR-1793137500:CONFERMATO",
         "DOGE-1793152800:CONFERMATO",
         "AVAX-1793159100:CONFERMATO",
-        "OP-1793155500:CONFERMATO"
+        "OP-1793155500:CONFERMATO",
+        "UNI-1793163600:CONFERMATO"
       ],
       "ledger": [
         {
@@ -472,9 +513,21 @@
           },
           "signalAt": 1793160900.0,
           "queuedAt": 1793160936.500274
+        },
+        {
+          "time": 1793166336.9043853,
+          "type": "IN_ATTESA",
+          "version": "paper-2",
+          "revision": "paper-2.1",
+          "symbol": "UNI",
+          "candidateId": "UNI-1793163600",
+          "reason": "Esecuzione dalla prossima osservazione disponibile",
+          "signalAt": 1793166300.0,
+          "stop": 7.114285714285715,
+          "target": 7.353428571428571
         }
       ],
-      "equity": 148.74913530331295,
+      "equity": 148.66715014323913,
       "peak": 150.33841096385066,
       "maxDrawdownPct": 1.1741564797939086,
       "history": [
@@ -3991,6 +4044,11 @@
         {
           "time": 1793165450.6409032,
           "equity": 148.74913530331295,
+          "cash": 118.92661503482645
+        },
+        {
+          "time": 1793166336.9043853,
+          "equity": 148.66715014323913,
           "cash": 118.92661503482645
         }
       ],
@@ -11368,6 +11426,11 @@
           "time": 1793165450.6409032,
           "equity": 137.86891661665993,
           "cash": 137.86891661665993
+        },
+        {
+          "time": 1793166336.9043853,
+          "equity": 137.86891661665993,
+          "cash": 137.86891661665993
         }
       ],
       "realizedEUR": -12.13108338334009,
@@ -11430,9 +11493,9 @@
     "uncertainty": "Prima candela parziale, entrambi i livelli o interruzione dati: chiusura al prezzo osservato, esito separato dalle statistiche certe",
     "maxDrawdownPausePct": 8
   },
-  "fxAt": 1793165450.6409032,
+  "fxAt": 1793166336.9043853,
   "eurRates": {
-    "USDT": 0.8977466558937068
+    "USDT": 0.8976660682226211
   },
   "errors": [],
   "revision": "paper-2.1"
