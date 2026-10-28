@@ -1,13 +1,92 @@
 {
   "version": "paper-2",
   "startedAt": 1792571521.2736304,
-  "lastRun": 1793218537.031095,
+  "lastRun": 1793219452.190814,
   "portfolios": {
     "A": {
       "name": "Conferme",
       "cash": 147.8840108041447,
       "positions": {},
-      "pending": {},
+      "pending": {
+        "ARB": {
+          "id": "ARB-1793217600",
+          "symbol": "ARB",
+          "status": "CONFERMATO",
+          "createdAt": 1793217600.0,
+          "checkedThrough": 1793219400.0,
+          "lastSeen": 1793219452.190814,
+          "lastPrice": 0.1738,
+          "eligibleAt": 1793219452.190814,
+          "entry": 0.1738,
+          "stop": 0.17115714285714287,
+          "target": 0.1814857142857143,
+          "provider": "Binance",
+          "quote": "USDT",
+          "signalSnapshot": {
+            "signal": "PRE-RADAR",
+            "score": 6,
+            "ratio": 1.0811857592047853,
+            "trend": 1.6889924286546343,
+            "trend4h": 4.052443384982118,
+            "relative": 2.770978592738804,
+            "confirmationFilters": {
+              "trendOrario": true,
+              "volume": false,
+              "forzaBTC": true,
+              "punteggio": false,
+              "prudenza": true
+            }
+          },
+          "confirmationCheck": {
+            "time": 1793219452.190814,
+            "candleTime": 1793219400.0,
+            "blockers": [],
+            "rr": 2.9081081081081135
+          },
+          "diagnosedThrough": 1793219400.0,
+          "confirmedAt": 1793219400.0,
+          "queuedAt": 1793219452.190814
+        },
+        "SUI": {
+          "id": "SUI-1793218500",
+          "symbol": "SUI",
+          "status": "CONFERMATO",
+          "createdAt": 1793218500.0,
+          "checkedThrough": 1793219400.0,
+          "lastSeen": 1793219452.190814,
+          "lastPrice": 0.9399,
+          "eligibleAt": 1793219452.190814,
+          "entry": 0.9399,
+          "stop": 0.9323714285714285,
+          "target": 0.9816571428571428,
+          "provider": "Binance",
+          "quote": "USDT",
+          "signalSnapshot": {
+            "signal": "SETUP",
+            "score": 7,
+            "ratio": 5.027594013550237,
+            "trend": 0.7967704238818651,
+            "trend4h": 2.5175580767152983,
+            "relative": 1.6427972788168876,
+            "confirmationFilters": {
+              "trendOrario": true,
+              "volume": true,
+              "forzaBTC": true,
+              "punteggio": true,
+              "prudenza": true
+            }
+          },
+          "confirmationCheck": {
+            "time": 1793219452.190814,
+            "candleTime": 1793219400.0,
+            "blockers": [],
+            "rr": 5.5464895635673495
+          },
+          "diagnosedThrough": 1793219400.0,
+          "confirmedAt": 1793219400.0,
+          "queuedAt": 1793219452.190814
+        }
+      },
       "seen": [
         "OP-1792539000:CONFERMATO",
         "ADA-1792567800:CONFERMATO",
@@ -22,7 +101,9 @@
         "AVAX-1793159100:CONFERMATO",
         "OP-1793155500:CONFERMATO",
         "UNI-1793163600:CONFERMATO",
-        "SOL-1793210400:CONFERMATO"
+        "SOL-1793210400:CONFERMATO",
+        "ARB-1793217600:CONFERMATO",
+        "SUI-1793218500:CONFERMATO"
       ],
       "ledger": [
         {
@@ -601,6 +682,30 @@
           "entry": 101.8017,
           "stop": 101.01,
           "target": 103.69
+        },
+        {
+          "time": 1793219452.190814,
+          "type": "IN_ATTESA",
+          "version": "paper-2",
+          "revision": "paper-2.1",
+          "symbol": "ARB",
+          "candidateId": "ARB-1793217600",
+          "reason": "Esecuzione dalla prossima osservazione disponibile",
+          "signalAt": 1793219400.0,
+          "stop": 0.17115714285714287,
+          "target": 0.1814857142857143
+        },
+        {
+          "time": 1793219452.190814,
+          "type": "IN_ATTESA",
+          "version": "paper-2",
+          "revision": "paper-2.1",
+          "symbol": "SUI",
+          "candidateId": "SUI-1793218500",
+          "reason": "Esecuzione dalla prossima osservazione disponibile",
+          "signalAt": 1793219400.0,
+          "stop": 0.9323714285714285,
+          "target": 0.9816571428571428
         }
       ],
       "equity": 147.8840108041447,
@@ -4431,6 +4536,11 @@
           "time": 1793218537.031095,
           "equity": 147.8840108041447,
           "cash": 147.8840108041447
+        },
+        {
+          "time": 1793219452.190814,
+          "equity": 147.8840108041447,
+          "cash": 147.8840108041447
         }
       ],
       "realizedEUR": -2.1159891958552848,
@@ -4440,7 +4550,7 @@
       "uncertainCount": 1,
       "wins": 3,
       "losses": 4,
-      "activity": "IN ATTESA DI CONFERME"
+      "activity": "INGRESSO IN ATTESA"
     },
     "B": {
       "name": "Anticipato",
@@ -12117,6 +12227,11 @@
           "time": 1793218537.031095,
           "equity": 137.86891661665993,
           "cash": 137.86891661665993
+        },
+        {
+          "time": 1793219452.190814,
+          "equity": 137.86891661665993,
+          "cash": 137.86891661665993
         }
       ],
       "realizedEUR": -12.13108338334009,
@@ -12179,9 +12294,9 @@
     "uncertainty": "Prima candela parziale, entrambi i livelli o interruzione dati: chiusura al prezzo osservato, esito separato dalle statistiche certe",
     "maxDrawdownPausePct": 8
   },
-  "fxAt": 1793218537.031095,
+  "fxAt": 1793219452.190814,
   "eurRates": {
-    "USDT": 0.8954956568460642
+    "USDT": 0.8959770629871875
   },
   "errors": [],
   "revision": "paper-2.1"
