@@ -1,25 +1,25 @@
 {
   "schema": 1,
   "version": "LIVE-4.0.0",
-  "generatedAt": 1793151519.3638356,
-  "lastFullSuccess": 1793151519.3638356,
-  "runNumber": 1484,
+  "generatedAt": 1793151938.268207,
+  "lastFullSuccess": 1793151938.268207,
+  "runNumber": 1485,
   "health": "ok",
   "coverage": 20,
   "total": 20,
   "intervalMinutes": 15,
   "errors": {},
-  "runTrigger": "schedule",
-  "lastScheduledSuccess": 1793151519.3638356,
-  "runUrl": "https://github.com/conterb80/crypto-conte-live/actions/runs/40616256504",
+  "runTrigger": "cron-job.org",
+  "lastScheduledSuccess": 1793151938.268207,
+  "runUrl": "https://github.com/conterb80/crypto-conte-live/actions/runs/40616937370",
   "markets": [
     {
       "symbol": "BTC",
       "provider": "Binance",
       "quote": "USDT",
-      "price": 80789.73,
-      "time": 1793151519.3638356,
-      "candleTime": 1793151000.0,
+      "price": 80964.79,
+      "time": 1793151938.268207,
+      "candleTime": 1793151900.0,
       "confirmationFilters": {
         "trendOrario": true,
         "volume": false,
@@ -28,13 +28,6 @@
         "prudenza": true
       },
       "candles": [
-        {
-          "t": 1793064600.0,
-          "o": 80176.61,
-          "h": 80379.37,
-          "l": 80102.68,
-          "c": 80294.53
-        },
         {
           "t": 1793065500.0,
           "o": 80294.54,
@@ -699,46 +692,46 @@
           "h": 80872.95,
           "l": 80657.87,
           "c": 80789.73
+        },
+        {
+          "t": 1793151000.0,
+          "o": 80789.74,
+          "h": 80996.99,
+          "l": 80762.79,
+          "c": 80964.79
         }
       ],
       "stale": false,
       "signal": "OSSERVA",
-      "score": 3,
+      "score": 4,
       "qualified": false,
-      "ratio": 0.971049138394576,
-      "trend": 0.004604757680204408,
-      "trend4h": 0.05763953591626514,
-      "trend24h": 0.7647118031056666,
+      "ratio": 0.9782182904601682,
+      "trend": 0.2684772378263256,
+      "trend4h": 0.009437091103126072,
+      "trend24h": 0.8347517570624019,
       "relative": 0.0,
-      "entry": 80789.73,
-      "stop": 80304.99162,
-      "target": 81759.20676,
-      "rr": 2.00000000000001,
-      "reason": "Trend orario positivo; Scambi sufficienti",
+      "entry": 80964.79,
+      "stop": 80479.00125999999,
+      "target": 81936.36747999999,
+      "rr": 1.9999999999999851,
+      "reason": "Trend orario positivo; Movimento moderato; Scambi sufficienti",
       "targetMethod": "Massimo delle 24 ore oppure proiezione di 2 volte il rischio; non è una previsione"
     },
     {
       "symbol": "ETH",
       "provider": "Binance",
       "quote": "USDT",
-      "price": 2348.73,
-      "time": 1793151519.3638356,
-      "candleTime": 1793151000.0,
+      "price": 2358.24,
+      "time": 1793151938.268207,
+      "candleTime": 1793151900.0,
       "confirmationFilters": {
         "trendOrario": true,
-        "volume": false,
+        "volume": true,
         "forzaBTC": false,
         "punteggio": false,
         "prudenza": true
       },
       "candles": [
-        {
-          "t": 1793064600.0,
-          "o": 2324.7,
-          "h": 2333.97,
-          "l": 2321.05,
-          "c": 2329.52
-        },
         {
           "t": 1793065500.0,
           "o": 2329.51,
@@ -1403,46 +1396,76 @@
           "h": 2352.39,
           "l": 2342.56,
           "c": 2348.73
+        },
+        {
+          "t": 1793151000.0,
+          "o": 2348.72,
+          "h": 2359.53,
+          "l": 2347.89,
+          "c": 2358.24
         }
       ],
       "stale": false,
-      "signal": "OSSERVA",
-      "score": 3,
+      "signal": "PRE-RADAR",
+      "score": 6,
       "qualified": false,
-      "ratio": 1.018268048858912,
-      "trend": 0.08223964547469098,
-      "trend4h": 0.24284689975417884,
-      "trend24h": 1.033681765389094,
-      "relative": 0.1852073638379137,
-      "entry": 2348.73,
-      "stop": 2334.63762,
-      "target": 2376.91476,
-      "rr": 2.0000000000000067,
-      "reason": "Trend orario positivo; Scambi sufficienti",
-      "targetMethod": "Massimo delle 24 ore oppure proiezione di 2 volte il rischio; non è una previsione"
+      "ratio": 1.7312905673487562,
+      "trend": 0.489613294982405,
+      "trend4h": 0.2542235977315288,
+      "trend24h": 1.2328720079672895,
+      "relative": 0.24478650662840273,
+      "entry": 2358.24,
+      "stop": 2344.0905599999996,
+      "target": 2386.5388799999996,
+      "rr": 1.999999999999988,
+      "reason": "Trend orario positivo; Volumi in aumento; Movimento moderato; Scambi sufficienti",
+      "targetMethod": "Massimo delle 24 ore oppure proiezione di 2 volte il rischio; non è una previsione",
+      "candidate": {
+        "id": "ETH-1793151900",
+        "symbol": "ETH",
+        "status": "OPPORTUNITA",
+        "createdAt": 1793151900.0,
+        "checkedThrough": 1793151900.0,
+        "lastSeen": 1793151938.268207,
+        "lastPrice": 2358.24,
+        "eligibleAt": 1793151938.268207,
+        "entry": 2358.24,
+        "stop": 2344.0905599999996,
+        "target": 2386.5388799999996,
+        "provider": "Binance",
+        "quote": "USDT",
+        "signalSnapshot": {
+          "signal": "PRE-RADAR",
+          "score": 6,
+          "ratio": 1.7312905673487562,
+          "trend": 0.489613294982405,
+          "trend4h": 0.2542235977315288,
+          "relative": 0.24478650662840273,
+          "confirmationFilters": {
+            "trendOrario": true,
+            "volume": true,
+            "forzaBTC": false,
+            "punteggio": false,
+            "prudenza": true
+          }
+        }
+      }
     },
     {
       "symbol": "SOL",
       "provider": "Binance",
       "quote": "USDT",
-      "price": 101.34,
-      "time": 1793151519.3638356,
-      "candleTime": 1793151000.0,
+      "price": 101.65,
+      "time": 1793151938.268207,
+      "candleTime": 1793151900.0,
       "confirmationFilters": {
         "trendOrario": false,
         "volume": false,
-        "forzaBTC": true,
+        "forzaBTC": false,
         "punteggio": false,
         "prudenza": true
       },
       "candles": [
-        {
-          "t": 1793064600.0,
-          "o": 100.73,
-          "h": 101.04,
-          "l": 100.58,
-          "c": 100.88
-        },
         {
           "t": 1793065500.0,
           "o": 100.89,
@@ -2107,31 +2130,38 @@
           "h": 101.51,
           "l": 101.14,
           "c": 101.34
+        },
+        {
+          "t": 1793151000.0,
+          "o": 101.34,
+          "h": 101.77,
+          "l": 101.31,
+          "c": 101.65
         }
       ],
       "stale": false,
       "signal": "OSSERVA",
       "score": 2,
       "qualified": false,
-      "ratio": 1.3366914345389531,
-      "trend": 0.06912214871137579,
-      "trend4h": 0.35650623885918886,
-      "trend24h": 0.6055792713193675,
-      "relative": 0.2988667029429237,
-      "entry": 101.34,
-      "stop": 100.73196,
-      "target": 102.55608000000001,
-      "rr": 2.0000000000000084,
-      "reason": "Forza rispetto a BTC; Scambi sufficienti",
+      "ratio": 1.3089383931084677,
+      "trend": 0.37523452157599557,
+      "trend4h": 0.137917446557001,
+      "trend24h": 0.7632831086439529,
+      "relative": 0.12848035545387493,
+      "entry": 101.65,
+      "stop": 101.04010000000001,
+      "target": 102.86980000000001,
+      "rr": 2.0000000000000107,
+      "reason": "Movimento moderato; Scambi sufficienti",
       "targetMethod": "Massimo delle 24 ore oppure proiezione di 2 volte il rischio; non è una previsione",
       "candidate": {
         "id": "SOL-1793115000",
         "symbol": "SOL",
         "status": "OPPORTUNITA",
         "createdAt": 1793115000.0,
-        "checkedThrough": 1793151000.0,
-        "lastSeen": 1793151519.3638356,
-        "lastPrice": 101.34,
+        "checkedThrough": 1793151900.0,
+        "lastSeen": 1793151938.268207,
+        "lastPrice": 101.65,
         "eligibleAt": 1793115052.596665,
         "entry": 101.05,
         "stop": 100.05571428571427,
@@ -2154,41 +2184,35 @@
           }
         },
         "confirmationCheck": {
-          "time": 1793151050.2828891,
-          "candleTime": 1793151000.0,
+          "time": 1793151938.268207,
+          "candleTime": 1793151900.0,
           "blockers": [
             "trendOrario",
             "volume",
+            "forzaBTC",
             "punteggio",
             "rapportoLivelli"
           ],
-          "rr": 1.322580645161273
+          "rr": 0.8709677419354716
         },
-        "diagnosedThrough": 1793151000.0
+        "diagnosedThrough": 1793151900.0
       }
     },
     {
       "symbol": "XRP",
       "provider": "Binance",
       "quote": "USDT",
-      "price": 1.3299,
-      "time": 1793151519.3638356,
-      "candleTime": 1793151000.0,
+      "price": 1.3368,
+      "time": 1793151938.268207,
+      "candleTime": 1793151900.0,
       "confirmationFilters": {
         "trendOrario": true,
-        "volume": false,
+        "volume": true,
         "forzaBTC": true,
-        "punteggio": false,
+        "punteggio": true,
         "prudenza": true
       },
       "candles": [
-        {
-          "t": 1793064600.0,
-          "o": 1.3063,
-          "h": 1.3101,
-          "l": 1.304,
-          "c": 1.3071
-        },
         {
           "t": 1793065500.0,
           "o": 1.3072,
@@ -2853,31 +2877,38 @@
           "h": 1.3325,
           "l": 1.3262,
           "c": 1.3299
+        },
+        {
+          "t": 1793151000.0,
+          "o": 1.3298,
+          "h": 1.3371,
+          "l": 1.3293,
+          "c": 1.3368
         }
       ],
       "stale": false,
-      "signal": "PRE-RADAR",
-      "score": 5,
-      "qualified": false,
-      "ratio": 1.2236154536223662,
-      "trend": 0.15815634884772667,
-      "trend4h": 0.8875739644970349,
-      "trend24h": 1.8066294113143977,
-      "relative": 0.8299344285807697,
-      "entry": 1.3299,
-      "stop": 1.3219206000000001,
-      "target": 1.3458588,
-      "rr": 1.9999999999999922,
-      "reason": "Trend orario positivo; Trend 4 ore positivo; Forza rispetto a BTC; Scambi sufficienti",
+      "signal": "SETUP",
+      "score": 8,
+      "qualified": true,
+      "ratio": 1.5180889761676921,
+      "trend": 0.7612874048390728,
+      "trend4h": 0.9362730292962862,
+      "trend24h": 2.272205646086767,
+      "relative": 0.9268359381931601,
+      "entry": 1.3368,
+      "stop": 1.328657142857143,
+      "target": 1.3530857142857142,
+      "rr": 2.000000000000004,
+      "reason": "Trend orario positivo; Trend 4 ore positivo; Volumi in aumento; Forza rispetto a BTC; Movimento moderato; Scambi sufficienti",
       "targetMethod": "Massimo delle 24 ore oppure proiezione di 2 volte il rischio; non è una previsione",
       "candidate": {
         "id": "XRP-1793146500",
         "symbol": "XRP",
         "status": "OPPORTUNITA",
         "createdAt": 1793146500.0,
-        "checkedThrough": 1793151000.0,
-        "lastSeen": 1793151519.3638356,
-        "lastPrice": 1.3299,
+        "checkedThrough": 1793151900.0,
+        "lastSeen": 1793151938.268207,
+        "lastPrice": 1.3368,
         "eligibleAt": 1793146537.978262,
         "entry": 1.3301,
         "stop": 1.3218857142857143,
@@ -2900,24 +2931,23 @@
           }
         },
         "confirmationCheck": {
-          "time": 1793151050.2828891,
-          "candleTime": 1793151000.0,
+          "time": 1793151938.268207,
+          "candleTime": 1793151900.0,
           "blockers": [
-            "volume",
-            "punteggio"
+            "rapportoLivelli"
           ],
-          "rr": 2.0748663101603917
+          "rr": 0.652298850574707
         },
-        "diagnosedThrough": 1793151000.0
+        "diagnosedThrough": 1793151900.0
       }
     },
     {
       "symbol": "LINK",
       "provider": "Binance",
       "quote": "USDT",
-      "price": 11.596,
-      "time": 1793151519.3638356,
-      "candleTime": 1793151000.0,
+      "price": 11.634,
+      "time": 1793151938.268207,
+      "candleTime": 1793151900.0,
       "confirmationFilters": {
         "trendOrario": true,
         "volume": false,
@@ -2926,13 +2956,6 @@
         "prudenza": true
       },
       "candles": [
-        {
-          "t": 1793064600.0,
-          "o": 11.37,
-          "h": 11.401,
-          "l": 11.347,
-          "c": 11.377
-        },
         {
           "t": 1793065500.0,
           "o": 11.377,
@@ -3597,21 +3620,28 @@
           "h": 11.624,
           "l": 11.584,
           "c": 11.596
+        },
+        {
+          "t": 1793151000.0,
+          "o": 11.596,
+          "h": 11.641,
+          "l": 11.587,
+          "c": 11.634
         }
       ],
       "stale": false,
       "signal": "PRE-RADAR",
       "score": 6,
       "qualified": false,
-      "ratio": 1.2136352562240889,
-      "trend": 0.27672085783465583,
-      "trend4h": 1.1602547326180046,
-      "trend24h": 1.987686895338614,
-      "relative": 1.1026151967017395,
-      "entry": 11.596,
-      "stop": 11.526424,
-      "target": 11.735152,
-      "rr": 1.9999999999999896,
+      "ratio": 1.1569588586240318,
+      "trend": 0.4923555325213824,
+      "trend4h": 0.7708964919878714,
+      "trend24h": 2.258943482464626,
+      "relative": 0.7614594008847453,
+      "entry": 11.634,
+      "stop": 11.564196,
+      "target": 11.773608000000001,
+      "rr": 2.000000000000012,
       "reason": "Trend orario positivo; Trend 4 ore positivo; Forza rispetto a BTC; Movimento moderato; Scambi sufficienti",
       "targetMethod": "Massimo delle 24 ore oppure proiezione di 2 volte il rischio; non è una previsione",
       "candidate": {
@@ -3619,9 +3649,9 @@
         "symbol": "LINK",
         "status": "OPPORTUNITA",
         "createdAt": 1793137500.0,
-        "checkedThrough": 1793151000.0,
-        "lastSeen": 1793151519.3638356,
-        "lastPrice": 11.596,
+        "checkedThrough": 1793151900.0,
+        "lastSeen": 1793151938.268207,
+        "lastPrice": 11.634,
         "eligibleAt": 1793137535.560846,
         "entry": 11.545,
         "stop": 11.462857142857143,
@@ -3644,40 +3674,33 @@
           }
         },
         "confirmationCheck": {
-          "time": 1793151050.2828891,
-          "candleTime": 1793151000.0,
+          "time": 1793151938.268207,
+          "candleTime": 1793151900.0,
           "blockers": [
             "volume",
             "punteggio",
             "rapportoLivelli"
           ],
-          "rr": 0.8508583690987116
+          "rr": 0.43989983305508973
         },
-        "diagnosedThrough": 1793151000.0
+        "diagnosedThrough": 1793151900.0
       }
     },
     {
       "symbol": "AVAX",
       "provider": "Binance",
       "quote": "USDT",
-      "price": 8.981,
-      "time": 1793151519.3638356,
-      "candleTime": 1793151000.0,
+      "price": 9.024,
+      "time": 1793151938.268207,
+      "candleTime": 1793151900.0,
       "confirmationFilters": {
         "trendOrario": false,
-        "volume": false,
+        "volume": true,
         "forzaBTC": true,
         "punteggio": false,
         "prudenza": true
       },
       "candles": [
-        {
-          "t": 1793064600.0,
-          "o": 8.921,
-          "h": 8.941,
-          "l": 8.908,
-          "c": 8.929
-        },
         {
           "t": 1793065500.0,
           "o": 8.928,
@@ -4342,31 +4365,38 @@
           "h": 9.0,
           "l": 8.958,
           "c": 8.981
+        },
+        {
+          "t": 1793151000.0,
+          "o": 8.982,
+          "h": 9.041,
+          "l": 8.98,
+          "c": 9.024
         }
       ],
       "stale": false,
-      "signal": "OSSERVA",
-      "score": 4,
+      "signal": "PRE-RADAR",
+      "score": 6,
       "qualified": false,
-      "ratio": 1.131462533436228,
-      "trend": 0.2455631208840403,
-      "trend4h": 1.274244474515096,
-      "trend24h": 0.6725703396480265,
-      "relative": 1.216604938598831,
-      "entry": 8.981,
-      "stop": 8.927,
-      "target": 9.089,
-      "rr": 2.0,
-      "reason": "Trend 4 ore positivo; Forza rispetto a BTC; Movimento moderato; Scambi sufficienti",
+      "ratio": 3.2880065492263717,
+      "trend": 0.646888244479138,
+      "trend4h": 1.0186947274152036,
+      "trend24h": 1.0639489304513194,
+      "relative": 1.0092576363120775,
+      "entry": 9.024,
+      "stop": 8.965714285714284,
+      "target": 9.140571428571429,
+      "rr": 2.000000000000009,
+      "reason": "Trend 4 ore positivo; Volumi in aumento; Forza rispetto a BTC; Movimento moderato; Scambi sufficienti",
       "targetMethod": "Massimo delle 24 ore oppure proiezione di 2 volte il rischio; non è una previsione",
       "candidate": {
         "id": "AVAX-1793115000",
         "symbol": "AVAX",
         "status": "OPPORTUNITA",
         "createdAt": 1793115000.0,
-        "checkedThrough": 1793151000.0,
-        "lastSeen": 1793151519.3638356,
-        "lastPrice": 8.981,
+        "checkedThrough": 1793151900.0,
+        "lastSeen": 1793151938.268207,
+        "lastPrice": 9.024,
         "eligibleAt": 1793115052.596665,
         "entry": 8.86,
         "stop": 8.750142857142857,
@@ -4389,26 +4419,25 @@
           }
         },
         "confirmationCheck": {
-          "time": 1793151050.2828891,
-          "candleTime": 1793151000.0,
+          "time": 1793151938.268207,
+          "candleTime": 1793151900.0,
           "blockers": [
             "trendOrario",
-            "volume",
             "punteggio",
             "rapportoLivelli"
           ],
-          "rr": 0.4275990099009875
+          "rr": 0.20344287949921896
         },
-        "diagnosedThrough": 1793151000.0
+        "diagnosedThrough": 1793151900.0
       }
     },
     {
       "symbol": "NEAR",
       "provider": "Binance",
       "quote": "USDT",
-      "price": 4.657,
-      "time": 1793151519.3638356,
-      "candleTime": 1793151000.0,
+      "price": 4.697,
+      "time": 1793151938.268207,
+      "candleTime": 1793151900.0,
       "confirmationFilters": {
         "trendOrario": true,
         "volume": false,
@@ -4417,13 +4446,6 @@
         "prudenza": true
       },
       "candles": [
-        {
-          "t": 1793064600.0,
-          "o": 4.478,
-          "h": 4.523,
-          "l": 4.467,
-          "c": 4.503
-        },
         {
           "t": 1793065500.0,
           "o": 4.504,
@@ -5088,31 +5110,38 @@
           "h": 4.673,
           "l": 4.635,
           "c": 4.657
+        },
+        {
+          "t": 1793151000.0,
+          "o": 4.657,
+          "h": 4.706,
+          "l": 4.65,
+          "c": 4.697
         }
       ],
       "stale": false,
-      "signal": "OSSERVA",
-      "score": 5,
+      "signal": "PRE-RADAR",
+      "score": 6,
       "qualified": false,
-      "ratio": 0.31642214582047823,
-      "trend": -0.29972168700492796,
-      "trend4h": 0.822688893699941,
-      "trend24h": 4.0205494750949144,
-      "relative": 0.7650493577836759,
-      "entry": 4.657,
-      "stop": 4.5928571428571425,
-      "target": 4.807,
-      "rr": 2.3385300668151507,
-      "reason": "Trend orario positivo; Trend 4 ore positivo; Forza rispetto a BTC; Scambi sufficienti",
+      "ratio": 0.46739889809030755,
+      "trend": 0.513588701048584,
+      "trend4h": 0.42762454564893027,
+      "trend24h": 4.308238951809895,
+      "relative": 0.4181874545458042,
+      "entry": 4.697,
+      "stop": 4.631142857142857,
+      "target": 4.828714285714286,
+      "rr": 1.999999999999998,
+      "reason": "Trend orario positivo; Trend 4 ore positivo; Forza rispetto a BTC; Movimento moderato; Scambi sufficienti",
       "targetMethod": "Massimo delle 24 ore oppure proiezione di 2 volte il rischio; non è una previsione",
       "candidate": {
         "id": "NEAR-1793137500",
         "symbol": "NEAR",
         "status": "CONFERMATO",
         "createdAt": 1793137500.0,
-        "checkedThrough": 1793151000.0,
-        "lastSeen": 1793151519.3638356,
-        "lastPrice": 4.657,
+        "checkedThrough": 1793151900.0,
+        "lastSeen": 1793151938.268207,
+        "lastPrice": 4.697,
         "eligibleAt": 1793139336.1953707,
         "entry": 4.675,
         "stop": 4.603714285714285,
@@ -5148,24 +5177,17 @@
       "symbol": "ADA",
       "provider": "Binance",
       "quote": "USDT",
-      "price": 0.206,
-      "time": 1793151519.3638356,
-      "candleTime": 1793151000.0,
+      "price": 0.2068,
+      "time": 1793151938.268207,
+      "candleTime": 1793151900.0,
       "confirmationFilters": {
         "trendOrario": false,
-        "volume": false,
+        "volume": true,
         "forzaBTC": true,
         "punteggio": false,
         "prudenza": true
       },
       "candles": [
-        {
-          "t": 1793064600.0,
-          "o": 0.2061,
-          "h": 0.2063,
-          "l": 0.2056,
-          "c": 0.2056
-        },
         {
           "t": 1793065500.0,
           "o": 0.2055,
@@ -5830,31 +5852,38 @@
           "h": 0.2066,
           "l": 0.2057,
           "c": 0.206
+        },
+        {
+          "t": 1793151000.0,
+          "o": 0.206,
+          "h": 0.207,
+          "l": 0.2059,
+          "c": 0.2068
         }
       ],
       "stale": false,
-      "signal": "OSSERVA",
-      "score": 4,
+      "signal": "PRE-RADAR",
+      "score": 5,
       "qualified": false,
-      "ratio": 0.5732122544461135,
-      "trend": 0.24330900243310083,
-      "trend4h": 0.6350757205666913,
-      "trend24h": -0.048520135856389146,
-      "relative": 0.5774361846504261,
-      "entry": 0.206,
-      "stop": 0.20468571428571428,
-      "target": 0.2086285714285714,
-      "rr": 1.999999999999994,
-      "reason": "Trend 4 ore positivo; Forza rispetto a BTC; Movimento moderato; Scambi sufficienti",
+      "ratio": 2.484671924986912,
+      "trend": 0.5836575875486361,
+      "trend4h": 0.3883495145631244,
+      "trend24h": 0.5836575875486361,
+      "relative": 0.3789124234599983,
+      "entry": 0.2068,
+      "stop": 0.20545714285714287,
+      "target": 0.2094857142857143,
+      "rr": 2.0000000000000058,
+      "reason": "Volumi in aumento; Forza rispetto a BTC; Movimento moderato; Scambi sufficienti",
       "targetMethod": "Massimo delle 24 ore oppure proiezione di 2 volte il rischio; non è una previsione",
       "candidate": {
         "id": "ADA-1793115000",
         "symbol": "ADA",
         "status": "OPPORTUNITA",
         "createdAt": 1793115000.0,
-        "checkedThrough": 1793151000.0,
-        "lastSeen": 1793151519.3638356,
-        "lastPrice": 0.206,
+        "checkedThrough": 1793151900.0,
+        "lastSeen": 1793151938.268207,
+        "lastPrice": 0.2068,
         "eligibleAt": 1793115052.596665,
         "entry": 0.2058,
         "stop": 0.20332857142857144,
@@ -5877,41 +5906,33 @@
           }
         },
         "confirmationCheck": {
-          "time": 1793151050.2828891,
-          "candleTime": 1793151000.0,
+          "time": 1793151938.268207,
+          "candleTime": 1793151900.0,
           "blockers": [
             "trendOrario",
-            "volume",
             "punteggio",
             "rapportoLivelli"
           ],
-          "rr": 1.7754010695187497
+          "rr": 1.1358024691358093
         },
-        "diagnosedThrough": 1793151000.0
+        "diagnosedThrough": 1793151900.0
       }
     },
     {
       "symbol": "DOGE",
       "provider": "Binance",
       "quote": "USDT",
-      "price": 0.07902,
-      "time": 1793151519.3638356,
-      "candleTime": 1793151000.0,
+      "price": 0.07924,
+      "time": 1793151938.268207,
+      "candleTime": 1793151900.0,
       "confirmationFilters": {
         "trendOrario": true,
-        "volume": false,
+        "volume": true,
         "forzaBTC": true,
-        "punteggio": false,
+        "punteggio": true,
         "prudenza": true
       },
       "candles": [
-        {
-          "t": 1793064600.0,
-          "o": 0.0779,
-          "h": 0.07804,
-          "l": 0.07779,
-          "c": 0.07789
-        },
         {
           "t": 1793065500.0,
           "o": 0.0779,
@@ -6576,72 +6597,38 @@
           "h": 0.07919,
           "l": 0.07881,
           "c": 0.07902
+        },
+        {
+          "t": 1793151000.0,
+          "o": 0.07903,
+          "h": 0.07939,
+          "l": 0.07898,
+          "c": 0.07924
         }
       ],
       "stale": false,
-      "signal": "PRE-RADAR",
-      "score": 5,
-      "qualified": false,
-      "ratio": 1.3535091234896466,
-      "trend": 0.11402508551883184,
-      "trend4h": 0.8551372048500427,
-      "trend24h": 1.4507638978046078,
-      "relative": 0.7974976689337776,
-      "entry": 0.07902,
-      "stop": 0.0785457142857143,
-      "target": 0.07996857142857143,
-      "rr": 2.000000000000004,
-      "reason": "Trend orario positivo; Trend 4 ore positivo; Forza rispetto a BTC; Scambi sufficienti",
-      "targetMethod": "Massimo delle 24 ore oppure proiezione di 2 volte il rischio; non è una previsione",
-      "candidate": {
-        "id": "DOGE-1793113200",
-        "symbol": "DOGE",
-        "status": "OPPORTUNITA",
-        "createdAt": 1793113200.0,
-        "checkedThrough": 1793151000.0,
-        "lastSeen": 1793151519.3638356,
-        "lastPrice": 0.07902,
-        "eligibleAt": 1793113267.2547426,
-        "entry": 0.07795,
-        "stop": 0.07730000000000001,
-        "target": 0.07925000000000001,
-        "provider": "Binance",
-        "quote": "USDT",
-        "signalSnapshot": {
-          "signal": "PRE-RADAR",
-          "score": 6,
-          "ratio": 1.4555812678651503,
-          "trend": 0.6585743801652999,
-          "trend4h": 0.8147956544231727,
-          "relative": 0.32932652745603086,
-          "confirmationFilters": {
-            "trendOrario": true,
-            "volume": false,
-            "forzaBTC": true,
-            "punteggio": false,
-            "prudenza": true
-          }
-        },
-        "confirmationCheck": {
-          "time": 1793151050.2828891,
-          "candleTime": 1793151000.0,
-          "blockers": [
-            "volume",
-            "punteggio",
-            "rapportoLivelli"
-          ],
-          "rr": 0.13372093023256282
-        },
-        "diagnosedThrough": 1793151000.0
-      }
+      "signal": "SETUP",
+      "score": 8,
+      "qualified": true,
+      "ratio": 1.7594966992800523,
+      "trend": 0.4818665990362625,
+      "trend4h": 0.7886034088018468,
+      "trend24h": 1.7332135062267273,
+      "relative": 0.7791663176987207,
+      "entry": 0.07924,
+      "stop": 0.0787357142857143,
+      "target": 0.08024857142857143,
+      "rr": 2.0000000000000115,
+      "reason": "Trend orario positivo; Trend 4 ore positivo; Volumi in aumento; Forza rispetto a BTC; Movimento moderato; Scambi sufficienti",
+      "targetMethod": "Massimo delle 24 ore oppure proiezione di 2 volte il rischio; non è una previsione"
     },
     {
       "symbol": "LTC",
       "provider": "Binance",
       "quote": "USDT",
-      "price": 57.18,
-      "time": 1793151519.3638356,
-      "candleTime": 1793151000.0,
+      "price": 57.4,
+      "time": 1793151938.268207,
+      "candleTime": 1793151900.0,
       "confirmationFilters": {
         "trendOrario": true,
         "volume": false,
@@ -6650,13 +6637,6 @@
         "prudenza": true
       },
       "candles": [
-        {
-          "t": 1793064600.0,
-          "o": 56.7,
-          "h": 56.87,
-          "l": 56.62,
-          "c": 56.77
-        },
         {
           "t": 1793065500.0,
           "o": 56.77,
@@ -7321,31 +7301,38 @@
           "h": 57.32,
           "l": 57.1,
           "c": 57.18
+        },
+        {
+          "t": 1793151000.0,
+          "o": 57.19,
+          "h": 57.46,
+          "l": 57.14,
+          "c": 57.4
         }
       ],
       "stale": false,
       "signal": "PRE-RADAR",
-      "score": 5,
+      "score": 6,
       "qualified": false,
-      "ratio": 0.4518873840686088,
-      "trend": 0.1927457508323016,
-      "trend4h": 0.9533898305084776,
-      "trend24h": 0.8643499735403015,
-      "relative": 0.8957502945922124,
-      "entry": 57.18,
-      "stop": 56.83692,
-      "target": 57.86616,
-      "rr": 2.000000000000003,
-      "reason": "Trend orario positivo; Trend 4 ore positivo; Forza rispetto a BTC; Scambi sufficienti",
+      "ratio": 0.7221623211838271,
+      "trend": 0.47260633642569605,
+      "trend4h": 0.7547832192381865,
+      "trend24h": 1.1097410604192337,
+      "relative": 0.7453461281350604,
+      "entry": 57.4,
+      "stop": 57.0556,
+      "target": 58.0888,
+      "rr": 2.0000000000000018,
+      "reason": "Trend orario positivo; Trend 4 ore positivo; Forza rispetto a BTC; Movimento moderato; Scambi sufficienti",
       "targetMethod": "Massimo delle 24 ore oppure proiezione di 2 volte il rischio; non è una previsione",
       "candidate": {
         "id": "LTC-1793113200",
         "symbol": "LTC",
         "status": "OPPORTUNITA",
         "createdAt": 1793113200.0,
-        "checkedThrough": 1793151000.0,
-        "lastSeen": 1793151519.3638356,
-        "lastPrice": 57.18,
+        "checkedThrough": 1793151900.0,
+        "lastSeen": 1793151938.268207,
+        "lastPrice": 57.4,
         "eligibleAt": 1793113267.2547426,
         "entry": 56.57,
         "stop": 56.011428571428574,
@@ -7368,40 +7355,33 @@
           }
         },
         "confirmationCheck": {
-          "time": 1793151050.2828891,
-          "candleTime": 1793151000.0,
+          "time": 1793151938.268207,
+          "candleTime": 1793151900.0,
           "blockers": [
             "volume",
             "punteggio",
             "rapportoLivelli"
           ],
-          "rr": 0.43398533007335305
+          "rr": 0.20679012345679348
         },
-        "diagnosedThrough": 1793151000.0
+        "diagnosedThrough": 1793151900.0
       }
     },
     {
       "symbol": "UNI",
       "provider": "Binance",
       "quote": "USDT",
-      "price": 7.07,
-      "time": 1793151519.3638356,
-      "candleTime": 1793151000.0,
+      "price": 7.089,
+      "time": 1793151938.268207,
+      "candleTime": 1793151900.0,
       "confirmationFilters": {
         "trendOrario": true,
-        "volume": true,
+        "volume": false,
         "forzaBTC": false,
         "punteggio": false,
         "prudenza": true
       },
       "candles": [
-        {
-          "t": 1793064600.0,
-          "o": 7.119,
-          "h": 7.189,
-          "l": 7.115,
-          "c": 7.163
-        },
         {
           "t": 1793065500.0,
           "o": 7.164,
@@ -8066,31 +8046,38 @@
           "h": 7.098,
           "l": 7.049,
           "c": 7.07
+        },
+        {
+          "t": 1793151000.0,
+          "o": 7.071,
+          "h": 7.107,
+          "l": 7.064,
+          "c": 7.089
         }
       ],
       "stale": false,
-      "signal": "PRE-RADAR",
-      "score": 5,
+      "signal": "OSSERVA",
+      "score": 4,
       "qualified": false,
-      "ratio": 2.180592211096669,
-      "trend": 0.09910802775026095,
-      "trend4h": 0.2694653240675082,
-      "trend24h": -0.7022471910112293,
-      "relative": 0.2118257881512431,
-      "entry": 7.07,
-      "stop": 7.009142857142858,
-      "target": 7.197,
-      "rr": 2.0868544600938965,
-      "reason": "Trend orario positivo; Volumi in aumento; Scambi sufficienti",
+      "ratio": 0.878619041775171,
+      "trend": 0.29711375212224667,
+      "trend4h": -0.22519352568614037,
+      "trend24h": -1.0330866955186369,
+      "relative": -0.23463061678926644,
+      "entry": 7.089,
+      "stop": 7.026142857142857,
+      "target": 7.214714285714286,
+      "rr": 1.9999999999999978,
+      "reason": "Trend orario positivo; Movimento moderato; Scambi sufficienti",
       "targetMethod": "Massimo delle 24 ore oppure proiezione di 2 volte il rischio; non è una previsione",
       "candidate": {
         "id": "UNI-1793151000",
         "symbol": "UNI",
         "status": "OPPORTUNITA",
         "createdAt": 1793151000.0,
-        "checkedThrough": 1793151000.0,
-        "lastSeen": 1793151519.3638356,
-        "lastPrice": 7.07,
+        "checkedThrough": 1793151900.0,
+        "lastSeen": 1793151938.268207,
+        "lastPrice": 7.089,
         "eligibleAt": 1793151050.2828891,
         "entry": 7.07,
         "stop": 7.009142857142858,
@@ -8111,16 +8098,28 @@
             "punteggio": false,
             "prudenza": true
           }
-        }
+        },
+        "confirmationCheck": {
+          "time": 1793151938.268207,
+          "candleTime": 1793151900.0,
+          "blockers": [
+            "volume",
+            "forzaBTC",
+            "punteggio",
+            "rapportoLivelli"
+          ],
+          "rr": 1.352415026833631
+        },
+        "diagnosedThrough": 1793151900.0
       }
     },
     {
       "symbol": "AAVE",
       "provider": "Binance",
       "quote": "USDT",
-      "price": 134.2,
-      "time": 1793151519.3638356,
-      "candleTime": 1793151000.0,
+      "price": 134.62,
+      "time": 1793151938.268207,
+      "candleTime": 1793151900.0,
       "confirmationFilters": {
         "trendOrario": false,
         "volume": false,
@@ -8129,13 +8128,6 @@
         "prudenza": true
       },
       "candles": [
-        {
-          "t": 1793064600.0,
-          "o": 135.18,
-          "h": 135.71,
-          "l": 134.97,
-          "c": 135.32
-        },
         {
           "t": 1793065500.0,
           "o": 135.31,
@@ -8800,21 +8792,28 @@
           "h": 134.6,
           "l": 133.75,
           "c": 134.2
+        },
+        {
+          "t": 1793151000.0,
+          "o": 134.18,
+          "h": 134.95,
+          "l": 133.97,
+          "c": 134.62
         }
       ],
       "stale": false,
       "signal": "OSSERVA",
       "score": 4,
       "qualified": false,
-      "ratio": 1.0282526148772015,
-      "trend": 0.5695443645083786,
-      "trend4h": 1.766891635701806,
-      "trend24h": -0.7176148553673101,
-      "relative": 1.709252099785541,
-      "entry": 134.2,
-      "stop": 132.91857142857143,
-      "target": 136.76285714285714,
-      "rr": 2.0000000000000093,
+      "ratio": 0.5320775517617766,
+      "trend": 0.8540605334132589,
+      "trend4h": 1.0129811660538612,
+      "trend24h": -0.5172923440732946,
+      "relative": 1.0035440749507352,
+      "entry": 134.62,
+      "stop": 133.31285714285715,
+      "target": 137.2342857142857,
+      "rr": 1.9999999999999938,
       "reason": "Trend 4 ore positivo; Forza rispetto a BTC; Movimento moderato; Scambi sufficienti",
       "targetMethod": "Massimo delle 24 ore oppure proiezione di 2 volte il rischio; non è una previsione",
       "candidate": {
@@ -8822,9 +8821,9 @@
         "symbol": "AAVE",
         "status": "OPPORTUNITA",
         "createdAt": 1793115000.0,
-        "checkedThrough": 1793151000.0,
-        "lastSeen": 1793151519.3638356,
-        "lastPrice": 134.2,
+        "checkedThrough": 1793151900.0,
+        "lastSeen": 1793151938.268207,
+        "lastPrice": 134.62,
         "eligibleAt": 1793115052.596665,
         "entry": 132.44,
         "stop": 130.25285714285712,
@@ -8847,41 +8846,34 @@
           }
         },
         "confirmationCheck": {
-          "time": 1793151050.2828891,
-          "candleTime": 1793151000.0,
+          "time": 1793151938.268207,
+          "candleTime": 1793151900.0,
           "blockers": [
             "trendOrario",
             "volume",
             "punteggio",
             "rapportoLivelli"
           ],
-          "rr": 1.1577994933043825
+          "rr": 0.9502780503761821
         },
-        "diagnosedThrough": 1793151000.0
+        "diagnosedThrough": 1793151900.0
       }
     },
     {
       "symbol": "DOT",
       "provider": "Binance",
       "quote": "USDT",
-      "price": 1.003,
-      "time": 1793151519.3638356,
-      "candleTime": 1793151000.0,
+      "price": 1.004,
+      "time": 1793151938.268207,
+      "candleTime": 1793151900.0,
       "confirmationFilters": {
         "trendOrario": false,
         "volume": false,
-        "forzaBTC": true,
+        "forzaBTC": false,
         "punteggio": false,
         "prudenza": true
       },
       "candles": [
-        {
-          "t": 1793064600.0,
-          "o": 1.001,
-          "h": 1.005,
-          "l": 0.998,
-          "c": 1.002
-        },
         {
           "t": 1793065500.0,
           "o": 1.002,
@@ -9546,31 +9538,38 @@
           "h": 1.007,
           "l": 1.001,
           "c": 1.003
+        },
+        {
+          "t": 1793151000.0,
+          "o": 1.003,
+          "h": 1.005,
+          "l": 1.0,
+          "c": 1.004
         }
       ],
       "stale": false,
       "signal": "OSSERVA",
-      "score": 4,
+      "score": 1,
       "qualified": false,
-      "ratio": 0.3943376857569222,
-      "trend": 0.29999999999998916,
-      "trend4h": 1.1088709677419262,
-      "trend24h": 0.19980019980019303,
-      "relative": 1.051231431825661,
-      "entry": 1.003,
-      "stop": 0.994,
-      "target": 1.0209999999999997,
-      "rr": 1.9999999999999964,
-      "reason": "Trend 4 ore positivo; Forza rispetto a BTC; Movimento moderato; Scambi sufficienti",
+      "ratio": 0.412148253046472,
+      "trend": 0.1996007984031989,
+      "trend4h": 0.1996007984031989,
+      "trend24h": 0.1996007984031989,
+      "relative": 0.19016370730007282,
+      "entry": 1.004,
+      "stop": 0.9951428571428572,
+      "target": 1.0217142857142856,
+      "rr": 2.000000000000007,
+      "reason": "Scambi sufficienti",
       "targetMethod": "Massimo delle 24 ore oppure proiezione di 2 volte il rischio; non è una previsione",
       "candidate": {
         "id": "DOT-1793115000",
         "symbol": "DOT",
         "status": "OPPORTUNITA",
         "createdAt": 1793115000.0,
-        "checkedThrough": 1793151000.0,
-        "lastSeen": 1793151519.3638356,
-        "lastPrice": 1.003,
+        "checkedThrough": 1793151900.0,
+        "lastSeen": 1793151938.268207,
+        "lastPrice": 1.004,
         "eligibleAt": 1793115052.596665,
         "entry": 0.993,
         "stop": 0.9785714285714285,
@@ -9593,26 +9592,27 @@
           }
         },
         "confirmationCheck": {
-          "time": 1793151050.2828891,
-          "candleTime": 1793151000.0,
+          "time": 1793151938.268207,
+          "candleTime": 1793151900.0,
           "blockers": [
             "trendOrario",
             "volume",
+            "forzaBTC",
             "punteggio",
             "rapportoLivelli"
           ],
-          "rr": 1.350877192982466
+          "rr": 1.2584269662921341
         },
-        "diagnosedThrough": 1793151000.0
+        "diagnosedThrough": 1793151900.0
       }
     },
     {
       "symbol": "ATOM",
       "provider": "Binance",
       "quote": "USDT",
-      "price": 1.637,
-      "time": 1793151519.3638356,
-      "candleTime": 1793151000.0,
+      "price": 1.645,
+      "time": 1793151938.268207,
+      "candleTime": 1793151900.0,
       "confirmationFilters": {
         "trendOrario": false,
         "volume": false,
@@ -9621,13 +9621,6 @@
         "prudenza": false
       },
       "candles": [
-        {
-          "t": 1793064600.0,
-          "o": 1.633,
-          "h": 1.633,
-          "l": 1.63,
-          "c": 1.633
-        },
         {
           "t": 1793065500.0,
           "o": 1.632,
@@ -10292,21 +10285,28 @@
           "h": 1.641,
           "l": 1.634,
           "c": 1.637
+        },
+        {
+          "t": 1793151000.0,
+          "o": 1.636,
+          "h": 1.645,
+          "l": 1.636,
+          "c": 1.645
         }
       ],
       "stale": false,
       "signal": "SCARTA",
       "score": 3,
       "qualified": false,
-      "ratio": 1.0862302521126779,
-      "trend": 0.24494794856093627,
-      "trend4h": 1.4250309789343163,
-      "trend24h": 0.30637254901961786,
-      "relative": 1.3673914430180512,
-      "entry": 1.637,
-      "stop": 1.6262857142857141,
-      "target": 1.6584285714285716,
-      "rr": 1.9999999999999971,
+      "ratio": 0.9295149283909381,
+      "trend": 0.8583690987124415,
+      "trend4h": 1.355514479359221,
+      "trend24h": 0.7348438456827866,
+      "relative": 1.346077388256095,
+      "entry": 1.645,
+      "stop": 1.634,
+      "target": 1.6670000000000003,
+      "rr": 2.0000000000000058,
       "reason": "Filtro prudenziale: liquidità, estensione del movimento o trend sfavorevole",
       "targetMethod": "Massimo delle 24 ore oppure proiezione di 2 volte il rischio; non è una previsione"
     },
@@ -10314,24 +10314,17 @@
       "symbol": "ARB",
       "provider": "Binance",
       "quote": "USDT",
-      "price": 0.1685,
-      "time": 1793151519.3638356,
-      "candleTime": 1793151000.0,
+      "price": 0.1687,
+      "time": 1793151938.268207,
+      "candleTime": 1793151900.0,
       "confirmationFilters": {
         "trendOrario": false,
-        "volume": false,
+        "volume": true,
         "forzaBTC": true,
         "punteggio": false,
         "prudenza": true
       },
       "candles": [
-        {
-          "t": 1793064600.0,
-          "o": 0.1683,
-          "h": 0.1691,
-          "l": 0.168,
-          "c": 0.1687
-        },
         {
           "t": 1793065500.0,
           "o": 0.1687,
@@ -10996,31 +10989,68 @@
           "h": 0.1693,
           "l": 0.1683,
           "c": 0.1685
+        },
+        {
+          "t": 1793151000.0,
+          "o": 0.1685,
+          "h": 0.1693,
+          "l": 0.1681,
+          "c": 0.1687
         }
       ],
       "stale": false,
-      "signal": "OSSERVA",
-      "score": 4,
+      "signal": "PRE-RADAR",
+      "score": 6,
       "qualified": false,
-      "ratio": 0.4359704205795738,
-      "trend": 0.5369928400954738,
-      "trend4h": 1.5060240963855387,
-      "trend24h": 0.11883541295305555,
-      "relative": 1.4483845604692736,
-      "entry": 0.1685,
-      "stop": 0.16682857142857144,
-      "target": 0.17184285714285716,
+      "ratio": 1.500893212631329,
+      "trend": 0.416666666666643,
+      "trend4h": 0.416666666666643,
+      "trend24h": 0.0,
+      "relative": 0.4072295755635169,
+      "entry": 0.1687,
+      "stop": 0.16702857142857142,
+      "target": 0.17204285714285714,
       "rr": 2.0,
-      "reason": "Trend 4 ore positivo; Forza rispetto a BTC; Movimento moderato; Scambi sufficienti",
-      "targetMethod": "Massimo delle 24 ore oppure proiezione di 2 volte il rischio; non è una previsione"
+      "reason": "Trend 4 ore positivo; Volumi in aumento; Forza rispetto a BTC; Movimento moderato; Scambi sufficienti",
+      "targetMethod": "Massimo delle 24 ore oppure proiezione di 2 volte il rischio; non è una previsione",
+      "candidate": {
+        "id": "ARB-1793151900",
+        "symbol": "ARB",
+        "status": "OPPORTUNITA",
+        "createdAt": 1793151900.0,
+        "checkedThrough": 1793151900.0,
+        "lastSeen": 1793151938.268207,
+        "lastPrice": 0.1687,
+        "eligibleAt": 1793151938.268207,
+        "entry": 0.1687,
+        "stop": 0.16702857142857142,
+        "target": 0.17204285714285714,
+        "provider": "Binance",
+        "quote": "USDT",
+        "signalSnapshot": {
+          "signal": "PRE-RADAR",
+          "score": 6,
+          "ratio": 1.500893212631329,
+          "trend": 0.416666666666643,
+          "trend4h": 0.416666666666643,
+          "relative": 0.4072295755635169,
+          "confirmationFilters": {
+            "trendOrario": false,
+            "volume": true,
+            "forzaBTC": true,
+            "punteggio": false,
+            "prudenza": true
+          }
+        }
+      }
     },
     {
       "symbol": "OP",
       "provider": "Binance",
       "quote": "USDT",
-      "price": 0.1124,
-      "time": 1793151519.3638356,
-      "candleTime": 1793151000.0,
+      "price": 0.1128,
+      "time": 1793151938.268207,
+      "candleTime": 1793151900.0,
       "confirmationFilters": {
         "trendOrario": false,
         "volume": false,
@@ -11029,13 +11059,6 @@
         "prudenza": true
       },
       "candles": [
-        {
-          "t": 1793064600.0,
-          "o": 0.1114,
-          "h": 0.1115,
-          "l": 0.1107,
-          "c": 0.1112
-        },
         {
           "t": 1793065500.0,
           "o": 0.1112,
@@ -11700,20 +11723,27 @@
           "h": 0.1128,
           "l": 0.1121,
           "c": 0.1124
+        },
+        {
+          "t": 1793151000.0,
+          "o": 0.1123,
+          "h": 0.1129,
+          "l": 0.1122,
+          "c": 0.1128
         }
       ],
       "stale": false,
       "signal": "OSSERVA",
       "score": 4,
       "qualified": false,
-      "ratio": 1.2505585724183517,
-      "trend": 0.44682752457552155,
-      "trend4h": 1.352569882777277,
-      "trend24h": 1.0791366906474975,
-      "relative": 1.2949303468610118,
-      "entry": 0.1124,
-      "stop": 0.11165714285714286,
-      "target": 0.11388571428571427,
+      "ratio": 0.9014517985539752,
+      "trend": 0.6244424620874156,
+      "trend4h": 0.8944543828264706,
+      "trend24h": 1.4388489208633226,
+      "relative": 0.8850172917233445,
+      "entry": 0.1128,
+      "stop": 0.11204285714285714,
+      "target": 0.1143142857142857,
       "rr": 1.9999999999999922,
       "reason": "Trend 4 ore positivo; Forza rispetto a BTC; Movimento moderato; Scambi sufficienti",
       "targetMethod": "Massimo delle 24 ore oppure proiezione di 2 volte il rischio; non è una previsione",
@@ -11722,9 +11752,9 @@
         "symbol": "OP",
         "status": "OPPORTUNITA",
         "createdAt": 1793146500.0,
-        "checkedThrough": 1793151000.0,
-        "lastSeen": 1793151519.3638356,
-        "lastPrice": 0.1124,
+        "checkedThrough": 1793151900.0,
+        "lastSeen": 1793151938.268207,
+        "lastPrice": 0.1128,
         "eligibleAt": 1793146537.978262,
         "entry": 0.1118,
         "stop": 0.1108857142857143,
@@ -11747,26 +11777,26 @@
           }
         },
         "confirmationCheck": {
-          "time": 1793151050.2828891,
-          "candleTime": 1793151000.0,
+          "time": 1793151938.268207,
+          "candleTime": 1793151900.0,
           "blockers": [
             "trendOrario",
             "volume",
             "punteggio",
             "rapportoLivelli"
           ],
-          "rr": 0.8113207547169757
+          "rr": 0.432835820895518
         },
-        "diagnosedThrough": 1793151000.0
+        "diagnosedThrough": 1793151900.0
       }
     },
     {
       "symbol": "SUI",
       "provider": "Binance",
       "quote": "USDT",
-      "price": 0.9321,
-      "time": 1793151519.3638356,
-      "candleTime": 1793151000.0,
+      "price": 0.9353,
+      "time": 1793151938.268207,
+      "candleTime": 1793151900.0,
       "confirmationFilters": {
         "trendOrario": true,
         "volume": false,
@@ -11775,13 +11805,6 @@
         "prudenza": true
       },
       "candles": [
-        {
-          "t": 1793064600.0,
-          "o": 0.9174,
-          "h": 0.9202,
-          "l": 0.9158,
-          "c": 0.918
-        },
         {
           "t": 1793065500.0,
           "o": 0.9181,
@@ -12446,31 +12469,38 @@
           "h": 0.9351,
           "l": 0.9301,
           "c": 0.9321
+        },
+        {
+          "t": 1793151000.0,
+          "o": 0.9322,
+          "h": 0.937,
+          "l": 0.9316,
+          "c": 0.9353
         }
       ],
       "stale": false,
       "signal": "PRE-RADAR",
-      "score": 5,
+      "score": 6,
       "qualified": false,
-      "ratio": 0.7815627966692681,
-      "trend": 0.1289075088624081,
-      "trend4h": 0.9203118233001462,
-      "trend24h": 1.6134307205930565,
-      "relative": 0.862672287383881,
-      "entry": 0.9321,
-      "stop": 0.9252142857142858,
-      "target": 0.9458714285714287,
-      "rr": 2.000000000000002,
-      "reason": "Trend orario positivo; Trend 4 ore positivo; Forza rispetto a BTC; Scambi sufficienti",
+      "ratio": 1.351633367935123,
+      "trend": 0.5158516926383694,
+      "trend4h": 0.5266552020636306,
+      "trend24h": 1.8845315904139515,
+      "relative": 0.5172181109605045,
+      "entry": 0.9353,
+      "stop": 0.9282285714285714,
+      "target": 0.9494428571428573,
+      "rr": 2.0,
+      "reason": "Trend orario positivo; Trend 4 ore positivo; Forza rispetto a BTC; Movimento moderato; Scambi sufficienti",
       "targetMethod": "Massimo delle 24 ore oppure proiezione di 2 volte il rischio; non è una previsione",
       "candidate": {
         "id": "SUI-1793115000",
         "symbol": "SUI",
         "status": "OPPORTUNITA",
         "createdAt": 1793115000.0,
-        "checkedThrough": 1793151000.0,
-        "lastSeen": 1793151519.3638356,
-        "lastPrice": 0.9321,
+        "checkedThrough": 1793151900.0,
+        "lastSeen": 1793151938.268207,
+        "lastPrice": 0.9353,
         "eligibleAt": 1793115052.596665,
         "entry": 0.9244,
         "stop": 0.9122142857142858,
@@ -12493,25 +12523,25 @@
           }
         },
         "confirmationCheck": {
-          "time": 1793151050.2828891,
-          "candleTime": 1793151000.0,
+          "time": 1793151938.268207,
+          "candleTime": 1793151900.0,
           "blockers": [
             "volume",
             "punteggio",
             "rapportoLivelli"
           ],
-          "rr": 0.8383620689655167
+          "rr": 0.5835396039603968
         },
-        "diagnosedThrough": 1793151000.0
+        "diagnosedThrough": 1793151900.0
       }
     },
     {
       "symbol": "INJ",
       "provider": "Binance",
       "quote": "USDT",
-      "price": 7.986,
-      "time": 1793151519.3638356,
-      "candleTime": 1793151000.0,
+      "price": 8.022,
+      "time": 1793151938.268207,
+      "candleTime": 1793151900.0,
       "confirmationFilters": {
         "trendOrario": true,
         "volume": false,
@@ -12520,13 +12550,6 @@
         "prudenza": true
       },
       "candles": [
-        {
-          "t": 1793064600.0,
-          "o": 7.914,
-          "h": 7.961,
-          "l": 7.893,
-          "c": 7.928
-        },
         {
           "t": 1793065500.0,
           "o": 7.928,
@@ -13191,46 +13214,46 @@
           "h": 8.021,
           "l": 7.983,
           "c": 7.986
+        },
+        {
+          "t": 1793151000.0,
+          "o": 7.987,
+          "h": 8.042,
+          "l": 7.978,
+          "c": 8.022
         }
       ],
       "stale": false,
       "signal": "OSSERVA",
-      "score": 3,
+      "score": 4,
       "qualified": false,
-      "ratio": 0.5408644400411544,
-      "trend": 0.33923859781379573,
-      "trend4h": -0.1625203150393828,
-      "trend24h": 0.9225325413875884,
-      "relative": -0.22015985095564794,
-      "entry": 7.986,
-      "stop": 7.8837142857142855,
+      "ratio": 0.6121507927371549,
+      "trend": 0.5641218503196654,
+      "trend4h": -0.14936519790889058,
+      "trend24h": 1.1856710393541858,
+      "relative": -0.15880228901201665,
+      "entry": 8.022,
+      "stop": 7.921285714285714,
       "target": 8.297,
-      "rr": 3.0405027932961004,
-      "reason": "Trend orario positivo; Scambi sufficienti",
+      "rr": 2.730496453900712,
+      "reason": "Trend orario positivo; Movimento moderato; Scambi sufficienti",
       "targetMethod": "Massimo delle 24 ore oppure proiezione di 2 volte il rischio; non è una previsione"
     },
     {
       "symbol": "FIL",
       "provider": "Binance",
       "quote": "USDT",
-      "price": 0.9129,
-      "time": 1793151519.3638356,
-      "candleTime": 1793151000.0,
+      "price": 0.9165,
+      "time": 1793151938.268207,
+      "candleTime": 1793151900.0,
       "confirmationFilters": {
         "trendOrario": false,
-        "volume": false,
+        "volume": true,
         "forzaBTC": true,
         "punteggio": false,
         "prudenza": true
       },
       "candles": [
-        {
-          "t": 1793064600.0,
-          "o": 0.9082,
-          "h": 0.9118,
-          "l": 0.9062,
-          "c": 0.9092
-        },
         {
           "t": 1793065500.0,
           "o": 0.9091,
@@ -13895,31 +13918,38 @@
           "h": 0.9154,
           "l": 0.9096,
           "c": 0.9129
+        },
+        {
+          "t": 1793151000.0,
+          "o": 0.9126,
+          "h": 0.9176,
+          "l": 0.9117,
+          "c": 0.9165
         }
       ],
       "stale": false,
-      "signal": "OSSERVA",
-      "score": 4,
+      "signal": "PRE-RADAR",
+      "score": 6,
       "qualified": false,
-      "ratio": 1.1121081699396005,
-      "trend": 0.49537648612947294,
-      "trend4h": 1.8861607142857117,
-      "trend24h": 0.5396475770925058,
-      "relative": 1.8285211783694466,
-      "entry": 0.9129,
-      "stop": 0.9039285714285715,
-      "target": 0.9308428571428572,
-      "rr": 2.0000000000000018,
-      "reason": "Trend 4 ore positivo; Forza rispetto a BTC; Movimento moderato; Scambi sufficienti",
+      "ratio": 1.770606579486473,
+      "trend": 0.8472711267605515,
+      "trend4h": 1.2707182320441879,
+      "trend24h": 0.8029036515618149,
+      "relative": 1.2612811409410618,
+      "entry": 0.9165,
+      "stop": 0.9077142857142857,
+      "target": 0.9340714285714286,
+      "rr": 2.0000000000000036,
+      "reason": "Trend 4 ore positivo; Volumi in aumento; Forza rispetto a BTC; Movimento moderato; Scambi sufficienti",
       "targetMethod": "Massimo delle 24 ore oppure proiezione di 2 volte il rischio; non è una previsione",
       "candidate": {
         "id": "FIL-1793137500",
         "symbol": "FIL",
         "status": "OPPORTUNITA",
         "createdAt": 1793137500.0,
-        "checkedThrough": 1793151000.0,
-        "lastSeen": 1793151519.3638356,
-        "lastPrice": 0.9129,
+        "checkedThrough": 1793151900.0,
+        "lastSeen": 1793151938.268207,
+        "lastPrice": 0.9165,
         "eligibleAt": 1793137535.560846,
         "entry": 0.905,
         "stop": 0.8947428571428572,
@@ -13942,41 +13972,33 @@
           }
         },
         "confirmationCheck": {
-          "time": 1793151050.2828891,
-          "candleTime": 1793151000.0,
+          "time": 1793151938.268207,
+          "candleTime": 1793151900.0,
           "blockers": [
             "trendOrario",
-            "volume",
             "punteggio",
             "rapportoLivelli"
           ],
-          "rr": 0.6947285601888258
+          "rr": 0.41431385423506506
         },
-        "diagnosedThrough": 1793151000.0
+        "diagnosedThrough": 1793151900.0
       }
     },
     {
       "symbol": "RENDER",
       "provider": "Binance",
       "quote": "USDT",
-      "price": 1.694,
-      "time": 1793151519.3638356,
-      "candleTime": 1793151000.0,
+      "price": 1.706,
+      "time": 1793151938.268207,
+      "candleTime": 1793151900.0,
       "confirmationFilters": {
         "trendOrario": false,
         "volume": false,
-        "forzaBTC": true,
+        "forzaBTC": false,
         "punteggio": false,
         "prudenza": false
       },
       "candles": [
-        {
-          "t": 1793064600.0,
-          "o": 1.704,
-          "h": 1.708,
-          "l": 1.701,
-          "c": 1.704
-        },
         {
           "t": 1793065500.0,
           "o": 1.705,
@@ -14641,75 +14663,41 @@
           "h": 1.699,
           "l": 1.688,
           "c": 1.694
+        },
+        {
+          "t": 1793151000.0,
+          "o": 1.695,
+          "h": 1.708,
+          "l": 1.693,
+          "c": 1.706
         }
       ],
       "stale": false,
       "signal": "SCARTA",
-      "score": 2,
+      "score": 1,
       "qualified": false,
-      "ratio": 0.4915348896514277,
-      "trend": 0.17740981667651035,
-      "trend4h": 0.5938242280284944,
-      "trend24h": -0.5284791544333589,
-      "relative": 0.5361846921122293,
-      "entry": 1.694,
-      "stop": 1.679142857142857,
-      "target": 1.7237142857142855,
-      "rr": 1.9999999999999938,
+      "ratio": 0.8147846829540474,
+      "trend": 0.946745562130169,
+      "trend4h": 0.17615971814444187,
+      "trend24h": 0.11737089201877549,
+      "relative": 0.1667226270413158,
+      "entry": 1.706,
+      "stop": 1.6901428571428572,
+      "target": 1.7377142857142855,
+      "rr": 1.999999999999996,
       "reason": "Filtro prudenziale: liquidità, estensione del movimento o trend sfavorevole",
       "targetMethod": "Massimo delle 24 ore oppure proiezione di 2 volte il rischio; non è una previsione"
     }
   ],
   "active": [
     {
-      "id": "DOGE-1793113200",
-      "symbol": "DOGE",
-      "status": "OPPORTUNITA",
-      "createdAt": 1793113200.0,
-      "checkedThrough": 1793151000.0,
-      "lastSeen": 1793151519.3638356,
-      "lastPrice": 0.07902,
-      "eligibleAt": 1793113267.2547426,
-      "entry": 0.07795,
-      "stop": 0.07730000000000001,
-      "target": 0.07925000000000001,
-      "provider": "Binance",
-      "quote": "USDT",
-      "signalSnapshot": {
-        "signal": "PRE-RADAR",
-        "score": 6,
-        "ratio": 1.4555812678651503,
-        "trend": 0.6585743801652999,
-        "trend4h": 0.8147956544231727,
-        "relative": 0.32932652745603086,
-        "confirmationFilters": {
-          "trendOrario": true,
-          "volume": false,
-          "forzaBTC": true,
-          "punteggio": false,
-          "prudenza": true
-        }
-      },
-      "confirmationCheck": {
-        "time": 1793151050.2828891,
-        "candleTime": 1793151000.0,
-        "blockers": [
-          "volume",
-          "punteggio",
-          "rapportoLivelli"
-        ],
-        "rr": 0.13372093023256282
-      },
-      "diagnosedThrough": 1793151000.0
-    },
-    {
       "id": "LTC-1793113200",
       "symbol": "LTC",
       "status": "OPPORTUNITA",
       "createdAt": 1793113200.0,
-      "checkedThrough": 1793151000.0,
-      "lastSeen": 1793151519.3638356,
-      "lastPrice": 57.18,
+      "checkedThrough": 1793151900.0,
+      "lastSeen": 1793151938.268207,
+      "lastPrice": 57.4,
       "eligibleAt": 1793113267.2547426,
       "entry": 56.57,
       "stop": 56.011428571428574,
@@ -14732,25 +14720,25 @@
         }
       },
       "confirmationCheck": {
-        "time": 1793151050.2828891,
-        "candleTime": 1793151000.0,
+        "time": 1793151938.268207,
+        "candleTime": 1793151900.0,
         "blockers": [
           "volume",
           "punteggio",
           "rapportoLivelli"
         ],
-        "rr": 0.43398533007335305
+        "rr": 0.20679012345679348
       },
-      "diagnosedThrough": 1793151000.0
+      "diagnosedThrough": 1793151900.0
     },
     {
       "id": "SOL-1793115000",
       "symbol": "SOL",
       "status": "OPPORTUNITA",
       "createdAt": 1793115000.0,
-      "checkedThrough": 1793151000.0,
-      "lastSeen": 1793151519.3638356,
-      "lastPrice": 101.34,
+      "checkedThrough": 1793151900.0,
+      "lastSeen": 1793151938.268207,
+      "lastPrice": 101.65,
       "eligibleAt": 1793115052.596665,
       "entry": 101.05,
       "stop": 100.05571428571427,
@@ -14773,26 +14761,27 @@
         }
       },
       "confirmationCheck": {
-        "time": 1793151050.2828891,
-        "candleTime": 1793151000.0,
+        "time": 1793151938.268207,
+        "candleTime": 1793151900.0,
         "blockers": [
           "trendOrario",
           "volume",
+          "forzaBTC",
           "punteggio",
           "rapportoLivelli"
         ],
-        "rr": 1.322580645161273
+        "rr": 0.8709677419354716
       },
-      "diagnosedThrough": 1793151000.0
+      "diagnosedThrough": 1793151900.0
     },
     {
       "id": "AVAX-1793115000",
       "symbol": "AVAX",
       "status": "OPPORTUNITA",
       "createdAt": 1793115000.0,
-      "checkedThrough": 1793151000.0,
-      "lastSeen": 1793151519.3638356,
-      "lastPrice": 8.981,
+      "checkedThrough": 1793151900.0,
+      "lastSeen": 1793151938.268207,
+      "lastPrice": 9.024,
       "eligibleAt": 1793115052.596665,
       "entry": 8.86,
       "stop": 8.750142857142857,
@@ -14815,26 +14804,25 @@
         }
       },
       "confirmationCheck": {
-        "time": 1793151050.2828891,
-        "candleTime": 1793151000.0,
+        "time": 1793151938.268207,
+        "candleTime": 1793151900.0,
         "blockers": [
           "trendOrario",
-          "volume",
           "punteggio",
           "rapportoLivelli"
         ],
-        "rr": 0.4275990099009875
+        "rr": 0.20344287949921896
       },
-      "diagnosedThrough": 1793151000.0
+      "diagnosedThrough": 1793151900.0
     },
     {
       "id": "ADA-1793115000",
       "symbol": "ADA",
       "status": "OPPORTUNITA",
       "createdAt": 1793115000.0,
-      "checkedThrough": 1793151000.0,
-      "lastSeen": 1793151519.3638356,
-      "lastPrice": 0.206,
+      "checkedThrough": 1793151900.0,
+      "lastSeen": 1793151938.268207,
+      "lastPrice": 0.2068,
       "eligibleAt": 1793115052.596665,
       "entry": 0.2058,
       "stop": 0.20332857142857144,
@@ -14857,26 +14845,25 @@
         }
       },
       "confirmationCheck": {
-        "time": 1793151050.2828891,
-        "candleTime": 1793151000.0,
+        "time": 1793151938.268207,
+        "candleTime": 1793151900.0,
         "blockers": [
           "trendOrario",
-          "volume",
           "punteggio",
           "rapportoLivelli"
         ],
-        "rr": 1.7754010695187497
+        "rr": 1.1358024691358093
       },
-      "diagnosedThrough": 1793151000.0
+      "diagnosedThrough": 1793151900.0
     },
     {
       "id": "AAVE-1793115000",
       "symbol": "AAVE",
       "status": "OPPORTUNITA",
       "createdAt": 1793115000.0,
-      "checkedThrough": 1793151000.0,
-      "lastSeen": 1793151519.3638356,
-      "lastPrice": 134.2,
+      "checkedThrough": 1793151900.0,
+      "lastSeen": 1793151938.268207,
+      "lastPrice": 134.62,
       "eligibleAt": 1793115052.596665,
       "entry": 132.44,
       "stop": 130.25285714285712,
@@ -14899,26 +14886,26 @@
         }
       },
       "confirmationCheck": {
-        "time": 1793151050.2828891,
-        "candleTime": 1793151000.0,
+        "time": 1793151938.268207,
+        "candleTime": 1793151900.0,
         "blockers": [
           "trendOrario",
           "volume",
           "punteggio",
           "rapportoLivelli"
         ],
-        "rr": 1.1577994933043825
+        "rr": 0.9502780503761821
       },
-      "diagnosedThrough": 1793151000.0
+      "diagnosedThrough": 1793151900.0
     },
     {
       "id": "DOT-1793115000",
       "symbol": "DOT",
       "status": "OPPORTUNITA",
       "createdAt": 1793115000.0,
-      "checkedThrough": 1793151000.0,
-      "lastSeen": 1793151519.3638356,
-      "lastPrice": 1.003,
+      "checkedThrough": 1793151900.0,
+      "lastSeen": 1793151938.268207,
+      "lastPrice": 1.004,
       "eligibleAt": 1793115052.596665,
       "entry": 0.993,
       "stop": 0.9785714285714285,
@@ -14941,26 +14928,27 @@
         }
       },
       "confirmationCheck": {
-        "time": 1793151050.2828891,
-        "candleTime": 1793151000.0,
+        "time": 1793151938.268207,
+        "candleTime": 1793151900.0,
         "blockers": [
           "trendOrario",
           "volume",
+          "forzaBTC",
           "punteggio",
           "rapportoLivelli"
         ],
-        "rr": 1.350877192982466
+        "rr": 1.2584269662921341
       },
-      "diagnosedThrough": 1793151000.0
+      "diagnosedThrough": 1793151900.0
     },
     {
       "id": "SUI-1793115000",
       "symbol": "SUI",
       "status": "OPPORTUNITA",
       "createdAt": 1793115000.0,
-      "checkedThrough": 1793151000.0,
-      "lastSeen": 1793151519.3638356,
-      "lastPrice": 0.9321,
+      "checkedThrough": 1793151900.0,
+      "lastSeen": 1793151938.268207,
+      "lastPrice": 0.9353,
       "eligibleAt": 1793115052.596665,
       "entry": 0.9244,
       "stop": 0.9122142857142858,
@@ -14983,25 +14971,25 @@
         }
       },
       "confirmationCheck": {
-        "time": 1793151050.2828891,
-        "candleTime": 1793151000.0,
+        "time": 1793151938.268207,
+        "candleTime": 1793151900.0,
         "blockers": [
           "volume",
           "punteggio",
           "rapportoLivelli"
         ],
-        "rr": 0.8383620689655167
+        "rr": 0.5835396039603968
       },
-      "diagnosedThrough": 1793151000.0
+      "diagnosedThrough": 1793151900.0
     },
     {
       "id": "LINK-1793137500",
       "symbol": "LINK",
       "status": "OPPORTUNITA",
       "createdAt": 1793137500.0,
-      "checkedThrough": 1793151000.0,
-      "lastSeen": 1793151519.3638356,
-      "lastPrice": 11.596,
+      "checkedThrough": 1793151900.0,
+      "lastSeen": 1793151938.268207,
+      "lastPrice": 11.634,
       "eligibleAt": 1793137535.560846,
       "entry": 11.545,
       "stop": 11.462857142857143,
@@ -15024,25 +15012,25 @@
         }
       },
       "confirmationCheck": {
-        "time": 1793151050.2828891,
-        "candleTime": 1793151000.0,
+        "time": 1793151938.268207,
+        "candleTime": 1793151900.0,
         "blockers": [
           "volume",
           "punteggio",
           "rapportoLivelli"
         ],
-        "rr": 0.8508583690987116
+        "rr": 0.43989983305508973
       },
-      "diagnosedThrough": 1793151000.0
+      "diagnosedThrough": 1793151900.0
     },
     {
       "id": "NEAR-1793137500",
       "symbol": "NEAR",
       "status": "CONFERMATO",
       "createdAt": 1793137500.0,
-      "checkedThrough": 1793151000.0,
-      "lastSeen": 1793151519.3638356,
-      "lastPrice": 4.657,
+      "checkedThrough": 1793151900.0,
+      "lastSeen": 1793151938.268207,
+      "lastPrice": 4.697,
       "eligibleAt": 1793139336.1953707,
       "entry": 4.675,
       "stop": 4.603714285714285,
@@ -15078,9 +15066,9 @@
       "symbol": "FIL",
       "status": "OPPORTUNITA",
       "createdAt": 1793137500.0,
-      "checkedThrough": 1793151000.0,
-      "lastSeen": 1793151519.3638356,
-      "lastPrice": 0.9129,
+      "checkedThrough": 1793151900.0,
+      "lastSeen": 1793151938.268207,
+      "lastPrice": 0.9165,
       "eligibleAt": 1793137535.560846,
       "entry": 0.905,
       "stop": 0.8947428571428572,
@@ -15103,26 +15091,25 @@
         }
       },
       "confirmationCheck": {
-        "time": 1793151050.2828891,
-        "candleTime": 1793151000.0,
+        "time": 1793151938.268207,
+        "candleTime": 1793151900.0,
         "blockers": [
           "trendOrario",
-          "volume",
           "punteggio",
           "rapportoLivelli"
         ],
-        "rr": 0.6947285601888258
+        "rr": 0.41431385423506506
       },
-      "diagnosedThrough": 1793151000.0
+      "diagnosedThrough": 1793151900.0
     },
     {
       "id": "XRP-1793146500",
       "symbol": "XRP",
       "status": "OPPORTUNITA",
       "createdAt": 1793146500.0,
-      "checkedThrough": 1793151000.0,
-      "lastSeen": 1793151519.3638356,
-      "lastPrice": 1.3299,
+      "checkedThrough": 1793151900.0,
+      "lastSeen": 1793151938.268207,
+      "lastPrice": 1.3368,
       "eligibleAt": 1793146537.978262,
       "entry": 1.3301,
       "stop": 1.3218857142857143,
@@ -15145,24 +15132,23 @@
         }
       },
       "confirmationCheck": {
-        "time": 1793151050.2828891,
-        "candleTime": 1793151000.0,
+        "time": 1793151938.268207,
+        "candleTime": 1793151900.0,
         "blockers": [
-          "volume",
-          "punteggio"
+          "rapportoLivelli"
         ],
-        "rr": 2.0748663101603917
+        "rr": 0.652298850574707
       },
-      "diagnosedThrough": 1793151000.0
+      "diagnosedThrough": 1793151900.0
     },
     {
       "id": "OP-1793146500",
       "symbol": "OP",
       "status": "OPPORTUNITA",
       "createdAt": 1793146500.0,
-      "checkedThrough": 1793151000.0,
-      "lastSeen": 1793151519.3638356,
-      "lastPrice": 0.1124,
+      "checkedThrough": 1793151900.0,
+      "lastSeen": 1793151938.268207,
+      "lastPrice": 0.1128,
       "eligibleAt": 1793146537.978262,
       "entry": 0.1118,
       "stop": 0.1108857142857143,
@@ -15185,26 +15171,26 @@
         }
       },
       "confirmationCheck": {
-        "time": 1793151050.2828891,
-        "candleTime": 1793151000.0,
+        "time": 1793151938.268207,
+        "candleTime": 1793151900.0,
         "blockers": [
           "trendOrario",
           "volume",
           "punteggio",
           "rapportoLivelli"
         ],
-        "rr": 0.8113207547169757
+        "rr": 0.432835820895518
       },
-      "diagnosedThrough": 1793151000.0
+      "diagnosedThrough": 1793151900.0
     },
     {
       "id": "UNI-1793151000",
       "symbol": "UNI",
       "status": "OPPORTUNITA",
       "createdAt": 1793151000.0,
-      "checkedThrough": 1793151000.0,
-      "lastSeen": 1793151519.3638356,
-      "lastPrice": 7.07,
+      "checkedThrough": 1793151900.0,
+      "lastSeen": 1793151938.268207,
+      "lastPrice": 7.089,
       "eligibleAt": 1793151050.2828891,
       "entry": 7.07,
       "stop": 7.009142857142858,
@@ -15225,19 +15211,179 @@
           "punteggio": false,
           "prudenza": true
         }
+      },
+      "confirmationCheck": {
+        "time": 1793151938.268207,
+        "candleTime": 1793151900.0,
+        "blockers": [
+          "volume",
+          "forzaBTC",
+          "punteggio",
+          "rapportoLivelli"
+        ],
+        "rr": 1.352415026833631
+      },
+      "diagnosedThrough": 1793151900.0
+    },
+    {
+      "id": "ETH-1793151900",
+      "symbol": "ETH",
+      "status": "OPPORTUNITA",
+      "createdAt": 1793151900.0,
+      "checkedThrough": 1793151900.0,
+      "lastSeen": 1793151938.268207,
+      "lastPrice": 2358.24,
+      "eligibleAt": 1793151938.268207,
+      "entry": 2358.24,
+      "stop": 2344.0905599999996,
+      "target": 2386.5388799999996,
+      "provider": "Binance",
+      "quote": "USDT",
+      "signalSnapshot": {
+        "signal": "PRE-RADAR",
+        "score": 6,
+        "ratio": 1.7312905673487562,
+        "trend": 0.489613294982405,
+        "trend4h": 0.2542235977315288,
+        "relative": 0.24478650662840273,
+        "confirmationFilters": {
+          "trendOrario": true,
+          "volume": true,
+          "forzaBTC": false,
+          "punteggio": false,
+          "prudenza": true
+        }
+      }
+    },
+    {
+      "id": "ARB-1793151900",
+      "symbol": "ARB",
+      "status": "OPPORTUNITA",
+      "createdAt": 1793151900.0,
+      "checkedThrough": 1793151900.0,
+      "lastSeen": 1793151938.268207,
+      "lastPrice": 0.1687,
+      "eligibleAt": 1793151938.268207,
+      "entry": 0.1687,
+      "stop": 0.16702857142857142,
+      "target": 0.17204285714285714,
+      "provider": "Binance",
+      "quote": "USDT",
+      "signalSnapshot": {
+        "signal": "PRE-RADAR",
+        "score": 6,
+        "ratio": 1.500893212631329,
+        "trend": 0.416666666666643,
+        "trend4h": 0.416666666666643,
+        "relative": 0.4072295755635169,
+        "confirmationFilters": {
+          "trendOrario": false,
+          "volume": true,
+          "forzaBTC": true,
+          "punteggio": false,
+          "prudenza": true
+        }
       }
     }
   ],
   "totals": {
-    "OPPORTUNITA": 527,
+    "OPPORTUNITA": 529,
     "CONFERMATO": 41,
     "INVALIDATO": 337,
-    "SCADUTO": 120,
+    "SCADUTO": 121,
     "OBIETTIVO_TEORICO": 5,
     "FALLITO": 29,
     "INDETERMINATO": 22
   },
   "events": [
+    {
+      "id": "ARB-1793151900:OPPORTUNITA",
+      "candidateId": "ARB-1793151900",
+      "symbol": "ARB",
+      "status": "OPPORTUNITA",
+      "time": 1793151938.268207,
+      "reason": "Trend 4 ore positivo; Volumi in aumento; Forza rispetto a BTC; Movimento moderato; Scambi sufficienti",
+      "price": 0.1687,
+      "quote": "USDT",
+      "provider": "Binance",
+      "entry": 0.1687,
+      "stop": 0.16702857142857142,
+      "target": 0.17204285714285714,
+      "signalSnapshot": {
+        "signal": "PRE-RADAR",
+        "score": 6,
+        "ratio": 1.500893212631329,
+        "trend": 0.416666666666643,
+        "trend4h": 0.416666666666643,
+        "relative": 0.4072295755635169,
+        "confirmationFilters": {
+          "trendOrario": false,
+          "volume": true,
+          "forzaBTC": true,
+          "punteggio": false,
+          "prudenza": true
+        }
+      }
+    },
+    {
+      "id": "DOGE-1793113200:SCADUTO",
+      "candidateId": "DOGE-1793113200",
+      "symbol": "DOGE",
+      "status": "SCADUTO",
+      "time": 1793151938.268207,
+      "reason": "Movimento già avvenuto prima della conferma",
+      "price": 0.07925000000000001,
+      "quote": "USDT",
+      "provider": "Binance",
+      "entry": 0.07795,
+      "stop": 0.07730000000000001,
+      "target": 0.07925000000000001,
+      "signalSnapshot": {
+        "signal": "PRE-RADAR",
+        "score": 6,
+        "ratio": 1.4555812678651503,
+        "trend": 0.6585743801652999,
+        "trend4h": 0.8147956544231727,
+        "relative": 0.32932652745603086,
+        "confirmationFilters": {
+          "trendOrario": true,
+          "volume": false,
+          "forzaBTC": true,
+          "punteggio": false,
+          "prudenza": true
+        }
+      },
+      "confirmed": false
+    },
+    {
+      "id": "ETH-1793151900:OPPORTUNITA",
+      "candidateId": "ETH-1793151900",
+      "symbol": "ETH",
+      "status": "OPPORTUNITA",
+      "time": 1793151938.268207,
+      "reason": "Trend orario positivo; Volumi in aumento; Movimento moderato; Scambi sufficienti",
+      "price": 2358.24,
+      "quote": "USDT",
+      "provider": "Binance",
+      "entry": 2358.24,
+      "stop": 2344.0905599999996,
+      "target": 2386.5388799999996,
+      "signalSnapshot": {
+        "signal": "PRE-RADAR",
+        "score": 6,
+        "ratio": 1.7312905673487562,
+        "trend": 0.489613294982405,
+        "trend4h": 0.2542235977315288,
+        "relative": 0.24478650662840273,
+        "confirmationFilters": {
+          "trendOrario": true,
+          "volume": true,
+          "forzaBTC": false,
+          "punteggio": false,
+          "prudenza": true
+        }
+      }
+    },
     {
       "id": "UNI-1793151000:OPPORTUNITA",
       "candidateId": "UNI-1793151000",
@@ -17505,130 +17651,40 @@
         }
       },
       "confirmed": false
-    },
-    {
-      "id": "RENDER-1793034900:INVALIDATO",
-      "candidateId": "RENDER-1793034900",
-      "symbol": "RENDER",
-      "status": "INVALIDATO",
-      "time": 1793043052.1295092,
-      "reason": "I filtri di mercato non sono più superati",
-      "price": 1.725,
-      "quote": "USDT",
-      "provider": "Binance",
-      "entry": 1.742,
-      "stop": 1.714,
-      "target": 1.798,
-      "signalSnapshot": {
-        "signal": "PRE-RADAR",
-        "score": 5,
-        "ratio": 0.2620935290624741,
-        "trend": 0.17251293847038163,
-        "trend4h": 1.1614401858304202,
-        "relative": 0.754814431202866,
-        "confirmationFilters": {
-          "trendOrario": true,
-          "volume": false,
-          "forzaBTC": true,
-          "punteggio": false,
-          "prudenza": true
-        }
-      },
-      "confirmed": false
-    },
-    {
-      "id": "FIL-1793024100:INVALIDATO",
-      "candidateId": "FIL-1793024100",
-      "symbol": "FIL",
-      "status": "INVALIDATO",
-      "time": 1793041268.2355952,
-      "reason": "I filtri di mercato non sono più superati",
-      "price": 0.9065,
-      "quote": "USDT",
-      "provider": "Binance",
-      "entry": 0.9119,
-      "stop": 0.8982142857142857,
-      "target": 0.9392714285714285,
-      "signalSnapshot": {
-        "signal": "PRE-RADAR",
-        "score": 5,
-        "ratio": 4.129136956946326,
-        "trend": 0.2418379685610761,
-        "trend4h": -0.10954102311315772,
-        "relative": 0.5092762422676644,
-        "confirmationFilters": {
-          "trendOrario": false,
-          "volume": true,
-          "forzaBTC": true,
-          "punteggio": false,
-          "prudenza": true
-        }
-      },
-      "confirmed": false
-    },
-    {
-      "id": "AAVE-1793003400:INVALIDATO",
-      "candidateId": "AAVE-1793003400",
-      "symbol": "AAVE",
-      "status": "INVALIDATO",
-      "time": 1793041268.2355952,
-      "reason": "I filtri di mercato non sono più superati",
-      "price": 134.91,
-      "quote": "USDT",
-      "provider": "Binance",
-      "entry": 135.28,
-      "stop": 133.7514285714286,
-      "target": 139.02,
-      "signalSnapshot": {
-        "signal": "PRE-RADAR",
-        "score": 6,
-        "ratio": 1.7322365427889397,
-        "trend": 0.6997171356260212,
-        "trend4h": 0.6173298624023937,
-        "relative": 0.261555964414506,
-        "confirmationFilters": {
-          "trendOrario": false,
-          "volume": true,
-          "forzaBTC": true,
-          "punteggio": false,
-          "prudenza": true
-        }
-      },
-      "confirmed": false
     }
   ],
   "sourceNotes": [],
   "diagnosis": {
     "since": 1792571521.2736304,
-    "asOf": 1793151519.3638356,
-    "opportunities": 204,
+    "asOf": 1793151938.268207,
+    "opportunities": 206,
     "counts": {
-      "OPPORTUNITA": 204,
+      "OPPORTUNITA": 206,
       "CONFERMATO": 5,
       "OBIETTIVO_TEORICO": 1,
       "INDETERMINATO": 4,
       "INVALIDATO": 143,
-      "SCADUTO": 39,
+      "SCADUTO": 40,
       "FALLITO": 3
     },
     "outcomes": {
       "Obiettivo teorico toccato": 1,
       "Livello toccato nella candela parzialmente precedente alla rilevazione: ordine temporale sconosciuto": 4,
       "Livello di invalidazione toccato": 127,
-      "Movimento già avvenuto prima della conferma": 23,
+      "Movimento già avvenuto prima della conferma": 24,
       "I filtri di mercato non sono più superati": 19,
       "Finestra di osservazione terminata": 16
     },
     "confirmationChecks": {
       "since": 1792939534.059774,
-      "checks": 1854,
-      "blockedChecks": 1851,
+      "checks": 1866,
+      "blockedChecks": 1863,
       "reasons": {
-        "trendOrario": 1529,
-        "volume": 1516,
-        "forzaBTC": 884,
-        "punteggio": 1820,
-        "rapportoLivelli": 1049,
+        "trendOrario": 1536,
+        "volume": 1524,
+        "forzaBTC": 887,
+        "punteggio": 1831,
+        "rapportoLivelli": 1061,
         "prudenza": 6
       }
     },
@@ -17665,7 +17721,7 @@
   "paper": {
     "version": "paper-2",
     "startedAt": 1792571521.2736304,
-    "lastRun": 1793151519.3638356,
+    "lastRun": 1793151938.268207,
     "previous": {
       "version": "paper-1",
       "startedAt": 1792060401.9214385,
@@ -17712,9 +17768,9 @@
       "uncertainty": "Prima candela parziale, entrambi i livelli o interruzione dati: chiusura al prezzo osservato, esito separato dalle statistiche certe",
       "maxDrawdownPausePct": 8
     },
-    "fxAt": 1793151519.3638356,
+    "fxAt": 1793151938.268207,
     "eurRates": {
-      "USDT": 0.897182845863987
+      "USDT": 0.8975854950184005
     },
     "errors": [],
     "revision": "paper-2.1",
@@ -21466,6 +21522,11 @@
           },
           {
             "time": 1793151519.3638356,
+            "equity": 148.78246981208417,
+            "cash": 148.78246981208417
+          },
+          {
+            "time": 1793151938.268207,
             "equity": 148.78246981208417,
             "cash": 148.78246981208417
           }
@@ -26283,6 +26344,11 @@
           },
           {
             "time": 1793151519.3638356,
+            "equity": 137.86891661665993,
+            "cash": 137.86891661665993
+          },
+          {
+            "time": 1793151938.268207,
             "equity": 137.86891661665993,
             "cash": 137.86891661665993
           }
