@@ -1,53 +1,13 @@
 {
   "version": "paper-2",
   "startedAt": 1792571521.2736304,
-  "lastRun": 1793277941.0604818,
+  "lastRun": 1793278864.9530423,
   "portfolios": {
     "A": {
       "name": "Conferme",
       "cash": 146.36450052585016,
       "positions": {},
-      "pending": {
-        "LTC": {
-          "id": "LTC-1793271600",
-          "symbol": "LTC",
-          "status": "CONFERMATO",
-          "createdAt": 1793271600.0,
-          "checkedThrough": 1793277900.0,
-          "lastSeen": 1793277941.0604818,
-          "lastPrice": 58.28,
-          "eligibleAt": 1793277941.0604818,
-          "entry": 58.28,
-          "stop": 57.46142857142857,
-          "target": 59.85,
-          "provider": "Binance",
-          "quote": "USDT",
-          "signalSnapshot": {
-            "signal": "PRE-RADAR",
-            "score": 6,
-            "ratio": 0.922681770142915,
-            "trend": 0.712671649574137,
-            "trend4h": 1.293706293706287,
-            "relative": 0.8984778462615806,
-            "confirmationFilters": {
-              "trendOrario": true,
-              "volume": false,
-              "forzaBTC": true,
-              "punteggio": false,
-              "prudenza": true
-            }
-          },
-          "confirmationCheck": {
-            "time": 1793277941.0604818,
-            "candleTime": 1793277900.0,
-            "blockers": [],
-            "rr": 1.9179755671902212
-          },
-          "diagnosedThrough": 1793277900.0,
-          "confirmedAt": 1793277900.0,
-          "queuedAt": 1793277941.0604818
-        }
-      },
+      "pending": {},
       "seen": [
         "OP-1792539000:CONFERMATO",
         "ADA-1792567800:CONFERMATO",
@@ -852,6 +812,27 @@
           "signalAt": 1793277900.0,
           "stop": 57.46142857142857,
           "target": 59.85
+        },
+        {
+          "time": 1793278864.9530423,
+          "type": "SALTATO",
+          "version": "paper-2",
+          "revision": "paper-2.1",
+          "symbol": "LTC",
+          "candidateId": "LTC-1793271600",
+          "reason": "Rapporto rischio/obiettivo al prezzo eseguito inferiore a 1,8",
+          "entryCheck": {
+            "entry": 58.34828999999999,
+            "stop": 57.46142857142857,
+            "target": 59.85,
+            "riskPct": 1.5199441638673932,
+            "rewardPct": 2.5737001032935325,
+            "rr": 1.693285953837232,
+            "targetNetPct": 1.9600484660172501,
+            "stopNetPct": -2.1091053956650896,
+            "eurRate": 0.8975854950184005,
+            "fxAssumption": "Cambio invariato solo per la stima dei livelli netti"
+          }
         }
       ],
       "equity": 146.36450052585016,
@@ -5027,6 +5008,11 @@
           "time": 1793277941.0604818,
           "equity": 146.36450052585016,
           "cash": 146.36450052585016
+        },
+        {
+          "time": 1793278864.9530423,
+          "equity": 146.36450052585016,
+          "cash": 146.36450052585016
         }
       ],
       "realizedEUR": -3.635499474149828,
@@ -5036,7 +5022,7 @@
       "uncertainCount": 1,
       "wins": 3,
       "losses": 7,
-      "activity": "INGRESSO IN ATTESA"
+      "activity": "IN ATTESA DI CONFERME"
     },
     "B": {
       "name": "Anticipato",
@@ -13058,6 +13044,11 @@
           "time": 1793277941.0604818,
           "equity": 137.86891661665993,
           "cash": 137.86891661665993
+        },
+        {
+          "time": 1793278864.9530423,
+          "equity": 137.86891661665993,
+          "cash": 137.86891661665993
         }
       ],
       "realizedEUR": -12.13108338334009,
@@ -13120,9 +13111,9 @@
     "uncertainty": "Prima candela parziale, entrambi i livelli o interruzione dati: chiusura al prezzo osservato, esito separato dalle statistiche certe",
     "maxDrawdownPausePct": 8
   },
-  "fxAt": 1793277941.0604818,
+  "fxAt": 1793278864.9530423,
   "eurRates": {
-    "USDT": 0.8962982880702699
+    "USDT": 0.8975854950184005
   },
   "errors": [],
   "revision": "paper-2.1"
