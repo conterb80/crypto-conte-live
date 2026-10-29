@@ -1,7 +1,7 @@
 {
   "version": "paper-2",
   "startedAt": 1792571521.2736304,
-  "lastRun": 1793233850.2732708,
+  "lastRun": 1793234735.1805882,
   "portfolios": {
     "A": {
       "name": "Conferme",
@@ -12,14 +12,14 @@
           "qty": 191.48080148762608,
           "costEUR": 30,
           "openedAt": 1793220338.0306585,
-          "checkedThrough": 1793233800.0,
+          "checkedThrough": 1793234700.0,
           "provider": "Binance",
           "quote": "USDT",
           "entry": 0.1744743,
           "stop": 0.17115714285714287,
           "target": 0.1814857142857143,
-          "mark": 29.47933874896614,
-          "markedAt": 1793233850.2732708,
+          "mark": 29.348971481101856,
+          "markedAt": 1793234735.1805882,
           "entryCheck": {
             "entry": 0.1744743,
             "stop": 0.17115714285714287,
@@ -38,14 +38,14 @@
           "qty": 35.38872197995253,
           "costEUR": 30,
           "openedAt": 1793220338.0306585,
-          "checkedThrough": 1793233800.0,
+          "checkedThrough": 1793234700.0,
           "provider": "Binance",
           "quote": "USDT",
           "entry": 0.9440430999999999,
           "stop": 0.9323714285714285,
           "target": 0.9816571428571428,
-          "mark": 29.914776739569838,
-          "markedAt": 1793233850.2732708,
+          "mark": 29.796510604645853,
+          "markedAt": 1793234735.1805882,
           "entryCheck": {
             "entry": 0.9440430999999999,
             "stop": 0.9323714285714285,
@@ -60,7 +60,47 @@
           }
         }
       },
-      "pending": {},
+      "pending": {
+        "INJ": {
+          "id": "INJ-1793229300",
+          "symbol": "INJ",
+          "status": "CONFERMATO",
+          "createdAt": 1793229300.0,
+          "checkedThrough": 1793234700.0,
+          "lastSeen": 1793234735.1805882,
+          "lastPrice": 8.034,
+          "eligibleAt": 1793234735.1805882,
+          "entry": 8.034,
+          "stop": 7.9634285714285715,
+          "target": 8.475142857142858,
+          "provider": "Binance",
+          "quote": "USDT",
+          "signalSnapshot": {
+            "signal": "PRE-RADAR",
+            "score": 5,
+            "ratio": 0.6923286479899787,
+            "trend": 0.4073571164053824,
+            "trend4h": 2.9489937982533965,
+            "relative": 2.7058376491871483,
+            "confirmationFilters": {
+              "trendOrario": true,
+              "volume": false,
+              "forzaBTC": true,
+              "punteggio": false,
+              "prudenza": true
+            }
+          },
+          "confirmationCheck": {
+            "time": 1793234735.1805882,
+            "candleTime": 1793234700.0,
+            "blockers": [],
+            "rr": 6.251012145748937
+          },
+          "diagnosedThrough": 1793234700.0,
+          "confirmedAt": 1793234700.0,
+          "queuedAt": 1793234735.1805882
+        }
+      },
       "seen": [
         "OP-1792539000:CONFERMATO",
         "ADA-1792567800:CONFERMATO",
@@ -77,7 +117,8 @@
         "UNI-1793163600:CONFERMATO",
         "SOL-1793210400:CONFERMATO",
         "ARB-1793217600:CONFERMATO",
-        "SUI-1793218500:CONFERMATO"
+        "SUI-1793218500:CONFERMATO",
+        "INJ-1793229300:CONFERMATO"
       ],
       "ledger": [
         {
@@ -738,9 +779,21 @@
           },
           "signalAt": 1793219400.0,
           "queuedAt": 1793219452.190814
+        },
+        {
+          "time": 1793234735.1805882,
+          "type": "IN_ATTESA",
+          "version": "paper-2",
+          "revision": "paper-2.1",
+          "symbol": "INJ",
+          "candidateId": "INJ-1793229300",
+          "reason": "Esecuzione dalla prossima osservazione disponibile",
+          "signalAt": 1793234700.0,
+          "stop": 7.9634285714285715,
+          "target": 8.475142857142858
         }
       ],
-      "equity": 147.27812629268067,
+      "equity": 147.02949288989242,
       "peak": 150.33841096385066,
       "maxDrawdownPct": 2.2381959205077795,
       "history": [
@@ -4657,6 +4710,11 @@
         {
           "time": 1793233850.2732708,
           "equity": 147.27812629268067,
+          "cash": 87.88401080414471
+        },
+        {
+          "time": 1793234735.1805882,
+          "equity": 147.02949288989242,
           "cash": 87.88401080414471
         }
       ],
@@ -12434,6 +12492,11 @@
           "time": 1793233850.2732708,
           "equity": 137.86891661665993,
           "cash": 137.86891661665993
+        },
+        {
+          "time": 1793234735.1805882,
+          "equity": 137.86891661665993,
+          "cash": 137.86891661665993
         }
       ],
       "realizedEUR": -12.13108338334009,
@@ -12496,9 +12559,9 @@
     "uncertainty": "Prima candela parziale, entrambi i livelli o interruzione dati: chiusura al prezzo osservato, esito separato dalle statistiche certe",
     "maxDrawdownPausePct": 8
   },
-  "fxAt": 1793233850.2732708,
+  "fxAt": 1793234735.1805882,
   "eurRates": {
-    "USDT": 0.897182845863987
+    "USDT": 0.8968609865470852
   },
   "errors": [],
   "revision": "paper-2.1"
