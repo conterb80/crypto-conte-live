@@ -1,13 +1,53 @@
 {
   "version": "paper-2",
   "startedAt": 1792571521.2736304,
-  "lastRun": 1793476860.4800637,
+  "lastRun": 1793477737.1167982,
   "portfolios": {
     "A": {
       "name": "Conferme",
       "cash": 145.54699467782595,
       "positions": {},
-      "pending": {},
+      "pending": {
+        "LINK": {
+          "id": "LINK-1793475900",
+          "symbol": "LINK",
+          "status": "CONFERMATO",
+          "createdAt": 1793475900.0,
+          "checkedThrough": 1793477700.0,
+          "lastSeen": 1793477737.1167982,
+          "lastPrice": 11.911,
+          "eligibleAt": 1793477737.1167982,
+          "entry": 11.911,
+          "stop": 11.801285714285715,
+          "target": 12.13642857142857,
+          "provider": "Binance",
+          "quote": "USDT",
+          "signalSnapshot": {
+            "signal": "PRE-RADAR",
+            "score": 6,
+            "ratio": 1.165515195944973,
+            "trend": 1.0689742937133984,
+            "trend4h": 2.7957545948744444,
+            "relative": 2.7827409018924554,
+            "confirmationFilters": {
+              "trendOrario": true,
+              "volume": false,
+              "forzaBTC": true,
+              "punteggio": false,
+              "prudenza": true
+            }
+          },
+          "confirmationCheck": {
+            "time": 1793477737.1167982,
+            "candleTime": 1793477700.0,
+            "blockers": [],
+            "rr": 2.0546875000000187
+          },
+          "diagnosedThrough": 1793477700.0,
+          "confirmedAt": 1793477700.0,
+          "queuedAt": 1793477737.1167982
+        }
+      },
       "seen": [
         "OP-1792539000:CONFERMATO",
         "ADA-1792567800:CONFERMATO",
@@ -31,7 +71,8 @@
         "LINK-1793271600:CONFERMATO",
         "OP-1793395800:CONFERMATO",
         "UNI-1793407500:CONFERMATO",
-        "UNI-1793440800:CONFERMATO"
+        "UNI-1793440800:CONFERMATO",
+        "LINK-1793475900:CONFERMATO"
       ],
       "ledger": [
         {
@@ -1023,6 +1064,18 @@
             "eurRate": 0.8843296781039971,
             "fxAssumption": "Cambio invariato solo per la stima dei livelli netti"
           }
+        },
+        {
+          "time": 1793477737.1167982,
+          "type": "IN_ATTESA",
+          "version": "paper-2",
+          "revision": "paper-2.1",
+          "symbol": "LINK",
+          "candidateId": "LINK-1793475900",
+          "reason": "Esecuzione dalla prossima osservazione disponibile",
+          "signalAt": 1793477700.0,
+          "stop": 11.801285714285715,
+          "target": 12.13642857142857
         }
       ],
       "equity": 145.54699467782595,
@@ -6358,6 +6411,11 @@
           "time": 1793476860.4800637,
           "equity": 145.54699467782595,
           "cash": 145.54699467782595
+        },
+        {
+          "time": 1793477737.1167982,
+          "equity": 145.54699467782595,
+          "cash": 145.54699467782595
         }
       ],
       "realizedEUR": -4.453005322174036,
@@ -6367,7 +6425,7 @@
       "uncertainCount": 1,
       "wins": 3,
       "losses": 8,
-      "activity": "IN ATTESA DI CONFERME"
+      "activity": "INGRESSO IN ATTESA"
     },
     "B": {
       "name": "Anticipato",
@@ -15549,6 +15607,11 @@
           "time": 1793476860.4800637,
           "equity": 137.86891661665993,
           "cash": 137.86891661665993
+        },
+        {
+          "time": 1793477737.1167982,
+          "equity": 137.86891661665993,
+          "cash": 137.86891661665993
         }
       ],
       "realizedEUR": -12.13108338334009,
@@ -15611,9 +15674,9 @@
     "uncertainty": "Prima candela parziale, entrambi i livelli o interruzione dati: chiusura al prezzo osservato, esito separato dalle statistiche certe",
     "maxDrawdownPausePct": 8
   },
-  "fxAt": 1793476860.4800637,
+  "fxAt": 1793477737.1167982,
   "eurRates": {
-    "USDT": 0.8848774444739402
+    "USDT": 0.8840951286358413
   },
   "errors": [],
   "revision": "paper-2.1"
