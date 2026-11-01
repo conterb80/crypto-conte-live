@@ -1,53 +1,40 @@
 {
   "version": "paper-2",
   "startedAt": 1792571521.2736304,
-  "lastRun": 1793511936.009991,
+  "lastRun": 1793512860.3316944,
   "portfolios": {
     "A": {
       "name": "Conferme",
-      "cash": 145.2009349952469,
-      "positions": {},
-      "pending": {
+      "cash": 115.20093499524691,
+      "positions": {
         "AAVE": {
-          "id": "AAVE-1793511000",
-          "symbol": "AAVE",
-          "status": "CONFERMATO",
-          "createdAt": 1793511000.0,
-          "checkedThrough": 1793511900.0,
-          "lastSeen": 1793511936.009991,
-          "lastPrice": 139.58,
-          "eligibleAt": 1793511936.009991,
-          "entry": 139.58,
-          "stop": 137.93142857142857,
-          "target": 145.12714285714287,
+          "candidateId": "AAVE-1793511000",
+          "qty": 0.24129542645062627,
+          "costEUR": 30,
+          "openedAt": 1793512860.3316944,
+          "checkedThrough": 1793512800,
           "provider": "Binance",
           "quote": "USDT",
-          "signalSnapshot": {
-            "signal": "PRE-RADAR",
-            "score": 6,
-            "ratio": 1.3470623151420942,
-            "trend": 1.2847347527968234,
-            "trend4h": 4.404434193884388,
-            "relative": 4.167876715516039,
-            "confirmationFilters": {
-              "trendOrario": true,
-              "volume": false,
-              "forzaBTC": true,
-              "punteggio": false,
-              "prudenza": true
-            }
-          },
-          "confirmationCheck": {
-            "time": 1793511936.009991,
-            "candleTime": 1793511900.0,
-            "blockers": [],
-            "rr": 3.3648180242634016
-          },
-          "diagnosedThrough": 1793511900.0,
-          "confirmedAt": 1793511900.0,
-          "queuedAt": 1793511936.009991
+          "entry": 140.29014999999998,
+          "stop": 137.93142857142857,
+          "target": 145.12714285714287,
+          "mark": 29.79073295781526,
+          "markedAt": 1793512860.3316944,
+          "entryCheck": {
+            "entry": 140.29014999999998,
+            "stop": 137.93142857142857,
+            "target": 145.12714285714287,
+            "riskPct": 1.6813164919785275,
+            "rewardPct": 3.4478492304291426,
+            "rr": 2.0506842387371145,
+            "targetNetPct": 2.8289679578510807,
+            "stopNetPct": -2.269512306780863,
+            "eurRate": 0.884016973125884,
+            "fxAssumption": "Cambio invariato solo per la stima dei livelli netti"
+          }
         }
       },
+      "pending": {},
       "seen": [
         "OP-1792539000:CONFERMATO",
         "ADA-1792567800:CONFERMATO",
@@ -1198,11 +1185,40 @@
           "signalAt": 1793511900.0,
           "stop": 137.93142857142857,
           "target": 145.12714285714287
+        },
+        {
+          "time": 1793512860.3316944,
+          "type": "ACQUISTO",
+          "version": "paper-2",
+          "revision": "paper-2.1",
+          "symbol": "AAVE",
+          "candidateId": "AAVE-1793511000",
+          "price": 140.29014999999998,
+          "observedPrice": 140.15,
+          "quote": "USDT",
+          "eurRate": 0.884016973125884,
+          "costEUR": 30,
+          "feeEUR": 0.07481296758104605,
+          "qty": 0.24129542645062627,
+          "entryCheck": {
+            "entry": 140.29014999999998,
+            "stop": 137.93142857142857,
+            "target": 145.12714285714287,
+            "riskPct": 1.6813164919785275,
+            "rewardPct": 3.4478492304291426,
+            "rr": 2.0506842387371145,
+            "targetNetPct": 2.8289679578510807,
+            "stopNetPct": -2.269512306780863,
+            "eurRate": 0.884016973125884,
+            "fxAssumption": "Cambio invariato solo per la stima dei livelli netti"
+          },
+          "signalAt": 1793511900.0,
+          "queuedAt": 1793511936.009991
         }
       ],
-      "equity": 145.2009349952469,
+      "equity": 144.99166795306218,
       "peak": 150.33841096385066,
-      "maxDrawdownPct": 3.4172743583401832,
+      "maxDrawdownPct": 3.556471680463702,
       "history": [
         {
           "time": 1792571521.2736304,
@@ -6738,6 +6754,11 @@
           "time": 1793511936.009991,
           "equity": 145.2009349952469,
           "cash": 145.2009349952469
+        },
+        {
+          "time": 1793512860.3316944,
+          "equity": 144.99166795306218,
+          "cash": 115.20093499524691
         }
       ],
       "realizedEUR": -4.799065004753071,
@@ -6747,7 +6768,7 @@
       "uncertainCount": 1,
       "wins": 3,
       "losses": 9,
-      "activity": "INGRESSO IN ATTESA"
+      "activity": "POSIZIONI APERTE"
     },
     "B": {
       "name": "Anticipato",
@@ -16134,6 +16155,11 @@
           "time": 1793511936.009991,
           "equity": 137.86891661665993,
           "cash": 137.86891661665993
+        },
+        {
+          "time": 1793512860.3316944,
+          "equity": 137.86891661665993,
+          "cash": 137.86891661665993
         }
       ],
       "realizedEUR": -12.13108338334009,
@@ -16196,9 +16222,9 @@
     "uncertainty": "Prima candela parziale, entrambi i livelli o interruzione dati: chiusura al prezzo osservato, esito separato dalle statistiche certe",
     "maxDrawdownPausePct": 8
   },
-  "fxAt": 1793511936.009991,
+  "fxAt": 1793512860.3316944,
   "eurRates": {
-    "USDT": 0.8844078889183691
+    "USDT": 0.884016973125884
   },
   "errors": [],
   "revision": "paper-2.1"
