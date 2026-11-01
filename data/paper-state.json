@@ -1,25 +1,25 @@
 {
   "version": "paper-2",
   "startedAt": 1792571521.2736304,
-  "lastRun": 1793521850.273461,
+  "lastRun": 1793522736.3833926,
   "portfolios": {
     "A": {
       "name": "Conferme",
-      "cash": 114.65073808247794,
+      "cash": 84.65073808247794,
       "positions": {
         "SUI": {
           "candidateId": "SUI-1793519100",
           "qty": 37.132230392866774,
           "costEUR": 30,
           "openedAt": 1793520937.4546232,
-          "checkedThrough": 1793521800.0,
+          "checkedThrough": 1793522700.0,
           "provider": "Binance",
           "quote": "USDT",
           "entry": 0.9064054999999999,
           "stop": 0.9013571428571429,
           "target": 0.9176857142857143,
-          "mark": 29.803073875367442,
-          "markedAt": 1793521850.273461,
+          "mark": 29.853654260812416,
+          "markedAt": 1793522736.3833926,
           "entryCheck": {
             "entry": 0.9064054999999999,
             "stop": 0.9013571428571429,
@@ -32,49 +32,35 @@
             "eurRate": 0.8891259891526629,
             "fxAssumption": "Cambio invariato solo per la stima dei livelli netti"
           }
-        }
-      },
-      "pending": {
+        },
         "UNI": {
-          "id": "UNI-1793514600",
-          "symbol": "UNI",
-          "status": "CONFERMATO",
-          "createdAt": 1793514600.0,
-          "checkedThrough": 1793521800.0,
-          "lastSeen": 1793521850.273461,
-          "lastPrice": 7.267,
-          "eligibleAt": 1793521850.273461,
-          "entry": 7.267,
-          "stop": 7.1692857142857145,
-          "target": 7.522428571428572,
+          "candidateId": "UNI-1793514600",
+          "qty": 4.618652318053466,
+          "costEUR": 30,
+          "openedAt": 1793522736.3833926,
+          "checkedThrough": 1793522700,
           "provider": "Binance",
           "quote": "USDT",
-          "signalSnapshot": {
-            "signal": "SETUP",
-            "score": 7,
-            "ratio": 2.6684712564268165,
-            "trend": 1.2505210504376807,
-            "trend4h": 2.2736842105263166,
-            "relative": 1.9527168518568727,
-            "confirmationFilters": {
-              "trendOrario": true,
-              "volume": true,
-              "forzaBTC": true,
-              "punteggio": true,
-              "prudenza": true
-            }
-          },
-          "confirmationCheck": {
-            "time": 1793521850.273461,
-            "candleTime": 1793521800.0,
-            "blockers": [],
-            "rr": 2.6140350877192935
-          },
-          "diagnosedThrough": 1793521800.0,
-          "confirmedAt": 1793521800.0,
-          "queuedAt": 1793521850.273461
+          "entry": 7.294286999999999,
+          "stop": 7.1692857142857145,
+          "target": 7.522428571428572,
+          "mark": 29.790732957815255,
+          "markedAt": 1793522736.3833926,
+          "entryCheck": {
+            "entry": 7.294286999999999,
+            "stop": 7.1692857142857145,
+            "target": 7.522428571428572,
+            "riskPct": 1.7136875161929384,
+            "rewardPct": 3.127674732685633,
+            "rr": 1.8251137988295285,
+            "targetNetPct": 2.510708918013038,
+            "stopNetPct": -2.301689669930207,
+            "eurRate": 0.8882572392965004,
+            "fxAssumption": "Cambio invariato solo per la stima dei livelli netti"
+          }
         }
       },
+      "pending": {},
       "seen": [
         "OP-1792539000:CONFERMATO",
         "ADA-1792567800:CONFERMATO",
@@ -1333,11 +1319,40 @@
           "signalAt": 1793521800.0,
           "stop": 7.1692857142857145,
           "target": 7.522428571428572
+        },
+        {
+          "time": 1793522736.3833926,
+          "type": "ACQUISTO",
+          "version": "paper-2",
+          "revision": "paper-2.1",
+          "symbol": "UNI",
+          "candidateId": "UNI-1793514600",
+          "price": 7.294286999999999,
+          "observedPrice": 7.287,
+          "quote": "USDT",
+          "eurRate": 0.8882572392965004,
+          "costEUR": 30,
+          "feeEUR": 0.07481296758104605,
+          "qty": 4.618652318053466,
+          "entryCheck": {
+            "entry": 7.294286999999999,
+            "stop": 7.1692857142857145,
+            "target": 7.522428571428572,
+            "riskPct": 1.7136875161929384,
+            "rewardPct": 3.127674732685633,
+            "rr": 1.8251137988295285,
+            "targetNetPct": 2.510708918013038,
+            "stopNetPct": -2.301689669930207,
+            "eurRate": 0.8882572392965004,
+            "fxAssumption": "Cambio invariato solo per la stima dei livelli netti"
+          },
+          "signalAt": 1793521800.0,
+          "queuedAt": 1793521850.273461
         }
       ],
-      "equity": 144.45381195784537,
+      "equity": 144.2951253011056,
       "peak": 150.33841096385066,
-      "maxDrawdownPct": 3.922443962092559,
+      "maxDrawdownPct": 4.019788172563688,
       "history": [
         {
           "time": 1792571521.2736304,
@@ -6933,6 +6948,11 @@
           "time": 1793521850.273461,
           "equity": 144.45381195784537,
           "cash": 114.65073808247794
+        },
+        {
+          "time": 1793522736.3833926,
+          "equity": 144.2951253011056,
+          "cash": 84.65073808247794
         }
       ],
       "realizedEUR": -5.3492619175220355,
@@ -16389,6 +16409,11 @@
           "time": 1793521850.273461,
           "equity": 137.86891661665993,
           "cash": 137.86891661665993
+        },
+        {
+          "time": 1793522736.3833926,
+          "equity": 137.86891661665993,
+          "cash": 137.86891661665993
         }
       ],
       "realizedEUR": -12.13108338334009,
@@ -16451,9 +16476,9 @@
     "uncertainty": "Prima candela parziale, entrambi i livelli o interruzione dati: chiusura al prezzo osservato, esito separato dalle statistiche certe",
     "maxDrawdownPausePct": 8
   },
-  "fxAt": 1793521850.273461,
+  "fxAt": 1793522736.3833926,
   "eurRates": {
-    "USDT": 0.8884150675195451
+    "USDT": 0.8882572392965004
   },
   "errors": [],
   "revision": "paper-2.1"
