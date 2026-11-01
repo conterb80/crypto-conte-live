@@ -1,80 +1,40 @@
 {
   "version": "paper-2",
   "startedAt": 1792571521.2736304,
-  "lastRun": 1793520060.6555023,
+  "lastRun": 1793520937.4546232,
   "portfolios": {
     "A": {
       "name": "Conferme",
-      "cash": 115.20093499524691,
+      "cash": 114.65073808247794,
       "positions": {
-        "AAVE": {
-          "candidateId": "AAVE-1793511000",
-          "qty": 0.24129542645062627,
+        "SUI": {
+          "candidateId": "SUI-1793519100",
+          "qty": 37.132230392866774,
           "costEUR": 30,
-          "openedAt": 1793512860.3316944,
-          "checkedThrough": 1793520000.0,
+          "openedAt": 1793520937.4546232,
+          "checkedThrough": 1793520900,
           "provider": "Binance",
           "quote": "USDT",
-          "entry": 140.29014999999998,
-          "stop": 137.93142857142857,
-          "target": 145.12714285714287,
-          "mark": 29.484822934084637,
-          "markedAt": 1793520060.6555023,
+          "entry": 0.9064054999999999,
+          "stop": 0.9013571428571429,
+          "target": 0.9176857142857143,
+          "mark": 29.790732957815255,
+          "markedAt": 1793520937.4546232,
           "entryCheck": {
-            "entry": 140.29014999999998,
-            "stop": 137.93142857142857,
-            "target": 145.12714285714287,
-            "riskPct": 1.6813164919785275,
-            "rewardPct": 3.4478492304291426,
-            "rr": 2.0506842387371145,
-            "targetNetPct": 2.8289679578510807,
-            "stopNetPct": -2.269512306780863,
-            "eurRate": 0.884016973125884,
+            "entry": 0.9064054999999999,
+            "stop": 0.9013571428571429,
+            "target": 0.9176857142857143,
+            "riskPct": 0.5569645310908868,
+            "rewardPct": 1.2444997614990712,
+            "rr": 2.2344327008787404,
+            "targetNetPct": 0.6388001232750629,
+            "stopNetPct": -1.1518868305669616,
+            "eurRate": 0.8891259891526629,
             "fxAssumption": "Cambio invariato solo per la stima dei livelli netti"
           }
         }
       },
-      "pending": {
-        "SUI": {
-          "id": "SUI-1793519100",
-          "symbol": "SUI",
-          "status": "CONFERMATO",
-          "createdAt": 1793519100.0,
-          "checkedThrough": 1793520000.0,
-          "lastSeen": 1793520060.6555023,
-          "lastPrice": 0.9065,
-          "eligibleAt": 1793520060.6555023,
-          "entry": 0.9065,
-          "stop": 0.9013571428571429,
-          "target": 0.9176857142857143,
-          "provider": "Binance",
-          "quote": "USDT",
-          "signalSnapshot": {
-            "signal": "PRE-RADAR",
-            "score": 5,
-            "ratio": 0.4276528298113924,
-            "trend": 0.343034192763092,
-            "trend4h": 0.38746817225727703,
-            "relative": 0.3073119807245561,
-            "confirmationFilters": {
-              "trendOrario": true,
-              "volume": false,
-              "forzaBTC": true,
-              "punteggio": false,
-              "prudenza": true
-            }
-          },
-          "confirmationCheck": {
-            "time": 1793520060.6555023,
-            "candleTime": 1793520000.0,
-            "blockers": [],
-            "rr": 2.1750000000000247
-          },
-          "diagnosedThrough": 1793520000.0,
-          "confirmedAt": 1793520000.0,
-          "queuedAt": 1793520060.6555023
-        }
-      },
+      "pending": {},
       "seen": [
         "OP-1792539000:CONFERMATO",
         "ADA-1792567800:CONFERMATO",
@@ -1267,11 +1227,64 @@
           "signalAt": 1793520000.0,
           "stop": 0.9013571428571429,
           "target": 0.9176857142857143
+        },
+        {
+          "time": 1793520937.4546232,
+          "type": "VENDITA",
+          "version": "paper-2",
+          "revision": "paper-2.1",
+          "symbol": "AAVE",
+          "candidateId": "AAVE-1793511000",
+          "reason": "Invalidazione",
+          "price": 137.61225,
+          "observedPrice": 137.75,
+          "quote": "USDT",
+          "eurRate": 0.8891259891526629,
+          "netEUR": 29.449803087231036,
+          "feeEUR": 0.07380903029381211,
+          "pnlEUR": -0.5501969127689641,
+          "ambiguous": false,
+          "quality": "OSSERVATO",
+          "uncertainty": [],
+          "openedAt": 1793512860.3316944,
+          "triggerAt": 1793520900.0,
+          "entry": 140.29014999999998,
+          "stop": 137.93142857142857,
+          "target": 145.12714285714287
+        },
+        {
+          "time": 1793520937.4546232,
+          "type": "ACQUISTO",
+          "version": "paper-2",
+          "revision": "paper-2.1",
+          "symbol": "SUI",
+          "candidateId": "SUI-1793519100",
+          "price": 0.9064054999999999,
+          "observedPrice": 0.9055,
+          "quote": "USDT",
+          "eurRate": 0.8891259891526629,
+          "costEUR": 30,
+          "feeEUR": 0.07481296758104605,
+          "qty": 37.132230392866774,
+          "entryCheck": {
+            "entry": 0.9064054999999999,
+            "stop": 0.9013571428571429,
+            "target": 0.9176857142857143,
+            "riskPct": 0.5569645310908868,
+            "rewardPct": 1.2444997614990712,
+            "rr": 2.2344327008787404,
+            "targetNetPct": 0.6388001232750629,
+            "stopNetPct": -1.1518868305669616,
+            "eurRate": 0.8891259891526629,
+            "fxAssumption": "Cambio invariato solo per la stima dei livelli netti"
+          },
+          "signalAt": 1793520000.0,
+          "queuedAt": 1793520060.6555023
         }
       ],
-      "equity": 144.68575792933154,
+      "equity": 144.4414710402932,
       "peak": 150.33841096385066,
-      "maxDrawdownPct": 3.759952628392693,
+      "maxDrawdownPct": 3.922443962092559,
       "history": [
         {
           "time": 1792571521.2736304,
@@ -6857,15 +6870,20 @@
           "time": 1793520060.6555023,
           "equity": 144.68575792933154,
           "cash": 115.20093499524691
+        },
+        {
+          "time": 1793520937.4546232,
+          "equity": 144.4414710402932,
+          "cash": 114.65073808247794
         }
       ],
-      "realizedEUR": -4.799065004753071,
-      "certainRealizedEUR": -4.405069463910259,
+      "realizedEUR": -5.3492619175220355,
+      "certainRealizedEUR": -4.955266376679223,
       "uncertainRealizedEUR": -0.39399554084281263,
-      "closedCount": 12,
+      "closedCount": 13,
       "uncertainCount": 1,
       "wins": 3,
-      "losses": 9,
+      "losses": 10,
       "activity": "POSIZIONI APERTE"
     },
     "B": {
@@ -16303,6 +16321,11 @@
           "time": 1793520060.6555023,
           "equity": 137.86891661665993,
           "cash": 137.86891661665993
+        },
+        {
+          "time": 1793520937.4546232,
+          "equity": 137.86891661665993,
+          "cash": 137.86891661665993
         }
       ],
       "realizedEUR": -12.13108338334009,
@@ -16365,9 +16388,9 @@
     "uncertainty": "Prima candela parziale, entrambi i livelli o interruzione dati: chiusura al prezzo osservato, esito separato dalle statistiche certe",
     "maxDrawdownPausePct": 8
   },
-  "fxAt": 1793520060.6555023,
+  "fxAt": 1793520937.4546232,
   "eurRates": {
-    "USDT": 0.8878629139660835
+    "USDT": 0.8891259891526629
   },
   "errors": [],
   "revision": "paper-2.1"
