@@ -1,13 +1,53 @@
 {
   "version": "paper-2",
   "startedAt": 1792571521.2736304,
-  "lastRun": 1793495737.493723,
+  "lastRun": 1793496650.924865,
   "portfolios": {
     "A": {
       "name": "Conferme",
       "cash": 145.2009349952469,
       "positions": {},
-      "pending": {},
+      "pending": {
+        "AAVE": {
+          "id": "AAVE-1793495700",
+          "symbol": "AAVE",
+          "status": "CONFERMATO",
+          "createdAt": 1793495700.0,
+          "checkedThrough": 1793496600.0,
+          "lastSeen": 1793496650.924865,
+          "lastPrice": 134.41,
+          "eligibleAt": 1793496650.924865,
+          "entry": 134.41,
+          "stop": 133.67428571428573,
+          "target": 136.8714285714286,
+          "provider": "Binance",
+          "quote": "USDT",
+          "signalSnapshot": {
+            "signal": "SETUP",
+            "score": 8,
+            "ratio": 2.0047059885923417,
+            "trend": 0.44729387207396165,
+            "trend4h": 0.717596053221703,
+            "relative": 0.4249036444575527,
+            "confirmationFilters": {
+              "trendOrario": true,
+              "volume": true,
+              "forzaBTC": true,
+              "punteggio": true,
+              "prudenza": true
+            }
+          },
+          "confirmationCheck": {
+            "time": 1793496650.924865,
+            "candleTime": 1793496600.0,
+            "blockers": [],
+            "rr": 3.3456310679612904
+          },
+          "diagnosedThrough": 1793496600.0,
+          "confirmedAt": 1793496600.0,
+          "queuedAt": 1793496650.924865
+        }
+      },
       "seen": [
         "OP-1792539000:CONFERMATO",
         "ADA-1792567800:CONFERMATO",
@@ -32,7 +72,8 @@
         "OP-1793395800:CONFERMATO",
         "UNI-1793407500:CONFERMATO",
         "UNI-1793440800:CONFERMATO",
-        "LINK-1793475900:CONFERMATO"
+        "LINK-1793475900:CONFERMATO",
+        "AAVE-1793495700:CONFERMATO"
       ],
       "ledger": [
         {
@@ -1089,6 +1130,18 @@
           "entry": 11.865853999999997,
           "stop": 11.801285714285715,
           "target": 12.13642857142857
+        },
+        {
+          "time": 1793496650.924865,
+          "type": "IN_ATTESA",
+          "version": "paper-2",
+          "revision": "paper-2.1",
+          "symbol": "AAVE",
+          "candidateId": "AAVE-1793495700",
+          "reason": "Esecuzione dalla prossima osservazione disponibile",
+          "signalAt": 1793496600.0,
+          "stop": 133.67428571428573,
+          "target": 136.8714285714286
         }
       ],
       "equity": 145.2009349952469,
@@ -6539,6 +6592,11 @@
           "time": 1793495737.493723,
           "equity": 145.2009349952469,
           "cash": 145.2009349952469
+        },
+        {
+          "time": 1793496650.924865,
+          "equity": 145.2009349952469,
+          "cash": 145.2009349952469
         }
       ],
       "realizedEUR": -4.799065004753071,
@@ -6548,7 +6606,7 @@
       "uncertainCount": 1,
       "wins": 3,
       "losses": 9,
-      "activity": "IN ATTESA DI CONFERME"
+      "activity": "INGRESSO IN ATTESA"
     },
     "B": {
       "name": "Anticipato",
@@ -15845,6 +15903,11 @@
           "time": 1793495737.493723,
           "equity": 137.86891661665993,
           "cash": 137.86891661665993
+        },
+        {
+          "time": 1793496650.924865,
+          "equity": 137.86891661665993,
+          "cash": 137.86891661665993
         }
       ],
       "realizedEUR": -12.13108338334009,
@@ -15907,9 +15970,9 @@
     "uncertainty": "Prima candela parziale, entrambi i livelli o interruzione dati: chiusura al prezzo osservato, esito separato dalle statistiche certe",
     "maxDrawdownPausePct": 8
   },
-  "fxAt": 1793495737.493723,
+  "fxAt": 1793496650.924865,
   "eurRates": {
-    "USDT": 0.8842514811212309
+    "USDT": 0.884016973125884
   },
   "errors": [],
   "revision": "paper-2.1"
