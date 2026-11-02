@@ -257,6 +257,16 @@ def main():
     from engine.paper import step, upgrade
     paper_path=root/'paper-state.json'
     paper=json.loads(paper_path.read_text()) if paper_path.exists() else None
+    from engine.pullback import checkpoint, step as step_pullback
+    pullback_path=root/'pullback-state.json'
+    pullback=json.loads(pullback_path.read_text()) if pullback_path.exists() else None
+    # Exact, immutable checkpoint before A/B continue. No live data edited by deployment.
+    if pullback is None and paper is not None:
+        archive_path=root/'paper-v2-checkpoint.json'
+        if not archive_path.exists():save_json(archive_path,paper)
+        pullback=checkpoint(None,paper,now)
+        pullback['archiveV2']=dict(checkpointAt=now,lastRun=paper['lastRun'],path='data/paper-v2-checkpoint.json',
+            portfolios={k:dict(equity=v['equity'],realizedEUR=v.get('realizedEUR',0),openPositions=list(v['positions'])) for k,v in paper['portfolios'].items()})
     quotes={}; rates={}; paper_errors=[]
     try:
         if provider=='Binance':
@@ -265,17 +275,21 @@ def main():
             if not math.isfinite(fx) or fx<=0: raise ValueError('Cambio EUR/USDT non valido')
             rates['USDT']=1/fx
             quotes={s:dict(price=ticks[s+'USDT'],quote='USDT',provider=provider) for s in SYMS if s+'USDT' in ticks and math.isfinite(ticks[s+'USDT']) and ticks[s+'USDT']>0}
+            received=time.time()
+            for q in quotes.values():q['observedAt']=received
         elif provider=='Coinbase':
             fx=float(request_json('https://api.coinbase.com/v2/exchange-rates?currency=EUR')['data']['rates']['USD'])
             if not math.isfinite(fx) or fx<=0: raise ValueError('Cambio EUR/USD non valido')
             rates['USD']=1/fx
             needed=set((paper or {}).get('portfolios',{}).get('A',{}).get('positions',{})) | set((paper or {}).get('portfolios',{}).get('B',{}).get('positions',{}))
             for portfolio in (paper or {}).get('portfolios',{}).values(): needed.update(portfolio.get('pending',{}))
+            needed.update(markets)
+            needed.update((pullback or {}).get('positions',{}))
             for symbol in needed:
                 try:
                     value=float(request_json(f'https://api.exchange.coinbase.com/products/{symbol}-USD/ticker')['price'])
                     if not math.isfinite(value) or value<=0: raise ValueError('Prezzo non valido')
-                    quotes[symbol]=dict(price=value,quote='USD',provider=provider)
+                    quotes[symbol]=dict(price=value,quote='USD',provider=provider,observedAt=time.time())
                 except Exception as exc: paper_errors.append(f'{symbol}: {exc}')
     except Exception as exc: paper_errors.append(str(exc))
     paper,previous=upgrade(paper,now)
@@ -286,6 +300,15 @@ def main():
         else: save_json(archive_path,previous)
     paper=step(paper,latest,markets,quotes,rates,now)
     paper['errors']=paper_errors
+    pullback=pullback or checkpoint(None,paper,now)
+    pullback=step_pullback(pullback,markets,quotes,rates,time.time())
+    pullback['errors']=paper_errors
+    a=paper['portfolios']['A']
+    pullback['controlA'].update(equityNow=a['equity'],changeEUR=a['equity']-pullback['controlA']['equityAtStart'],
+                               newClosed=a['closedCount']-pullback['controlA']['closedAtStart'])
+    save_json(pullback_path,pullback)
+    latest['pullback']={**{k:v for k,v in pullback.items() if k not in ('ledger','history','processed','lastEntry')},
+                        'ledger':pullback['ledger'][-100:],'history':pullback['history'][-2880:]}
     from engine.diagnostics import diagnose
     archived=[]
     for archive in sorted((root/'archive').glob('*.jsonl')):
@@ -310,4 +333,3 @@ def main():
 
 if __name__=='__main__':
     sys.exit(main())
-
