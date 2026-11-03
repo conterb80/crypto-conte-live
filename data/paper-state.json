@@ -1,13 +1,53 @@
 {
   "version": "paper-2",
   "startedAt": 1792571521.2736304,
-  "lastRun": 1793709941.7542155,
+  "lastRun": 1793710865.9298823,
   "portfolios": {
     "A": {
       "name": "Conferme",
       "cash": 142.8494379564099,
       "positions": {},
-      "pending": {},
+      "pending": {
+        "XRP": {
+          "id": "XRP-1793709900",
+          "symbol": "XRP",
+          "status": "CONFERMATO",
+          "createdAt": 1793709900.0,
+          "checkedThrough": 1793710800.0,
+          "lastSeen": 1793710865.9298823,
+          "lastPrice": 1.2822,
+          "eligibleAt": 1793710865.9298823,
+          "entry": 1.2822,
+          "stop": 1.2745857142857144,
+          "target": 1.3037285714285713,
+          "provider": "Binance",
+          "quote": "USDT",
+          "signalSnapshot": {
+            "signal": "SETUP",
+            "score": 8,
+            "ratio": 3.0026339335240104,
+            "trend": 2.139335135994913,
+            "trend4h": 2.4980047885075907,
+            "relative": 1.4033218609263987,
+            "confirmationFilters": {
+              "trendOrario": true,
+              "volume": true,
+              "forzaBTC": true,
+              "punteggio": true,
+              "prudenza": true
+            }
+          },
+          "confirmationCheck": {
+            "time": 1793710865.9298823,
+            "candleTime": 1793710800.0,
+            "blockers": [],
+            "rr": 2.827392120075088
+          },
+          "diagnosedThrough": 1793710800.0,
+          "confirmedAt": 1793710800.0,
+          "queuedAt": 1793710865.9298823
+        }
+      },
       "seen": [
         "OP-1792539000:CONFERMATO",
         "ADA-1792567800:CONFERMATO",
@@ -42,7 +82,8 @@
         "ARB-1793574900:CONFERMATO",
         "UNI-1793577600:CONFERMATO",
         "UNI-1793627100:CONFERMATO",
-        "OP-1793628000:CONFERMATO"
+        "OP-1793628000:CONFERMATO",
+        "XRP-1793709900:CONFERMATO"
       ],
       "ledger": [
         {
@@ -1597,6 +1638,18 @@
           "symbol": "OP",
           "candidateId": "OP-1793628000",
           "reason": "Segnale scaduto o dati/filtri non validi"
+        },
+        {
+          "time": 1793710865.9298823,
+          "type": "IN_ATTESA",
+          "version": "paper-2",
+          "revision": "paper-2.1",
+          "symbol": "XRP",
+          "candidateId": "XRP-1793709900",
+          "reason": "Esecuzione dalla prossima osservazione disponibile",
+          "signalAt": 1793710800.0,
+          "stop": 1.2745857142857144,
+          "target": 1.3037285714285713
         }
       ],
       "equity": 142.8494379564099,
@@ -8287,6 +8340,11 @@
           "time": 1793709941.7542155,
           "equity": 142.8494379564099,
           "cash": 142.8494379564099
+        },
+        {
+          "time": 1793710865.9298823,
+          "equity": 142.8494379564099,
+          "cash": 142.8494379564099
         }
       ],
       "realizedEUR": -7.150562043590067,
@@ -8296,7 +8354,7 @@
       "uncertainCount": 1,
       "wins": 3,
       "losses": 15,
-      "activity": "IN ATTESA DI CONFERME"
+      "activity": "INGRESSO IN ATTESA"
     },
     "B": {
       "name": "Anticipato",
@@ -18833,6 +18891,11 @@
           "time": 1793709941.7542155,
           "equity": 137.86891661665993,
           "cash": 137.86891661665993
+        },
+        {
+          "time": 1793710865.9298823,
+          "equity": 137.86891661665993,
+          "cash": 137.86891661665993
         }
       ],
       "realizedEUR": -12.13108338334009,
@@ -18895,9 +18958,9 @@
     "uncertainty": "Prima candela parziale, entrambi i livelli o interruzione dati: chiusura al prezzo osservato, esito separato dalle statistiche certe",
     "maxDrawdownPausePct": 8
   },
-  "fxAt": 1793709941.7542155,
+  "fxAt": 1793710865.9298823,
   "eurRates": {
-    "USDT": 0.8935751943526048
+    "USDT": 0.8933357155619082
   },
   "errors": [],
   "revision": "paper-2.1"
