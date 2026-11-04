@@ -1,7 +1,7 @@
 {
   "version": "ripartenza-1",
   "startedAt": 1793628447.2721717,
-  "lastRun": 1793829678.8439236,
+  "lastRun": 1793830555.769339,
   "rules": {
     "initialEUR": 150,
     "orderCapEUR": 40,
@@ -21,7 +21,7 @@
     "slippagePct": 0.1
   },
   "cash": 121.32740219618412,
-  "equity": 149.05585646795802,
+  "equity": 149.13118347267385,
   "peak": 150.744426011688,
   "maxDrawdownPct": 1.217075542754864,
   "positions": {
@@ -43,35 +43,35 @@
       "openedAt": 1793803556.7480168,
       "entryObservedPrice": 8.797,
       "entryEURRate": 0.8871540099361249,
-      "checkedThrough": 1793829600.0,
-      "mark": 27.7284542717739,
-      "markedAt": 1793829678.8439236,
+      "checkedThrough": 1793830500.0,
+      "mark": 27.80378127648974,
+      "markedAt": 1793830555.769339,
       "maxObservedPrice": 9.16,
       "minObservedPrice": 8.698,
-      "fullBars": 28
+      "fullBars": 29
     }
   },
   "processed": {
-    "Binance:AAVE": 1793829600.0,
-    "Binance:ADA": 1793829600.0,
-    "Binance:ARB": 1793829600.0,
-    "Binance:ATOM": 1793829600.0,
-    "Binance:AVAX": 1793829600.0,
-    "Binance:BTC": 1793829600.0,
-    "Binance:DOGE": 1793829600.0,
-    "Binance:DOT": 1793829600.0,
-    "Binance:ETH": 1793829600.0,
-    "Binance:FIL": 1793829600.0,
-    "Binance:INJ": 1793829600.0,
-    "Binance:LINK": 1793829600.0,
-    "Binance:LTC": 1793829600.0,
-    "Binance:NEAR": 1793829600.0,
-    "Binance:OP": 1793829600.0,
-    "Binance:RENDER": 1793829600.0,
-    "Binance:SOL": 1793829600.0,
-    "Binance:SUI": 1793829600.0,
-    "Binance:UNI": 1793829600.0,
-    "Binance:XRP": 1793829600.0
+    "Binance:AAVE": 1793830500.0,
+    "Binance:ADA": 1793830500.0,
+    "Binance:ARB": 1793830500.0,
+    "Binance:ATOM": 1793830500.0,
+    "Binance:AVAX": 1793830500.0,
+    "Binance:BTC": 1793830500.0,
+    "Binance:DOGE": 1793830500.0,
+    "Binance:DOT": 1793830500.0,
+    "Binance:ETH": 1793830500.0,
+    "Binance:FIL": 1793830500.0,
+    "Binance:INJ": 1793830500.0,
+    "Binance:LINK": 1793830500.0,
+    "Binance:LTC": 1793830500.0,
+    "Binance:NEAR": 1793830500.0,
+    "Binance:OP": 1793830500.0,
+    "Binance:RENDER": 1793830500.0,
+    "Binance:SOL": 1793830500.0,
+    "Binance:SUI": 1793830500.0,
+    "Binance:UNI": 1793830500.0,
+    "Binance:XRP": 1793830500.0
   },
   "lastEntry": {
     "AAVE": 1793803556.7480168,
@@ -626,6 +626,50 @@
       "type": "SALTATO",
       "version": "ripartenza-1",
       "symbol": "RENDER",
+      "reason": "Margine netto o rapporto guadagno/perdita netto insufficiente"
+    },
+    {
+      "time": 1793830555.769339,
+      "type": "SEGNALE",
+      "version": "ripartenza-1",
+      "symbol": "ARB",
+      "provider": "Binance",
+      "quote": "USDT",
+      "signalAt": 1793830500.0,
+      "stop": 0.16191607142857145,
+      "target": 0.164,
+      "signalPrice": 0.1639,
+      "atr": 0.0011357142857142874,
+      "volumeRatio": 1.4705188705009835,
+      "reason": "Trend orario asset/BTC positivo; rientro EMA20; ripartenza sopra il massimo precedente"
+    },
+    {
+      "time": 1793830555.769339,
+      "type": "SALTATO",
+      "version": "ripartenza-1",
+      "symbol": "ARB",
+      "reason": "Prezzo eseguito fuori dai livelli"
+    },
+    {
+      "time": 1793830555.769339,
+      "type": "SEGNALE",
+      "version": "ripartenza-1",
+      "symbol": "SUI",
+      "provider": "Binance",
+      "quote": "USDT",
+      "signalAt": 1793830500.0,
+      "stop": 0.9160142857142857,
+      "target": 0.9324,
+      "signalPrice": 0.9282,
+      "atr": 0.005542857142857151,
+      "volumeRatio": 2.053351770925682,
+      "reason": "Trend orario asset/BTC positivo; rientro EMA20; ripartenza sopra il massimo precedente"
+    },
+    {
+      "time": 1793830555.769339,
+      "type": "SALTATO",
+      "version": "ripartenza-1",
+      "symbol": "SUI",
       "reason": "Margine netto o rapporto guadagno/perdita netto insufficiente"
     }
   ],
@@ -1769,15 +1813,20 @@
       "time": 1793829678.8439236,
       "equity": 149.05585646795802,
       "cash": 121.32740219618412
+    },
+    {
+      "time": 1793830555.769339,
+      "equity": 149.13118347267385,
+      "cash": 121.32740219618412
     }
   ],
   "checks": {
-    "Trend orario asset/BTC non positivo": 3706,
-    "Scambi o volume della ripresa insufficienti": 481,
-    "Manca rientro verso EMA20 nelle tre candele precedenti": 72,
+    "Trend orario asset/BTC non positivo": 3708,
+    "Scambi o volume della ripresa insufficienti": 493,
+    "Manca rientro verso EMA20 nelle tre candele precedenti": 73,
     "Ripartenza sopra il massimo precedente non confermata": 40,
-    "Stop fuori intervallo 0,8–4%": 5,
-    "Setup rilevato": 22,
+    "Stop fuori intervallo 0,8–4%": 6,
+    "Setup rilevato": 24,
     "Candela oltre cinque minuti: ingresso non inseguito": 18
   },
   "controlA": {
