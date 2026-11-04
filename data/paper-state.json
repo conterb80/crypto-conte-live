@@ -1,7 +1,7 @@
 {
   "version": "paper-2",
   "startedAt": 1792571521.2736304,
-  "lastRun": 1793808068.5140624,
+  "lastRun": 1793809224.8210576,
   "portfolios": {
     "A": {
       "name": "Conferme",
@@ -12,14 +12,14 @@
           "qty": 169.0308953824374,
           "costEUR": 30,
           "openedAt": 1793808068.5140624,
-          "checkedThrough": 1793808000,
+          "checkedThrough": 1793808900.0,
           "provider": "Binance",
           "quote": "USDT",
           "entry": 0.19909889999999997,
           "stop": 0.19505714285714285,
           "target": 0.20658571428571426,
-          "mark": 29.79073295781525,
-          "markedAt": 1793808068.5140624,
+          "mark": 29.96016560420395,
+          "markedAt": 1793809224.8210576,
           "entryCheck": {
             "entry": 0.19909889999999997,
             "stop": 0.19505714285714285,
@@ -34,47 +34,7 @@
           }
         }
       },
-      "pending": {
-        "DOGE": {
-          "id": "DOGE-1793807100",
-          "symbol": "DOGE",
-          "status": "CONFERMATO",
-          "createdAt": 1793807100.0,
-          "checkedThrough": 1793808000.0,
-          "lastSeen": 1793808068.5140624,
-          "lastPrice": 0.07731,
-          "eligibleAt": 1793808068.5140624,
-          "entry": 0.07731,
-          "stop": 0.07612571428571428,
-          "target": 0.07979857142857144,
-          "provider": "Binance",
-          "quote": "USDT",
-          "signalSnapshot": {
-            "signal": "PRE-RADAR",
-            "score": 5,
-            "ratio": 1.243052592429469,
-            "trend": 1.4958666841621948,
-            "trend4h": 2.4639025036428563,
-            "relative": 0.4054428495563256,
-            "confirmationFilters": {
-              "trendOrario": true,
-              "volume": false,
-              "forzaBTC": true,
-              "punteggio": false,
-              "prudenza": true
-            }
-          },
-          "confirmationCheck": {
-            "time": 1793808068.5140624,
-            "candleTime": 1793808000.0,
-            "blockers": [],
-            "rr": 2.101326899879368
-          },
-          "diagnosedThrough": 1793808000.0,
-          "confirmedAt": 1793808000.0,
-          "queuedAt": 1793808068.5140624
-        }
-      },
+      "pending": {},
       "seen": [
         "OP-1792539000:CONFERMATO",
         "ADA-1792567800:CONFERMATO",
@@ -2107,9 +2067,30 @@
           "signalAt": 1793808000.0,
           "stop": 0.07612571428571428,
           "target": 0.07979857142857144
+        },
+        {
+          "time": 1793809224.8210576,
+          "type": "SALTATO",
+          "version": "paper-2",
+          "revision": "paper-2.1",
+          "symbol": "DOGE",
+          "candidateId": "DOGE-1793807100",
+          "reason": "Rapporto rischio/obiettivo al prezzo eseguito inferiore a 1,8",
+          "entryCheck": {
+            "entry": 0.07777769999999999,
+            "stop": 0.07612571428571428,
+            "target": 0.07979857142857144,
+            "riskPct": 2.123983756636811,
+            "rewardPct": 2.5982658635720135,
+            "rr": 1.2232983681975973,
+            "targetNetPct": 1.9844672605627611,
+            "stopNetPct": -2.7095312952099215,
+            "eurRate": 0.8902341315766047,
+            "fxAssumption": "Cambio invariato solo per la stima dei livelli netti"
+          }
         }
       ],
-      "equity": 143.32779040892893,
+      "equity": 143.49722305531765,
       "peak": 150.33841096385066,
       "maxDrawdownPct": 5.808229139503784,
       "history": [
@@ -9336,6 +9317,11 @@
         {
           "time": 1793808068.5140624,
           "equity": 143.32779040892893,
+          "cash": 113.5370574511137
+        },
+        {
+          "time": 1793809224.8210576,
+          "equity": 143.49722305531765,
           "cash": 113.5370574511137
         }
       ],
@@ -20423,6 +20409,11 @@
           "time": 1793808068.5140624,
           "equity": 137.86891661665993,
           "cash": 137.86891661665993
+        },
+        {
+          "time": 1793809224.8210576,
+          "equity": 137.86891661665993,
+          "cash": 137.86891661665993
         }
       ],
       "realizedEUR": -12.13108338334009,
@@ -20485,9 +20476,9 @@
     "uncertainty": "Prima candela parziale, entrambi i livelli o interruzione dati: chiusura al prezzo osservato, esito separato dalle statistiche certe",
     "maxDrawdownPausePct": 8
   },
-  "fxAt": 1793808068.5140624,
+  "fxAt": 1793809224.8210576,
   "eurRates": {
-    "USDT": 0.8892050506846878
+    "USDT": 0.8902341315766047
   },
   "errors": [],
   "revision": "paper-2.1"
