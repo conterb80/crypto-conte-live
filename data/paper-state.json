@@ -1,13 +1,92 @@
 {
   "version": "paper-2",
   "startedAt": 1792571521.2736304,
-  "lastRun": 1793792739.5055013,
+  "lastRun": 1793793666.9224908,
   "portfolios": {
     "A": {
       "name": "Conferme",
       "cash": 141.99821143048484,
       "positions": {},
-      "pending": {},
+      "pending": {
+        "AVAX": {
+          "id": "AVAX-1793789100",
+          "symbol": "AVAX",
+          "status": "CONFERMATO",
+          "createdAt": 1793789100.0,
+          "checkedThrough": 1793793600.0,
+          "lastSeen": 1793793666.9224908,
+          "lastPrice": 8.67,
+          "eligibleAt": 1793793666.9224908,
+          "entry": 8.67,
+          "stop": 8.606571428571428,
+          "target": 8.874857142857142,
+          "provider": "Binance",
+          "quote": "USDT",
+          "signalSnapshot": {
+            "signal": "SETUP",
+            "score": 7,
+            "ratio": 2.231622130443979,
+            "trend": -0.16073478760046944,
+            "trend4h": 1.612526291189531,
+            "relative": 0.814636574843286,
+            "confirmationFilters": {
+              "trendOrario": true,
+              "volume": true,
+              "forzaBTC": true,
+              "punteggio": true,
+              "prudenza": true
+            }
+          },
+          "confirmationCheck": {
+            "time": 1793793666.9224908,
+            "candleTime": 1793793600.0,
+            "blockers": [],
+            "rr": 3.22972972972968
+          },
+          "diagnosedThrough": 1793793600.0,
+          "confirmedAt": 1793793600.0,
+          "queuedAt": 1793793666.9224908
+        },
+        "XRP": {
+          "id": "XRP-1793790000",
+          "symbol": "XRP",
+          "status": "CONFERMATO",
+          "createdAt": 1793790000.0,
+          "checkedThrough": 1793793600.0,
+          "lastSeen": 1793793666.9224908,
+          "lastPrice": 1.2881,
+          "eligibleAt": 1793793666.9224908,
+          "entry": 1.2881,
+          "stop": 1.2825857142857144,
+          "target": 1.3093285714285714,
+          "provider": "Binance",
+          "quote": "USDT",
+          "signalSnapshot": {
+            "signal": "PRE-RADAR",
+            "score": 5,
+            "ratio": 1.3687062638270926,
+            "trend": 0.6468204488778273,
+            "trend4h": 1.2544100352802845,
+            "relative": 0.4840394408110793,
+            "confirmationFilters": {
+              "trendOrario": true,
+              "volume": false,
+              "forzaBTC": true,
+              "punteggio": false,
+              "prudenza": true
+            }
+          },
+          "confirmationCheck": {
+            "time": 1793793666.9224908,
+            "candleTime": 1793793600.0,
+            "blockers": [],
+            "rr": 3.849740932642569
+          },
+          "diagnosedThrough": 1793793600.0,
+          "confirmedAt": 1793793600.0,
+          "queuedAt": 1793793666.9224908
+        }
+      },
       "seen": [
         "OP-1792539000:CONFERMATO",
         "ADA-1792567800:CONFERMATO",
@@ -46,7 +125,9 @@
         "XRP-1793709900:CONFERMATO",
         "UNI-1793714400:CONFERMATO",
         "INJ-1793741400:CONFERMATO",
-        "INJ-1793777400:CONFERMATO"
+        "INJ-1793777400:CONFERMATO",
+        "AVAX-1793789100:CONFERMATO",
+        "XRP-1793790000:CONFERMATO"
       ],
       "ledger": [
         {
@@ -1797,6 +1878,30 @@
             "eurRate": 0.8884150675195451,
             "fxAssumption": "Cambio invariato solo per la stima dei livelli netti"
           }
+        },
+        {
+          "time": 1793793666.9224908,
+          "type": "IN_ATTESA",
+          "version": "paper-2",
+          "revision": "paper-2.1",
+          "symbol": "AVAX",
+          "candidateId": "AVAX-1793789100",
+          "reason": "Esecuzione dalla prossima osservazione disponibile",
+          "signalAt": 1793793600.0,
+          "stop": 8.606571428571428,
+          "target": 8.874857142857142
+        },
+        {
+          "time": 1793793666.9224908,
+          "type": "IN_ATTESA",
+          "version": "paper-2",
+          "revision": "paper-2.1",
+          "symbol": "XRP",
+          "candidateId": "XRP-1793790000",
+          "reason": "Esecuzione dalla prossima osservazione disponibile",
+          "signalAt": 1793793600.0,
+          "stop": 1.2825857142857144,
+          "target": 1.3093285714285714
         }
       ],
       "equity": 141.99821143048484,
@@ -8947,6 +9052,11 @@
           "time": 1793792739.5055013,
           "equity": 141.99821143048484,
           "cash": 141.99821143048484
+        },
+        {
+          "time": 1793793666.9224908,
+          "equity": 141.99821143048484,
+          "cash": 141.99821143048484
         }
       ],
       "realizedEUR": -8.001788569515131,
@@ -8956,7 +9066,7 @@
       "uncertainCount": 1,
       "wins": 3,
       "losses": 17,
-      "activity": "IN ATTESA DI CONFERME"
+      "activity": "INGRESSO IN ATTESA"
     },
     "B": {
       "name": "Anticipato",
@@ -19953,6 +20063,11 @@
           "time": 1793792739.5055013,
           "equity": 137.86891661665993,
           "cash": 137.86891661665993
+        },
+        {
+          "time": 1793793666.9224908,
+          "equity": 137.86891661665993,
+          "cash": 137.86891661665993
         }
       ],
       "realizedEUR": -12.13108338334009,
@@ -20015,9 +20130,9 @@
     "uncertainty": "Prima candela parziale, entrambi i livelli o interruzione dati: chiusura al prezzo osservato, esito separato dalle statistiche certe",
     "maxDrawdownPausePct": 8
   },
-  "fxAt": 1793792739.5055013,
+  "fxAt": 1793793666.9224908,
   "eurRates": {
-    "USDT": 0.8873901854645487
+    "USDT": 0.8869179600886918
   },
   "errors": [],
   "revision": "paper-2.1"
