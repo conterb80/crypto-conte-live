@@ -1,25 +1,25 @@
 {
   "version": "paper-2",
   "startedAt": 1792571521.2736304,
-  "lastRun": 1793799055.1290681,
+  "lastRun": 1793799939.1121912,
   "portfolios": {
     "A": {
       "name": "Conferme",
-      "cash": 111.99821143048484,
+      "cash": 81.99821143048484,
       "positions": {
         "AVAX": {
           "candidateId": "AVAX-1793789100",
           "qty": 3.9098379346621592,
           "costEUR": 30,
           "openedAt": 1793794537.835208,
-          "checkedThrough": 1793799000.0,
+          "checkedThrough": 1793799900.0,
           "provider": "Binance",
           "quote": "USDT",
           "entry": 8.626617999999999,
           "stop": 8.606571428571428,
           "target": 8.874857142857142,
-          "mark": 29.955339395644017,
-          "markedAt": 1793799055.1290681,
+          "mark": 30.02097789737591,
+          "markedAt": 1793799939.1121912,
           "entryCheck": {
             "entry": 8.626617999999999,
             "stop": 8.606571428571428,
@@ -32,49 +32,35 @@
             "eurRate": 0.8872327211427558,
             "fxAssumption": "Cambio invariato solo per la stima dei livelli netti"
           }
-        }
-      },
-      "pending": {
+        },
         "DOT": {
-          "id": "DOT-1793798100",
-          "symbol": "DOT",
-          "status": "CONFERMATO",
-          "createdAt": 1793798100.0,
-          "checkedThrough": 1793799000.0,
-          "lastSeen": 1793799055.1290681,
-          "lastPrice": 0.956,
-          "eligibleAt": 1793799055.1290681,
-          "entry": 0.956,
-          "stop": 0.9418571428571428,
-          "target": 0.9842857142857143,
+          "candidateId": "DOT-1793798100",
+          "qty": 35.304617827368546,
+          "costEUR": 30,
+          "openedAt": 1793799939.1121912,
+          "checkedThrough": 1793799900,
           "provider": "Binance",
           "quote": "USDT",
-          "signalSnapshot": {
-            "signal": "PRE-RADAR",
-            "score": 5,
-            "ratio": 0.9514922868668337,
-            "trend": 0.31479538300105414,
-            "trend4h": 0.525762355415349,
-            "relative": 0.5916601171224722,
-            "confirmationFilters": {
-              "trendOrario": true,
-              "volume": false,
-              "forzaBTC": true,
-              "punteggio": false,
-              "prudenza": true
-            }
-          },
-          "confirmationCheck": {
-            "time": 1793799055.1290681,
-            "candleTime": 1793799000.0,
-            "blockers": [],
-            "rr": 2.000000000000008
-          },
-          "diagnosedThrough": 1793799000.0,
-          "confirmedAt": 1793799000.0,
-          "queuedAt": 1793799055.1290681
+          "entry": 0.9559549999999999,
+          "stop": 0.9418571428571428,
+          "target": 0.9842857142857143,
+          "mark": 29.79073295781525,
+          "markedAt": 1793799939.1121912,
+          "entryCheck": {
+            "entry": 0.9559549999999999,
+            "stop": 0.9418571428571428,
+            "target": 0.9842857142857143,
+            "riskPct": 1.4747406669620486,
+            "rewardPct": 2.963603337574931,
+            "rr": 2.0095759233926365,
+            "targetNetPct": 2.3476190871838387,
+            "stopNetPct": -2.0641723306527027,
+            "eurRate": 0.8866820358219543,
+            "fxAssumption": "Cambio invariato solo per la stima dei livelli netti"
+          }
         }
       },
+      "pending": {},
       "seen": [
         "OP-1792539000:CONFERMATO",
         "ADA-1792567800:CONFERMATO",
@@ -1975,9 +1961,38 @@
           "signalAt": 1793799000.0,
           "stop": 0.9418571428571428,
           "target": 0.9842857142857143
+        },
+        {
+          "time": 1793799939.1121912,
+          "type": "ACQUISTO",
+          "version": "paper-2",
+          "revision": "paper-2.1",
+          "symbol": "DOT",
+          "candidateId": "DOT-1793798100",
+          "price": 0.9559549999999999,
+          "observedPrice": 0.955,
+          "quote": "USDT",
+          "eurRate": 0.8866820358219543,
+          "costEUR": 30,
+          "feeEUR": 0.07481296758104605,
+          "qty": 35.304617827368546,
+          "entryCheck": {
+            "entry": 0.9559549999999999,
+            "stop": 0.9418571428571428,
+            "target": 0.9842857142857143,
+            "riskPct": 1.4747406669620486,
+            "rewardPct": 2.963603337574931,
+            "rr": 2.0095759233926365,
+            "targetNetPct": 2.3476190871838387,
+            "stopNetPct": -2.0641723306527027,
+            "eurRate": 0.8866820358219543,
+            "fxAssumption": "Cambio invariato solo per la stima dei livelli netti"
+          },
+          "signalAt": 1793799000.0,
+          "queuedAt": 1793799055.1290681
         }
       ],
-      "equity": 141.95355082612886,
+      "equity": 141.809922285676,
       "peak": 150.33841096385066,
       "maxDrawdownPct": 5.68681451449311,
       "history": [
@@ -9160,6 +9175,11 @@
           "time": 1793799055.1290681,
           "equity": 141.95355082612886,
           "cash": 111.99821143048484
+        },
+        {
+          "time": 1793799939.1121912,
+          "equity": 141.809922285676,
+          "cash": 81.99821143048484
         }
       ],
       "realizedEUR": -8.001788569515131,
@@ -20201,6 +20221,11 @@
           "time": 1793799055.1290681,
           "equity": 137.86891661665993,
           "cash": 137.86891661665993
+        },
+        {
+          "time": 1793799939.1121912,
+          "equity": 137.86891661665993,
+          "cash": 137.86891661665993
         }
       ],
       "realizedEUR": -12.13108338334009,
@@ -20263,7 +20288,7 @@
     "uncertainty": "Prima candela parziale, entrambi i livelli o interruzione dati: chiusura al prezzo osservato, esito separato dalle statistiche certe",
     "maxDrawdownPausePct": 8
   },
-  "fxAt": 1793799055.1290681,
+  "fxAt": 1793799939.1121912,
   "eurRates": {
     "USDT": 0.8866820358219543
   },
