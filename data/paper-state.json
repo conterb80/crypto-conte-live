@@ -1,73 +1,61 @@
 {
   "version": "paper-2",
   "startedAt": 1792571521.2736304,
-  "lastRun": 1793793666.9224908,
+  "lastRun": 1793794537.835208,
   "portfolios": {
     "A": {
       "name": "Conferme",
-      "cash": 141.99821143048484,
-      "positions": {},
-      "pending": {
+      "cash": 111.99821143048484,
+      "positions": {
         "AVAX": {
-          "id": "AVAX-1793789100",
-          "symbol": "AVAX",
-          "status": "CONFERMATO",
-          "createdAt": 1793789100.0,
-          "checkedThrough": 1793793600.0,
-          "lastSeen": 1793793666.9224908,
-          "lastPrice": 8.67,
-          "eligibleAt": 1793793666.9224908,
-          "entry": 8.67,
-          "stop": 8.606571428571428,
-          "target": 8.874857142857142,
+          "candidateId": "AVAX-1793789100",
+          "qty": 3.9098379346621592,
+          "costEUR": 30,
+          "openedAt": 1793794537.835208,
+          "checkedThrough": 1793794500,
           "provider": "Binance",
           "quote": "USDT",
-          "signalSnapshot": {
-            "signal": "SETUP",
-            "score": 7,
-            "ratio": 2.231622130443979,
-            "trend": -0.16073478760046944,
-            "trend4h": 1.612526291189531,
-            "relative": 0.814636574843286,
-            "confirmationFilters": {
-              "trendOrario": true,
-              "volume": true,
-              "forzaBTC": true,
-              "punteggio": true,
-              "prudenza": true
-            }
-          },
-          "confirmationCheck": {
-            "time": 1793793666.9224908,
-            "candleTime": 1793793600.0,
-            "blockers": [],
-            "rr": 3.22972972972968
-          },
-          "diagnosedThrough": 1793793600.0,
-          "confirmedAt": 1793793600.0,
-          "queuedAt": 1793793666.9224908
-        },
-        "XRP": {
-          "id": "XRP-1793790000",
-          "symbol": "XRP",
+          "entry": 8.626617999999999,
+          "stop": 8.606571428571428,
+          "target": 8.874857142857142,
+          "mark": 29.790732957815255,
+          "markedAt": 1793794537.835208,
+          "entryCheck": {
+            "entry": 8.626617999999999,
+            "stop": 8.606571428571428,
+            "target": 8.874857142857142,
+            "riskPct": 0.23238042334285483,
+            "rewardPct": 2.877595169475951,
+            "rr": 12.383122158402896,
+            "targetNetPct": 2.262125466703968,
+            "stopNetPct": -0.8292445614086597,
+            "eurRate": 0.8872327211427558,
+            "fxAssumption": "Cambio invariato solo per la stima dei livelli netti"
+          }
+        }
+      },
+      "pending": {
+        "ARB": {
+          "id": "ARB-1793789100",
+          "symbol": "ARB",
           "status": "CONFERMATO",
-          "createdAt": 1793790000.0,
-          "checkedThrough": 1793793600.0,
-          "lastSeen": 1793793666.9224908,
-          "lastPrice": 1.2881,
-          "eligibleAt": 1793793666.9224908,
-          "entry": 1.2881,
-          "stop": 1.2825857142857144,
-          "target": 1.3093285714285714,
+          "createdAt": 1793789100.0,
+          "checkedThrough": 1793794500.0,
+          "lastSeen": 1793794537.835208,
+          "lastPrice": 0.1619,
+          "eligibleAt": 1793794537.835208,
+          "entry": 0.1619,
+          "stop": 0.16092857142857142,
+          "target": 0.16744285714285714,
           "provider": "Binance",
           "quote": "USDT",
           "signalSnapshot": {
             "signal": "PRE-RADAR",
             "score": 5,
-            "ratio": 1.3687062638270926,
-            "trend": 0.6468204488778273,
-            "trend4h": 1.2544100352802845,
-            "relative": 0.4840394408110793,
+            "ratio": 0.7795621980369841,
+            "trend": 0.49291435613061374,
+            "trend4h": 1.6832917705735806,
+            "relative": 0.8854020542273355,
             "confirmationFilters": {
               "trendOrario": true,
               "volume": false,
@@ -77,14 +65,14 @@
             }
           },
           "confirmationCheck": {
-            "time": 1793793666.9224908,
-            "candleTime": 1793793600.0,
+            "time": 1793794537.835208,
+            "candleTime": 1793794500.0,
             "blockers": [],
-            "rr": 3.849740932642569
+            "rr": 5.705882352941212
           },
-          "diagnosedThrough": 1793793600.0,
-          "confirmedAt": 1793793600.0,
-          "queuedAt": 1793793666.9224908
+          "diagnosedThrough": 1793794500.0,
+          "confirmedAt": 1793794500.0,
+          "queuedAt": 1793794537.835208
         }
       },
       "seen": [
@@ -127,7 +115,8 @@
         "INJ-1793741400:CONFERMATO",
         "INJ-1793777400:CONFERMATO",
         "AVAX-1793789100:CONFERMATO",
-        "XRP-1793790000:CONFERMATO"
+        "XRP-1793790000:CONFERMATO",
+        "ARB-1793789100:CONFERMATO"
       ],
       "ledger": [
         {
@@ -1902,11 +1891,61 @@
           "signalAt": 1793793600.0,
           "stop": 1.2825857142857144,
           "target": 1.3093285714285714
+        },
+        {
+          "time": 1793794537.835208,
+          "type": "ACQUISTO",
+          "version": "paper-2",
+          "revision": "paper-2.1",
+          "symbol": "AVAX",
+          "candidateId": "AVAX-1793789100",
+          "price": 8.626617999999999,
+          "observedPrice": 8.618,
+          "quote": "USDT",
+          "eurRate": 0.8872327211427558,
+          "costEUR": 30,
+          "feeEUR": 0.07481296758104605,
+          "qty": 3.9098379346621592,
+          "entryCheck": {
+            "entry": 8.626617999999999,
+            "stop": 8.606571428571428,
+            "target": 8.874857142857142,
+            "riskPct": 0.23238042334285483,
+            "rewardPct": 2.877595169475951,
+            "rr": 12.383122158402896,
+            "targetNetPct": 2.262125466703968,
+            "stopNetPct": -0.8292445614086597,
+            "eurRate": 0.8872327211427558,
+            "fxAssumption": "Cambio invariato solo per la stima dei livelli netti"
+          },
+          "signalAt": 1793793600.0,
+          "queuedAt": 1793793666.9224908
+        },
+        {
+          "time": 1793794537.835208,
+          "type": "SALTATO",
+          "version": "paper-2",
+          "revision": "paper-2.1",
+          "symbol": "XRP",
+          "candidateId": "XRP-1793790000",
+          "reason": "Segnale scaduto o dati/filtri non validi"
+        },
+        {
+          "time": 1793794537.835208,
+          "type": "IN_ATTESA",
+          "version": "paper-2",
+          "revision": "paper-2.1",
+          "symbol": "ARB",
+          "candidateId": "ARB-1793789100",
+          "reason": "Esecuzione dalla prossima osservazione disponibile",
+          "signalAt": 1793794500.0,
+          "stop": 0.16092857142857142,
+          "target": 0.16744285714285714
         }
       ],
-      "equity": 141.99821143048484,
+      "equity": 141.7889443883001,
       "peak": 150.33841096385066,
-      "maxDrawdownPct": 5.5476171923695805,
+      "maxDrawdownPct": 5.68681451449311,
       "history": [
         {
           "time": 1792571521.2736304,
@@ -9057,6 +9096,11 @@
           "time": 1793793666.9224908,
           "equity": 141.99821143048484,
           "cash": 141.99821143048484
+        },
+        {
+          "time": 1793794537.835208,
+          "equity": 141.7889443883001,
+          "cash": 111.99821143048484
         }
       ],
       "realizedEUR": -8.001788569515131,
@@ -9066,7 +9110,7 @@
       "uncertainCount": 1,
       "wins": 3,
       "losses": 17,
-      "activity": "INGRESSO IN ATTESA"
+      "activity": "POSIZIONI APERTE"
     },
     "B": {
       "name": "Anticipato",
@@ -20068,6 +20112,11 @@
           "time": 1793793666.9224908,
           "equity": 137.86891661665993,
           "cash": 137.86891661665993
+        },
+        {
+          "time": 1793794537.835208,
+          "equity": 137.86891661665993,
+          "cash": 137.86891661665993
         }
       ],
       "realizedEUR": -12.13108338334009,
@@ -20130,9 +20179,9 @@
     "uncertainty": "Prima candela parziale, entrambi i livelli o interruzione dati: chiusura al prezzo osservato, esito separato dalle statistiche certe",
     "maxDrawdownPausePct": 8
   },
-  "fxAt": 1793793666.9224908,
+  "fxAt": 1793794537.835208,
   "eurRates": {
-    "USDT": 0.8869179600886918
+    "USDT": 0.8872327211427558
   },
   "errors": [],
   "revision": "paper-2.1"
