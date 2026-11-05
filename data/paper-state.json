@@ -1,39 +1,12 @@
 {
   "version": "paper-2",
   "startedAt": 1792571521.2736304,
-  "lastRun": 1793836869.358733,
+  "lastRun": 1793837742.9872766,
   "portfolios": {
     "A": {
       "name": "Conferme",
-      "cash": 112.32405051329857,
-      "positions": {
-        "FIL": {
-          "candidateId": "FIL-1793833200",
-          "qty": 38.7007764971695,
-          "costEUR": 30,
-          "openedAt": 1793836869.358733,
-          "checkedThrough": 1793836800,
-          "provider": "Binance",
-          "quote": "USDT",
-          "entry": 0.8696687999999999,
-          "stop": 0.8680142857142857,
-          "target": 0.9032,
-          "mark": 29.790732957815255,
-          "markedAt": 1793836869.358733,
-          "entryCheck": {
-            "entry": 0.8696687999999999,
-            "stop": 0.8680142857142857,
-            "target": 0.9032,
-            "riskPct": 0.19024648069634906,
-            "rewardPct": 3.855628717507182,
-            "rr": 20.266491676453775,
-            "targetNetPct": 3.2343078863518393,
-            "stopNetPct": -0.7873626869128181,
-            "eurRate": 0.8891259891526629,
-            "fxAssumption": "Cambio invariato solo per la stima dei livelli netti"
-          }
-        }
-      },
+      "cash": 142.12881249827407,
+      "positions": {},
       "pending": {},
       "seen": [
         "OP-1792539000:CONFERMATO",
@@ -2242,9 +2215,35 @@
           },
           "signalAt": 1793835900.0,
           "queuedAt": 1793835937.7605717
+        },
+        {
+          "time": 1793837742.9872766,
+          "type": "VENDITA",
+          "version": "paper-2",
+          "revision": "paper-2.1",
+          "symbol": "FIL",
+          "candidateId": "FIL-1793833200",
+          "reason": "Invalidazione",
+          "price": 0.8680311,
+          "observedPrice": 0.8689,
+          "quote": "USDT",
+          "eurRate": 0.8894423196655696,
+          "netEUR": 29.804761984975507,
+          "feeEUR": 0.07469865159141731,
+          "pnlEUR": -0.19523801502449345,
+          "ambiguous": true,
+          "quality": "INCERTO",
+          "uncertainty": [
+            "Livello toccato nella prima candela parziale: prima/dopo ingresso non ricostruibile"
+          ],
+          "openedAt": 1793836869.358733,
+          "triggerAt": 1793837700.0,
+          "entry": 0.8696687999999999,
+          "stop": 0.8680142857142857,
+          "target": 0.9032
         }
       ],
-      "equity": 142.11478347111384,
+      "equity": 142.12881249827407,
       "peak": 150.33841096385066,
       "maxDrawdownPct": 5.808229139503784,
       "history": [
@@ -9642,16 +9641,21 @@
           "time": 1793836869.358733,
           "equity": 142.11478347111384,
           "cash": 112.32405051329857
+        },
+        {
+          "time": 1793837742.9872766,
+          "equity": 142.12881249827407,
+          "cash": 142.12881249827407
         }
       ],
-      "realizedEUR": -7.675949486701409,
+      "realizedEUR": -7.8711875017259025,
       "certainRealizedEUR": -7.2819539458585965,
-      "uncertainRealizedEUR": -0.39399554084281263,
+      "uncertainRealizedEUR": -0.5892335558673061,
       "closedCount": 24,
-      "uncertainCount": 1,
+      "uncertainCount": 2,
       "wins": 5,
       "losses": 19,
-      "activity": "POSIZIONI APERTE"
+      "activity": "IN ATTESA DI CONFERME"
     },
     "B": {
       "name": "Anticipato",
@@ -20898,6 +20902,11 @@
           "time": 1793836869.358733,
           "equity": 137.86891661665993,
           "cash": 137.86891661665993
+        },
+        {
+          "time": 1793837742.9872766,
+          "equity": 137.86891661665993,
+          "cash": 137.86891661665993
         }
       ],
       "realizedEUR": -12.13108338334009,
@@ -20960,9 +20969,9 @@
     "uncertainty": "Prima candela parziale, entrambi i livelli o interruzione dati: chiusura al prezzo osservato, esito separato dalle statistiche certe",
     "maxDrawdownPausePct": 8
   },
-  "fxAt": 1793836869.358733,
+  "fxAt": 1793837742.9872766,
   "eurRates": {
-    "USDT": 0.8891259891526629
+    "USDT": 0.8894423196655696
   },
   "errors": [],
   "revision": "paper-2.1"
