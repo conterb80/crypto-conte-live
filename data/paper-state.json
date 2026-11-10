@@ -1,39 +1,12 @@
 {
   "version": "paper-2",
   "startedAt": 1792571521.2736304,
-  "lastRun": 1794290469.9887552,
+  "lastRun": 1794291339.553611,
   "portfolios": {
     "A": {
       "name": "Conferme",
-      "cash": 109.01568685948683,
-      "positions": {
-        "AVAX": {
-          "candidateId": "AVAX-1794264300",
-          "qty": 3.8663934926501726,
-          "costEUR": 30,
-          "openedAt": 1794267054.9680035,
-          "checkedThrough": 1794290400.0,
-          "provider": "Binance",
-          "quote": "USDT",
-          "entry": 8.695686999999998,
-          "stop": 8.523285714285715,
-          "target": 9.014,
-          "mark": 29.46050776352816,
-          "markedAt": 1794290469.9887552,
-          "entryCheck": {
-            "entry": 8.695686999999998,
-            "stop": 8.523285714285715,
-            "target": 9.014,
-            "riskPct": 1.982606845373841,
-            "rewardPct": 3.660584839357738,
-            "rr": 1.846349339456405,
-            "targetNetPct": 3.0404308667152824,
-            "stopNetPct": -2.569000177488423,
-            "eurRate": 0.8900756564307967,
-            "fxAssumption": "Cambio invariato solo per la stima dei livelli netti"
-          }
-        }
-      },
+      "cash": 138.19236731214323,
+      "positions": {},
       "pending": {},
       "seen": [
         "OP-1792539000:CONFERMATO",
@@ -2962,11 +2935,42 @@
           },
           "signalAt": 1794266100.0,
           "queuedAt": 1794266139.2043014
+        },
+        {
+          "time": 1794291339.553611,
+          "type": "VENDITA",
+          "version": "paper-2",
+          "revision": "paper-2.1",
+          "symbol": "AVAX",
+          "candidateId": "AVAX-1794264300",
+          "reason": "Invalidazione",
+          "price": 8.505486,
+          "observedPrice": 8.514,
+          "quote": "USDT",
+          "eurRate": 0.8894423196655696,
+          "netEUR": 29.176680452656388,
+          "feeEUR": 0.07312451241267265,
+          "pnlEUR": -0.8233195473436119,
+          "ambiguous": false,
+          "quality": "OSSERVATO",
+          "uncertainty": [],
+          "openedAt": 1794267054.9680035,
+          "triggerAt": 1794291339.553611,
+          "entry": 8.695686999999998,
+          "stop": 8.523285714285715,
+          "target": 9.014
+        },
+        {
+          "time": 1794291339.553611,
+          "type": "PAUSA_INGRESSI",
+          "version": "paper-2",
+          "revision": "paper-2.1",
+          "reason": "Limite sperimentale di calo del capitale dell’8% raggiunto; nuovi ingressi sospesi per revisione."
         }
       ],
-      "equity": 138.476194623015,
+      "equity": 138.19236731214323,
       "peak": 150.33841096385066,
-      "maxDrawdownPct": 7.995791042475409,
+      "maxDrawdownPct": 8.07913531467882,
       "history": [
         {
           "time": 1792571521.2736304,
@@ -12967,16 +12971,25 @@
           "time": 1794290469.9887552,
           "equity": 138.476194623015,
           "cash": 109.01568685948683
+        },
+        {
+          "time": 1794291339.553611,
+          "equity": 138.19236731214323,
+          "cash": 138.19236731214323
         }
       ],
-      "realizedEUR": -10.984313140513105,
-      "certainRealizedEUR": -10.160827303748881,
+      "realizedEUR": -11.807632687856717,
+      "certainRealizedEUR": -10.984146851092493,
       "uncertainRealizedEUR": -0.8234858367642239,
-      "closedCount": 32,
+      "closedCount": 33,
       "uncertainCount": 3,
       "wins": 6,
-      "losses": 26,
-      "activity": "POSIZIONI APERTE"
+      "losses": 27,
+      "activity": "INGRESSI SOSPESI",
+      "entryPause": {
+        "at": 1794291339.553611,
+        "reason": "Limite sperimentale di calo del capitale dell’8% raggiunto; nuovi ingressi sospesi per revisione."
+      }
     },
     "B": {
       "name": "Anticipato",
@@ -26828,6 +26841,11 @@
           "time": 1794290469.9887552,
           "equity": 137.86891661665993,
           "cash": 137.86891661665993
+        },
+        {
+          "time": 1794291339.553611,
+          "equity": 137.86891661665993,
+          "cash": 137.86891661665993
         }
       ],
       "realizedEUR": -12.13108338334009,
@@ -26890,9 +26908,9 @@
     "uncertainty": "Prima candela parziale, entrambi i livelli o interruzione dati: chiusura al prezzo osservato, esito separato dalle statistiche certe",
     "maxDrawdownPausePct": 8
   },
-  "fxAt": 1794290469.9887552,
+  "fxAt": 1794291339.553611,
   "eurRates": {
-    "USDT": 0.8898380494749957
+    "USDT": 0.8894423196655696
   },
   "errors": [],
   "revision": "paper-2.1"
