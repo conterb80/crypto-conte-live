@@ -54,7 +54,7 @@ jobs:
         run: exit 1
   publish:
     needs: engine
-    if: always() && needs.engine.result != 'cancelled'
+    if: always() && needs.engine.result != 'cancelled' && (github.event_name != 'schedule' || github.event.schedule == '8 * * * *')
     runs-on: ubuntu-latest
     timeout-minutes: 5
     environment:
@@ -76,9 +76,6 @@ jobs:
       - uses: actions/upload-pages-artifact@v3
         with:
           path: public
-          name: github-pages-${{ github.run_attempt }}
       - name: Pubblica dashboard
         id: deployment
         uses: actions/deploy-pages@v4
-        with:
-          artifact_name: github-pages-${{ github.run_attempt }}
