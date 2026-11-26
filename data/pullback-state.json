@@ -1,7 +1,7 @@
 {
   "version": "ripartenza-1",
   "startedAt": 1793628447.2721717,
-  "lastRun": 1795691753.512255,
+  "lastRun": 1795692672.8198698,
   "rules": {
     "initialEUR": 150,
     "orderCapEUR": 40,
@@ -21,7 +21,7 @@
     "slippagePct": 0.1
   },
   "cash": 118.70589667769974,
-  "equity": 148.10985479665618,
+  "equity": 148.22745421170336,
   "peak": 150.744426011688,
   "maxDrawdownPct": 1.757574836432385,
   "positions": {
@@ -43,35 +43,35 @@
       "openedAt": 1795683688.4405875,
       "entryObservedPrice": 6.225,
       "entryEURRate": 0.9107468123861566,
-      "checkedThrough": 1795691700.0,
-      "mark": 29.403958118956453,
-      "markedAt": 1795691753.512255,
+      "checkedThrough": 1795692600.0,
+      "mark": 29.521557534003623,
+      "markedAt": 1795692672.8198698,
       "maxObservedPrice": 6.289,
       "minObservedPrice": 6.158,
-      "fullBars": 8
+      "fullBars": 9
     }
   },
   "processed": {
-    "Binance:AAVE": 1795691700.0,
-    "Binance:ADA": 1795691700.0,
-    "Binance:ARB": 1795691700.0,
-    "Binance:ATOM": 1795691700.0,
-    "Binance:AVAX": 1795691700.0,
-    "Binance:BTC": 1795691700.0,
-    "Binance:DOGE": 1795691700.0,
-    "Binance:DOT": 1795691700.0,
-    "Binance:ETH": 1795691700.0,
-    "Binance:FIL": 1795691700.0,
-    "Binance:INJ": 1795691700.0,
-    "Binance:LINK": 1795691700.0,
-    "Binance:LTC": 1795691700.0,
-    "Binance:NEAR": 1795691700.0,
-    "Binance:OP": 1795691700.0,
-    "Binance:RENDER": 1795691700.0,
-    "Binance:SOL": 1795691700.0,
-    "Binance:SUI": 1795691700.0,
-    "Binance:UNI": 1795691700.0,
-    "Binance:XRP": 1795691700.0
+    "Binance:AAVE": 1795692600.0,
+    "Binance:ADA": 1795692600.0,
+    "Binance:ARB": 1795692600.0,
+    "Binance:ATOM": 1795692600.0,
+    "Binance:AVAX": 1795692600.0,
+    "Binance:BTC": 1795692600.0,
+    "Binance:DOGE": 1795692600.0,
+    "Binance:DOT": 1795692600.0,
+    "Binance:ETH": 1795692600.0,
+    "Binance:FIL": 1795692600.0,
+    "Binance:INJ": 1795692600.0,
+    "Binance:LINK": 1795692600.0,
+    "Binance:LTC": 1795692600.0,
+    "Binance:NEAR": 1795692600.0,
+    "Binance:OP": 1795692600.0,
+    "Binance:RENDER": 1795692600.0,
+    "Binance:SOL": 1795692600.0,
+    "Binance:SUI": 1795692600.0,
+    "Binance:UNI": 1795692600.0,
+    "Binance:XRP": 1795692600.0
   },
   "lastEntry": {
     "AAVE": 1793803556.7480168,
@@ -1689,6 +1689,28 @@
       "version": "ripartenza-1",
       "symbol": "LTC",
       "reason": "Margine netto o rapporto guadagno/perdita netto insufficiente"
+    },
+    {
+      "time": 1795692672.8198698,
+      "type": "SEGNALE",
+      "version": "ripartenza-1",
+      "symbol": "NEAR",
+      "provider": "Binance",
+      "quote": "USDT",
+      "signalAt": 1795692600.0,
+      "stop": 3.0291249999999996,
+      "target": 3.066,
+      "signalPrice": 3.062,
+      "atr": 0.019500000000000073,
+      "volumeRatio": 1.39667811398288,
+      "reason": "Trend orario asset/BTC positivo; rientro EMA20; ripartenza sopra il massimo precedente"
+    },
+    {
+      "time": 1795692672.8198698,
+      "type": "SALTATO",
+      "version": "ripartenza-1",
+      "symbol": "NEAR",
+      "reason": "Prezzo eseguito fuori dai livelli"
     }
   ],
   "history": [
@@ -13526,15 +13548,20 @@
       "time": 1795691753.512255,
       "equity": 148.10985479665618,
       "cash": 118.70589667769974
+    },
+    {
+      "time": 1795692672.8198698,
+      "equity": 148.22745421170336,
+      "cash": 118.70589667769974
     }
   ],
   "checks": {
-    "Trend orario asset/BTC non positivo": 42144,
-    "Scambi o volume della ripresa insufficienti": 2294,
+    "Trend orario asset/BTC non positivo": 42146,
+    "Scambi o volume della ripresa insufficienti": 2306,
     "Manca rientro verso EMA20 nelle tre candele precedenti": 384,
-    "Ripartenza sopra il massimo precedente non confermata": 354,
+    "Ripartenza sopra il massimo precedente non confermata": 358,
     "Stop fuori intervallo 0,8–4%": 79,
-    "Setup rilevato": 68,
+    "Setup rilevato": 69,
     "Candela oltre cinque minuti: ingresso non inseguito": 58
   },
   "controlA": {
