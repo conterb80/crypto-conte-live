@@ -1,7 +1,7 @@
 {
   "version": "ripartenza-1",
   "startedAt": 1793628447.2721717,
-  "lastRun": 1795766477.326436,
+  "lastRun": 1795767350.855252,
   "rules": {
     "initialEUR": 150,
     "orderCapEUR": 40,
@@ -26,26 +26,26 @@
   "maxDrawdownPct": 2.1320504870907864,
   "positions": {},
   "processed": {
-    "Binance:AAVE": 1795766400.0,
-    "Binance:ADA": 1795766400.0,
-    "Binance:ARB": 1795766400.0,
-    "Binance:ATOM": 1795766400.0,
-    "Binance:AVAX": 1795766400.0,
-    "Binance:BTC": 1795766400.0,
-    "Binance:DOGE": 1795766400.0,
-    "Binance:DOT": 1795766400.0,
-    "Binance:ETH": 1795766400.0,
-    "Binance:FIL": 1795766400.0,
-    "Binance:INJ": 1795766400.0,
-    "Binance:LINK": 1795766400.0,
-    "Binance:LTC": 1795766400.0,
-    "Binance:NEAR": 1795766400.0,
-    "Binance:OP": 1795766400.0,
-    "Binance:RENDER": 1795766400.0,
-    "Binance:SOL": 1795766400.0,
-    "Binance:SUI": 1795766400.0,
-    "Binance:UNI": 1795766400.0,
-    "Binance:XRP": 1795766400.0
+    "Binance:AAVE": 1795767300.0,
+    "Binance:ADA": 1795767300.0,
+    "Binance:ARB": 1795767300.0,
+    "Binance:ATOM": 1795767300.0,
+    "Binance:AVAX": 1795767300.0,
+    "Binance:BTC": 1795767300.0,
+    "Binance:DOGE": 1795767300.0,
+    "Binance:DOT": 1795767300.0,
+    "Binance:ETH": 1795767300.0,
+    "Binance:FIL": 1795767300.0,
+    "Binance:INJ": 1795767300.0,
+    "Binance:LINK": 1795767300.0,
+    "Binance:LTC": 1795767300.0,
+    "Binance:NEAR": 1795767300.0,
+    "Binance:OP": 1795767300.0,
+    "Binance:RENDER": 1795767300.0,
+    "Binance:SOL": 1795767300.0,
+    "Binance:SUI": 1795767300.0,
+    "Binance:UNI": 1795767300.0,
+    "Binance:XRP": 1795767300.0
   },
   "lastEntry": {
     "AAVE": 1793803556.7480168,
@@ -2269,6 +2269,50 @@
       "type": "SALTATO",
       "version": "ripartenza-1",
       "symbol": "LTC",
+      "reason": "Margine netto o rapporto guadagno/perdita netto insufficiente"
+    },
+    {
+      "time": 1795767350.855252,
+      "type": "SEGNALE",
+      "version": "ripartenza-1",
+      "symbol": "AAVE",
+      "provider": "Binance",
+      "quote": "USDT",
+      "signalAt": 1795767300.0,
+      "stop": 95.63428571428572,
+      "target": 96.69,
+      "signalPrice": 96.64,
+      "atr": 0.5028571428571412,
+      "volumeRatio": 1.6560152845152403,
+      "reason": "Trend orario asset/BTC positivo; rientro EMA20; ripartenza sopra il massimo precedente"
+    },
+    {
+      "time": 1795767350.855252,
+      "type": "SALTATO",
+      "version": "ripartenza-1",
+      "symbol": "AAVE",
+      "reason": "Prezzo eseguito fuori dai livelli"
+    },
+    {
+      "time": 1795767350.855252,
+      "type": "SEGNALE",
+      "version": "ripartenza-1",
+      "symbol": "ARB",
+      "provider": "Binance",
+      "quote": "USDT",
+      "signalAt": 1795767300.0,
+      "stop": 0.11690357142857143,
+      "target": 0.1188,
+      "signalPrice": 0.1181,
+      "atr": 0.0007857142857142864,
+      "volumeRatio": 1.6230831703511306,
+      "reason": "Trend orario asset/BTC positivo; rientro EMA20; ripartenza sopra il massimo precedente"
+    },
+    {
+      "time": 1795767350.855252,
+      "type": "SALTATO",
+      "version": "ripartenza-1",
+      "symbol": "ARB",
       "reason": "Margine netto o rapporto guadagno/perdita netto insufficiente"
     }
   ],
@@ -14537,15 +14581,20 @@
       "time": 1795766477.326436,
       "equity": 147.5304787426436,
       "cash": 147.5304787426436
+    },
+    {
+      "time": 1795767350.855252,
+      "equity": 147.5304787426436,
+      "cash": 147.5304787426436
     }
   ],
   "checks": {
-    "Trend orario asset/BTC non positivo": 42573,
-    "Scambi o volume della ripresa insufficienti": 3075,
-    "Manca rientro verso EMA20 nelle tre candele precedenti": 572,
-    "Ripartenza sopra il massimo precedente non confermata": 485,
-    "Stop fuori intervallo 0,8–4%": 101,
-    "Setup rilevato": 94,
+    "Trend orario asset/BTC non positivo": 42574,
+    "Scambi o volume della ripresa insufficienti": 3082,
+    "Manca rientro verso EMA20 nelle tre candele precedenti": 577,
+    "Ripartenza sopra il massimo precedente non confermata": 487,
+    "Stop fuori intervallo 0,8–4%": 103,
+    "Setup rilevato": 96,
     "Candela oltre cinque minuti: ingresso non inseguito": 58
   },
   "controlA": {
