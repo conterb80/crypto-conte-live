@@ -1,7 +1,7 @@
 {
   "version": "ripartenza-1",
   "startedAt": 1793628447.2721717,
-  "lastRun": 1795741279.4662235,
+  "lastRun": 1795742157.2624433,
   "rules": {
     "initialEUR": 150,
     "orderCapEUR": 40,
@@ -26,26 +26,26 @@
   "maxDrawdownPct": 2.1320504870907864,
   "positions": {},
   "processed": {
-    "Binance:AAVE": 1795741200.0,
-    "Binance:ADA": 1795741200.0,
-    "Binance:ARB": 1795741200.0,
-    "Binance:ATOM": 1795741200.0,
-    "Binance:AVAX": 1795741200.0,
-    "Binance:BTC": 1795741200.0,
-    "Binance:DOGE": 1795741200.0,
-    "Binance:DOT": 1795741200.0,
-    "Binance:ETH": 1795741200.0,
-    "Binance:FIL": 1795741200.0,
-    "Binance:INJ": 1795741200.0,
-    "Binance:LINK": 1795741200.0,
-    "Binance:LTC": 1795741200.0,
-    "Binance:NEAR": 1795741200.0,
-    "Binance:OP": 1795741200.0,
-    "Binance:RENDER": 1795741200.0,
-    "Binance:SOL": 1795741200.0,
-    "Binance:SUI": 1795741200.0,
-    "Binance:UNI": 1795741200.0,
-    "Binance:XRP": 1795741200.0
+    "Binance:AAVE": 1795742100.0,
+    "Binance:ADA": 1795742100.0,
+    "Binance:ARB": 1795742100.0,
+    "Binance:ATOM": 1795742100.0,
+    "Binance:AVAX": 1795742100.0,
+    "Binance:BTC": 1795742100.0,
+    "Binance:DOGE": 1795742100.0,
+    "Binance:DOT": 1795742100.0,
+    "Binance:ETH": 1795742100.0,
+    "Binance:FIL": 1795742100.0,
+    "Binance:INJ": 1795742100.0,
+    "Binance:LINK": 1795742100.0,
+    "Binance:LTC": 1795742100.0,
+    "Binance:NEAR": 1795742100.0,
+    "Binance:OP": 1795742100.0,
+    "Binance:RENDER": 1795742100.0,
+    "Binance:SOL": 1795742100.0,
+    "Binance:SUI": 1795742100.0,
+    "Binance:UNI": 1795742100.0,
+    "Binance:XRP": 1795742100.0
   },
   "lastEntry": {
     "AAVE": 1793803556.7480168,
@@ -1851,6 +1851,50 @@
       "type": "SALTATO",
       "version": "ripartenza-1",
       "symbol": "ETH",
+      "reason": "Prezzo eseguito fuori dai livelli"
+    },
+    {
+      "time": 1795742157.2624433,
+      "type": "SEGNALE",
+      "version": "ripartenza-1",
+      "symbol": "LTC",
+      "provider": "Binance",
+      "quote": "USDT",
+      "signalAt": 1795742100.0,
+      "stop": 43.81857142857143,
+      "target": 45.50357142857141,
+      "signalPrice": 44.3,
+      "atr": 0.16571428571428573,
+      "volumeRatio": 1.032884198431408,
+      "reason": "Trend orario asset/BTC positivo; rientro EMA20; ripartenza sopra il massimo precedente"
+    },
+    {
+      "time": 1795742157.2624433,
+      "type": "SALTATO",
+      "version": "ripartenza-1",
+      "symbol": "LTC",
+      "reason": "Margine netto o rapporto guadagno/perdita netto insufficiente"
+    },
+    {
+      "time": 1795742157.2624433,
+      "type": "SEGNALE",
+      "version": "ripartenza-1",
+      "symbol": "NEAR",
+      "provider": "Binance",
+      "quote": "USDT",
+      "signalAt": 1795742100.0,
+      "stop": 3.0433392857142856,
+      "target": 3.088,
+      "signalPrice": 3.087,
+      "atr": 0.018642857142857246,
+      "volumeRatio": 1.257491336154281,
+      "reason": "Trend orario asset/BTC positivo; rientro EMA20; ripartenza sopra il massimo precedente"
+    },
+    {
+      "time": 1795742157.2624433,
+      "type": "SALTATO",
+      "version": "ripartenza-1",
+      "symbol": "NEAR",
       "reason": "Prezzo eseguito fuori dai livelli"
     }
   ],
@@ -13974,15 +14018,20 @@
       "time": 1795741279.4662235,
       "equity": 147.5304787426436,
       "cash": 147.5304787426436
+    },
+    {
+      "time": 1795742157.2624433,
+      "equity": 147.5304787426436,
+      "cash": 147.5304787426436
     }
   ],
   "checks": {
-    "Trend orario asset/BTC non positivo": 42515,
-    "Scambi o volume della ripresa insufficienti": 2771,
-    "Manca rientro verso EMA20 nelle tre candele precedenti": 448,
+    "Trend orario asset/BTC non positivo": 42522,
+    "Scambi o volume della ripresa insufficienti": 2777,
+    "Manca rientro verso EMA20 nelle tre candele precedenti": 449,
     "Ripartenza sopra il massimo precedente non confermata": 462,
-    "Stop fuori intervallo 0,8–4%": 97,
-    "Setup rilevato": 75,
+    "Stop fuori intervallo 0,8–4%": 100,
+    "Setup rilevato": 77,
     "Candela oltre cinque minuti: ingresso non inseguito": 58
   },
   "controlA": {
